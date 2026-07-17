@@ -13,6 +13,16 @@
 
 ---
 
+## 2026-07-17 — Version control established; Gumroad go-to-market research; Higgsfield validation experiment (author: Claude session)
+**What changed:**
+- Initialized git for the repo, added `.gitignore` (excludes macOS `._*`/`.DS_Store` cruft and the personal `.claude/settings.local.json`), made the initial commit (302 files), added the GitHub remote (`github.com/arpitphillips/fujifilmrecipes`, **public**), and pushed `main`. The repo is under version control for the first time.
+- Root `README.md` exists only as GitHub's auto-generated placeholder (`# fujifilmrecipes`), merged in from the remote during setup — not yet written.
+- Researched the Gumroad monetization landscape for this bank against three live comparisons (a pay-what-you-want 70-recipe aggregator pack, Reggie Ballesteros's ~$11 single-recipe listing, Fuji X Weekly's $19.99/yr Patron tier) and produced a go-to-market strategy memo. Published as a private Claude Artifact — **not** committed to this repo.
+- Ran an experiment generating an AI test image (CSMT, Mumbai) styled after the Kodak Tri-X 400 recipe via Higgsfield/GPT Image 2, to gauge whether AI image generation can previsualize a recipe's look before shooting film. Result is an external CDN URL, not saved into the repo.
+
+**Why:** Bringing the changelog up to date with a session's work, in lieu of syncing the raw session transcript (a 6MB internal JSONL log) — not appropriate content for a public repo.
+**Follow-ups:** Write a real root `README.md` (currently just the GitHub placeholder). Decide whether the Gumroad strategy memo should be adapted into a repo doc (e.g. a `business/` folder) if the user wants it version-controlled.
+
 ## 2026-07-16 — Clean Girl creative original added (author: Claude session)
 **What changed:**
 - New creative original **`originals/creative/clean-girl/`** (recipe.md + drop-folders): the bright/airy/white-white/luminous-skin "clean girl" aesthetic. Astia base; the design hinge is **Auto White Priority WB** (Fujifilm's keep-whites-white AWB mode) with a +1R/−1B whisper for skin, DR400 + Highlight −1.5 for high-key headroom, Shadow −1 (lifted but not matte), Color +1/CCE Weak/CCFXB Off, **Grain Off** (the defining clean choice — only Grain-Off recipe in the bank besides Kodachrome 25), Sharpness −1, Clarity 0, ISO capped 1600, EC +2/3…+1⅓. Golden-hour and PRO-Neg-Hi studio variants + inline movie-mode section (translates near-1:1 since Grain/Clarity were already off/0). Comparison table vs Pastel Dream / Matte Editorial / Golden Hour Glow documents the distinct niche (neutral-white luminous pole).

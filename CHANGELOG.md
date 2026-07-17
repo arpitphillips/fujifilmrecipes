@@ -1,0 +1,129 @@
+# System Changelog
+
+**Every Claude agent (and human) working in this repo must log their changes here.** Newest entries at the top. This is the repo's memory — read the recent entries before making changes so you don't undo or duplicate prior work.
+
+## Entry template
+
+```markdown
+## YYYY-MM-DD — short title (author: Claude session / user)
+**What changed:** bullet list of files/folders added, edited, moved, deleted.
+**Why:** one or two lines.
+**Follow-ups:** anything left pending (or "none").
+```
+
+---
+
+## 2026-07-16 — Clean Girl creative original added (author: Claude session)
+**What changed:**
+- New creative original **`originals/creative/clean-girl/`** (recipe.md + drop-folders): the bright/airy/white-white/luminous-skin "clean girl" aesthetic. Astia base; the design hinge is **Auto White Priority WB** (Fujifilm's keep-whites-white AWB mode) with a +1R/−1B whisper for skin, DR400 + Highlight −1.5 for high-key headroom, Shadow −1 (lifted but not matte), Color +1/CCE Weak/CCFXB Off, **Grain Off** (the defining clean choice — only Grain-Off recipe in the bank besides Kodachrome 25), Sharpness −1, Clarity 0, ISO capped 1600, EC +2/3…+1⅓. Golden-hour and PRO-Neg-Hi studio variants + inline movie-mode section (translates near-1:1 since Grain/Clarity were already off/0). Comparison table vs Pastel Dream / Matte Editorial / Golden Hour Glow documents the distinct niche (neutral-white luminous pole).
+- Indexed in `creative/README.md`, `X-T5/README.md`, `RANKING.md`.
+
+**Why:** User asked for a maximally aesthetic "white-white, clean look, clean girl aesthetics" stills recipe.
+**Follow-ups:** Tune against user-dropped reference images in `clean-girl/references/` (Pinterest/IG saves welcome — analysis-only).
+
+## 2026-07-16 — Silent Atlas frame-verified independently; WB corrected (author: Claude session)
+**What changed:**
+- Ran a **second, independent frame-verification pass** on the Silent Atlas reference video (user request: "watch the video and double check and fine tune"). YouTube's player blocks browser screenshots in this environment, so used YouTube's **auto-generated real frame stills** (i.ytimg.com sd1/sd2/sd3 = ~25/50/75% points + maxresdefault hero frame) — 4 frames spanning mist landscape, portrait, clear sky, and the hero shot.
+- **Confirmed** the ported grade on every axis except one: warm golden skin/earth ✓, deep held shadows ✓, soft bloomed highlights ✓, muted saturation ✓, fine grain in mist ✓ (supports the stills Weak/Large grain choice).
+- **Corrected from the evidence: WB Blue shift −3 → −2** in both `recipe.md` and `recipe-video.md` — all 4 frames show skies/mist landing *teal-cyan*; −3B would strip too much blue and yellow the atmosphere toward khaki, while −2B preserves enough blue for Classic Negative's native cyan lean to render it teal. Knowledge.md gained a "Frame verification — second independent pass" section with the full observation table; the 2383-comparison table updated to match.
+- Method caveat documented: YouTube auto-frames are heavily compressed → hue relationships treated as reliable evidence, absolute saturation only loosely.
+
+**Why:** Core principle — verify with real images, not inherited notes; the second pass caught a real mis-tune.
+**Follow-ups:** none — the i.ytimg.com auto-frame strategy was added to validation-methodology.md fetch strategies same day.
+
+## 2026-07-16 — Silent Atlas ported from second-machine copy + stills companion added (author: Claude session)
+**What changed:**
+- Discovered the two repo copies have **diverged**: `D:\Fujifilm Recipes` (worked on by a session on the user's other machine) contained `originals/creative/silent-atlas/` (recipe-video.md + knowledge.md, derived 2026-07-15 from a frame-by-frame study of Merlin Krumme's *The Silent Atlas* YouTube film), which was absent from this copy — and this copy has ~13 recipes the D: copy lacks.
+- **Ported** `silent-atlas/` D:→C: unchanged (crediting the original session in knowledge.md's footer), added the standard `references/`/`test-shots/` drop-folders.
+- **Added `recipe.md` (stills companion)** — the D: version was video-only. Same grade (Classic Neg, Daylight +3R/−3B, DR200, H−1/S+2, Sharpness −1); stills build uses the movie-mode-unavailable controls instead of saturation compensation: Color +2 (not +3) with **CCE Strong** carrying warm-tone depth, **CCFXB Weak** for teal shadow depth, **Grain Weak/Large** for subtle cine texture, Clarity 0 per standard (physical Glimmerglass/mist filter recommended; Clarity −2 documented as the no-filter variant).
+- Updated knowledge.md (video-first section now points to the stills build), `creative/README.md`, `X-T5/README.md`, `RANKING.md`.
+- **Did not write to the D: copy** (it's the other session's working copy; one-way port only).
+
+**Why:** User asked for the grade + sim for the same YouTube reference on this machine; the prior work existed only in the unsynced D: copy.
+**Follow-ups:** The two repo copies need reconciling — this C: copy is ahead by ~13 recipes (Ektar, Pro 400H, Delta 3200, Pan F, 4 FXW references, 6 Ross creatives, Reggie's Superia, 3 cinema stocks) and D: had silent-atlas. Recommend picking one copy as canonical.
+
+## 2026-07-16 — Researched and added the most notable cinema stocks (author: Claude session)
+**What changed:**
+- Researched (not assumed) which cinema film stocks cinematographers/critics rate most highly, beyond the existing Vision3 250D/500T/2383: web search surfaced **Vision3 50D** (Kodak's own "finest grain" cinema stock; used on Sean Baker's *Red Rocket*; Vanessa Whyte BSC has published praise for the family's highlight latitude), **Kodak Double-X 5222** (B&W cinema negative in continuous production since 1959 — *Raging Bull*, *Schindler's List*, *Manhattan*), and **Kodak Ektachrome 100D** (reversal/slide cinema stock used in *Poor Things*, 2023).
+- Added 3 new **datasheet-derived cinema originals**, each with `recipe.md` + `recipe-video.md` + `knowledge.md`:
+  - **`originals/cinema/kodak-vision3-50d/`** — Eterna base, Weak/Small grain, neutral WB. Validated against 2 real Commons scans (daylight + overcast) confirming near-invisible grain.
+  - **`originals/cinema/kodak-double-x-5222/`** — **placed in `cinema/`, not `black-and-white/`** (a cinema stock with cinema-specific grain/contrast targets, distinct from the still-photo B&W family). Acros base, Strong/Large grain (datasheet RMS 14), Clarity +1 (third B&W-family recipe to deviate from the Clarity-0 default, after Tri-X and Delta 3200).
+  - **`originals/cinema/kodak-ektachrome-100d/`** — the one cinema recipe on **Provia, not Eterna**, since it's a *reversal* stock (E-6, slide-film logic) rather than a negative — same base-choice logic as the still Ektachrome E100 original.
+- Fetched and archived 2 new official Kodak datasheets not previously in the collection: `kodak-motion/double-x_5222.pdf`, `kodak-motion/ektachrome-100d_5294.pdf` (corrected from an initial misfile into `kodak-still/` — Double-X is a motion-picture stock).
+- Rewrote `originals/cinema/README.md` to explain the research-driven selection and the now-6-stock family (was 3).
+- Updated `X-T5/README.md`, `X-T5/RANKING.md`, `Knowledge/film-stocks-master-list.md` (added Double-X and Ektachrome-100D-cine as new rows, distinguished from the existing still-photo Ektachrome E100 row; flipped Vision3 50D's flag), and `Knowledge/validation-methodology.md` ledger.
+
+**Why:** User asked for research into the most notable/pleasing cinema stocks beyond Vision3, sourced from official/authentic/reliable sources.
+**Follow-ups:** No Wikimedia Commons frame-grabs exist for Double-X, Ektachrome 100D, 250D, 500T, or 2383 (real movie footage isn't Commons' domain) — real-footage scan-validation for those needs a user-supplied reference (a still from one of the cited films, or the user's own test footage) dropped into each recipe's `references/` folder. Vision3 200T remains an open gap (❌, no recipe yet).
+
+## 2026-07-16 — Added Ross McConaghy creative recipes + Reggie's Superia (author: Claude session)
+**What changed:**
+- 6 new **creative** attributed reference recipes from [rossandhisjpegs.com](https://www.rossandhisjpegs.com/fujifilm-recipes), each with recipe.md + drop-folders + source link: **`ross-chrome-fog`** (Classic Chrome, Clarity −5 diffusion-filter/fog look — a genuinely new niche), **`ross-canned-heat`** (Classic Neg, +6R/−7B extreme-warm teal-orange), **`ross-fruit-pastel`** (Velvia pastel — the Velvia counterpart to our Astia Pastel Dream), **`ross-sherbet-lemon`** (Velvia bright seaside), **`ross-pumpkin-soup`** (Nostalgic Neg, Underwater-WB autumnal), **`ross-salted-slate`** (Acros+G dark slate B&W).
+- Added **`reference-recipes/reggies-superia/`** (Classic Negative; Reggie Ballesteros's deliberately heavy-handed, moody, grain-forward portrait recipe for melanated skin — the philosophical *opposite* of Reggie's Portra despite the shared author).
+- Corrected an earlier mischaracterisation: Reggie's Superia had been described as "versatile like Reggie's Portra" — a timestamped video breakdown showed it's intentionally heavy-handed/moody; recipe.md and the Superia-original comparison updated. WB Blue shift updated −3 → −4 (video's on-screen reading; discrepancy with the article text documented, not silently resolved).
+- Wrote full settings-diff comparison tables into `originals/kodak-portra-400/knowledge.md` and `originals/fujicolor-superia-400/knowledge.md` covering original (emulsion-faithful) vs Reggie's (purpose-faithful) for both Portra and Superia.
+- Updated `X-T5/README.md` reference table (7 new rows) and `Knowledge/film-stocks-master-list.md` (added Ross as a source + noted his film-emulation recipes that map to open gaps: UltraMax/XP2/C200/Lomography).
+
+**Why:** User supplied rossandhisjpegs.com as a creative-look source and asked to compare the bank's Portra/Superia originals against Reggie's versions.
+**Sensor-generation verification (same day):** Ross's pages don't state a sensor gen, so verified it independently — his **Pumpkin Soup** uses **Nostalgic Neg.**, a sim that exists only on X-Processor 5 / X-Trans V-category bodies (and on *no* X-Trans IV camera). This proves his whole current recipe set is X-Trans V category = the X-T5's blue-rendering generation, so **all 6 are correct as-published; no IV→V Color Chrome FX Blue translation needed.** Recorded the verified finding in each of the 6 recipe files (replacing the earlier hedged "unknown gen" notes). The 4 non-blue-affected bases (Velvia ×2, Acros B&W, and Nostalgic Neg itself) are doubly safe.
+**Follow-ups:** Ross's site has film-emulation recipes (Ultramax Electro, XP2 Electro, Fujipop Trio = C200, Lomo800) that would close several master-list gaps — candidates for a future pass.
+
+## 2026-07-16 — Closed all 6 priority-queue gaps (author: Claude session)
+**What changed:**
+- 4 new **datasheet-derived originals** (all datasheets already in the archive; extracted via pdftotext):
+  - **`originals/kodak-ektar-100/`** — Velvia base (tamed toward negative-film rolloff), Weak/Small grain (PGI<25), near-neutral WB. Validated against 2 real scans (saturated autumn street + night long-exposure, Wikimedia Commons).
+  - **`originals/fujicolor-pro-400h/`** — PRO Neg. Hi base, CCFXB Weak + cool WB to add the film's cyan-green shadow cast. Grounded in the datasheet (RMS 4) **and** the existing `pro400h-vs-proneghi-analog-comparison.md` (a real-film-vs-simulation video study) — the strongest non-scan evidence base in the bank.
+  - **`originals/black-and-white/ilford-delta-3200/`** — Acros base, Strong/Large grain, Clarity +1. Datasheet reveals true ISO is 1000 (not 3200) — designed for EI-3200 push development. Validated against 1 real scan.
+  - **`originals/black-and-white/ilford-pan-f-plus-50/`** — Acros base, Sharpness +2 / Clarity +2 (highest of any B&W in the bank — datasheet calls out "edge contrast"). A found "reference" image turned out to be a synthetic DXO FilmPack preset, not real film — **correctly discarded** rather than used; flagged as scan-pending.
+- 4 new **attributed reference recipes** fetched from Fuji X Weekly: **`reference-recipes/cinestill-400d-v2/`**, **`kodachrome-25/`**, **`kodak-plus-x-125/`**, **`kodak-t-max-100/`** (Hard Tone + Soft Tone in one file). Datasheet-check notes added where sheets exist.
+- Updated `Knowledge/film-stocks-master-list.md` — flipped coverage flags for all 8 stocks (🔶/🔎/❌ → ✅/📗); replaced the closed priority queue with a new "next tier of gaps" list (Astia 100F, Superia 100/C200, Vericolor III 160, Delta 100/400, Agfa Ultra/Scala, CineStill 50D, XP2 Super/SFX 200).
+- Updated `X-T5/README.md` (both tables) and `X-T5/RANKING.md` ("Validated originals" table) with all 8 new recipes; flagged the older "Full bank" ranking table in RANKING.md as stale/needing a full rebuild (it predates several recent expansions).
+- Updated `Knowledge/validation-methodology.md` ledger with the 4 new originals' validation tiers.
+- Updated `X-T5/originals/black-and-white/README.md` — expanded the B&W family comparison from 3 to 6 stocks (added Pan F Plus 50 as the slow/sharp pole, Delta 3200 as the heaviest-grain pole); documented Pan F's Clarity +2 as a third justified deviation from the Clarity-0 default (after Tri-X, now also Delta 3200 at +1).
+
+**Why:** User asked to "fix all identified gaps" — the six-item priority queue from the 2026-07-15 master-list entry.
+**Follow-ups:** New "next tier of gaps" list above. Both new datasheet originals with only partial/no scan coverage (Pan F Plus 50 has none yet) need real scans dropped into their `references/` folders. The stale RANKING.md "Full bank" table needs a full rebuild across all ~49 recipes.
+
+## 2026-07-15 — Datasheet validation audit of all recipes (author: Claude session)
+**What changed:**
+- Added **`X-T5/VALIDATION-AUDIT.md`** — every recipe with a corresponding datasheet checked against the archived PDF (granularity/RMS, contrast/tone scale, balance, latitude, speed). No recipe settings changed.
+- Results: all 8 film-based **originals pass** ✅. Reference recipes: 6 flagged ⚠️ (provia-positive & thommys-ektachrome & ultramax-400 & portra-400/800 & fp4-plus — each renders the *remembered artifact* (print/aged slide/pushed roll) rather than the emulsion spec; FP4's Weak/Large grain is the only combination with no datasheet support). Kodachrome RMS ladder (9/10/16) and grain-size↔RMS anchors documented.
+
+**Why:** User asked to validate all recipes against the new datasheet archive.
+**Follow-ups (approved & executed same day):**
+- **A ✅** Datasheet-check notes added to the 6 flagged reference recipes.
+- **B ✅** Two new datasheet-derived originals: **`originals/kodak-portra-400/`** (Classic Chrome, Weak/Small grain per PGI 37, DR400 + H−1.5, Daylight +2R/−4B) and **`originals/kodak-ektachrome-e100/`** (Provia, Weak/Small grain per RMS 8, cool-neutral WB, H−1/S−0.5). Each with recipe.md + knowledge.md (trait→setting derivation) + drop-folders; curve pages of both sheets read visually (pymupdf render). Scan-validation pending. Indexed in README, RANKING, master list.
+- **C ✅** Validation ledger updated (archive-PDF-verified datasheet tier + 2 new rows).
+
+## 2026-07-15 — Datasheet archive for all master-list stocks (author: Claude session)
+**What changed:**
+- Created **`X-T5/_reference-sources/datasheets/`** with **46 official technical datasheet PDFs (~25 MB)** organised by manufacturer: `fujifilm/` (10 — Velvia 50/100, Provia 100F, Astia 100F, Pro 400H, Superia X-TRA 400/100/Reala, Neopan Acros 100, Neopan 1600), `kodak-still/` (15 — Portra trio, Ektar, Gold, UltraMax, Ektachrome E100/E100VS, Kodachrome E-55, Tri-X, T-Max 100/400/P3200, Plus-X, Vericolor III), `kodak-motion/` (5 — Vision3 50D/250D/200T/500T, 2383 print), `ilford/` (11 — all current stocks + Kentmere), `agfa/` (3), `foma/` (2).
+- All files validated as real PDFs; index at `datasheets/README.md` with per-file sources, recipe cross-links, the CineStill→Vision3 equivalence note, and the gap list (Natura 1600, C200, ColorPlus 200, Ferrania P30, Lomography/Konica).
+- Master list now points to the archive.
+
+**Why:** User asked for datasheets for all stocks; they are the datasheet evidence tier of the validation methodology.
+**Follow-ups:** Gaps above; Ektar 100 + Pro 400H sheets now unblock the two top items in the master-list priority queue.
+
+## 2026-07-15 — Repo restructure, agent docs, stock-gap research (author: Claude session)
+**What changed:**
+- Moved the 15 flat attributed-recipe folders from `X-T5/` root into **`X-T5/reference-recipes/`** — the X-T5 root now shows only README, RANKING, manuals, `_reference-sources/`, `originals/`, `reference-recipes/`. Rewrote all relative links across ~26 files; link check passes with 0 broken links.
+- Added root **`CLAUDE.md`** (agent orientation: structure map, conventions, rules) and this **`CHANGELOG.md`**.
+- Updated `X-T5/README.md` folder-structure section to describe the two-tier layout.
+- Added **`Knowledge/film-stocks-master-list.md`** — top film stocks per manufacturer (Fujifilm/Kodak/Ilford/CineStill/others) with recipe-coverage status.
+- Added 8 new reference recipes under `X-T5/reference-recipes/` for top missing stocks (all from Fuji X Weekly, X-Trans V versions): **provia-positive** (Provia 100F slide), **vivid-velvia** (Velvia), **thommys-ektachrome** (Ektachrome, Nostalgic Neg. base), **kodak-portra-160-v2**, **kodak-ultramax-400**, **fujicolor-natura-1600**, **ilford-fp4-plus-125** (Monochrome base, negative EC convention), **kodak-t-max-p3200** (pushed B&W, ISO up to 12800). Each has recipe.md + standard references/ + test-shots/ drop-folders; all added to the X-T5 README reference table.
+
+**Why:** User asked for a self-orienting repo any agent can pick up, a logical structure, and coverage research for missing top film stocks.
+**Follow-ups:** New reference recipes need field test-shots; candidates for re-derivation as originals per validation methodology.
+
+## 2026-07-15 — Knowledge-base integration of chemistry + full Imaging Resource guide (author: Claude session)
+**What changed:**
+- New `Knowledge/film-chemistry-fundamentals.md` from the UW–Eau Claire chemistry-of-photography reference (silver halide chemistry, latent image, development/stop/fix, grain-speed-contrast coupling, sepia chemistry).
+- Major enrichment of `Knowledge/color-science-why-film-cannot-be-faked.md` from the full Imaging Resource definitive guide (retrieved via Wayback Machine — live site blocks bots): simulation history timeline 2003–2020, colour-film layer/dye physics with the Provia-vs-Velvia dye-purity case study, new Eterna Bleach Bypass entry, ACROS grain-model section, Ye/R/G filters + B&W Adjust, per-simulation additions.
+- Cross-references added in `Knowledge/grain-and-detail.md` and `Knowledge/film-simulations.md`; `Knowledge/README.md` index updated.
+
+**Why:** User requested integration of three sources (Imaging Resource guide — most important, chemistry page, YouTube comparisons); the two YouTube videos were already integrated in a prior session (`color-science-…` + `pro400h-vs-proneghi-analog-comparison.md`).
+**Follow-ups:** Nostalgic Neg. and REALA ACE postdate the Aug-2020 guide — no spectral data for them yet; add if a comparable source appears.
+
+## Baseline (pre-changelog state, reconstructed)
+- `Knowledge/` reference layer (11 files) grounded in the X-T5 manual + Fuji X Weekly.
+- `X-T5/` recipe bank: 16 originals (colour, cinema, B&W, creative) + 15 attributed reference recipes, RANKING.md, validation methodology, per-recipe references/ + test-shots/ drop-folders.

@@ -1,0 +1,6 @@
+# macOS filesystem cruft
+._*
+.DS_Store
+
+# Personal/local Claude Code settings (machine-specific permissions, not shared config)
+.claude/settings.local.json

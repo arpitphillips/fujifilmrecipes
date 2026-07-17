@@ -13,6 +13,16 @@
 
 ---
 
+## 2026-07-17 — Site v3 iteration 2: content humanization batch 1 (author: Claude session)
+**What changed:**
+- **Audit refinement (`site/audit.py`):** style tells (em dash, curly quotes, bold) are now measured on prose only, with `<table>` content excluded, and coverage/status glyphs (✅📗🔎🔶❌⚠️) exempted — tables legitimately use em dashes as empty-value markers, bold as row keys, and glyphs as data notation. Sitewide score dropped 2,593 → 1,848 from measurement fairness alone.
+- **`originals/kodak-gold-200/` (all 5 files) humanized:** prose em dashes and bold removed, sentences rewritten to read naturally. Settings, links, sources and tables untouched. Also fixed three **stale-value references** that predated the scan-validation pass: knowledge.md cited "Highlight −1.5 + Clarity −2" and "+4R" (validated recipe is Highlight −2, Clarity 0, +3R); research.md's derivation table cited "Clarity −2"; recipe-video.md's compensation notes referenced stills Clarity −2. Recipe values themselves unchanged.
+- **`Knowledge/film-stocks-master-list.md` prose humanized:** H1 de-title-cased, legend/priority-queue/Ross-note em dashes and bold-key patterns rewritten as plain sentences. All tables and coverage data untouched.
+- Sitewide audit score now 1,720 (was 2,593); 6 pages fully clean; template pages still 0.
+
+**Why:** Loop iterations toward the user's goal: the whole site reading as human-written.
+**Follow-ups:** Next batches: color-science article (59 prose em dashes), silent-atlas, fujicolor-superia-400, mumbai ×2, ektachrome-100d, then the long tail of ~70 pages scoring 10–50.
+
 ## 2026-07-17 — Site v3 iteration 1: copy humanized, SEO layer, AI-tell audit (author: Claude session)
 **What changed:**
 - **All site-authored copy rewritten** per the humanizer skill (Wikipedia "Signs of AI writing"): removed em dashes, negative parallelisms, tailing-negation fragments, rule-of-three padding, emoji-decorated headings/bullets, and promotional vocabulary from every template (home, community, knowledge index, about, contact, footer, category intros). Site voice is now first-person (the owner's), with varied rhythm and plain copulas.

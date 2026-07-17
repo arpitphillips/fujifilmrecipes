@@ -37,8 +37,13 @@ ING_TAILS = [r",\s+(?:highlighting|underscoring|emphasizing|reflecting|"
              r"contributing to|demonstrating)\b"]
 EMOJI = re.compile("[\U0001F300-\U0001FAFF☀-➿]")
 
-# The film-frame gallery placeholder glyph is a design element, not prose.
-PLACEHOLDER_GLYPHS = {"🎞️", "🎞"}
+# Glyphs that are data notation, not prose decoration: the gallery placeholder
+# frame and the coverage/status marks used in comparison tables and legends.
+EXEMPT_GLYPHS = {"🎞️", "🎞", "✅", "❌", "📗", "🔎", "🔶", "⚠️", "⚠", "🎬"}
+
+
+def strip_tables(html: str) -> str:
+    return re.sub(r"<table.*?</table>", " ", html, flags=re.S)
 
 
 def page_text(html: str) -> str:
@@ -50,16 +55,21 @@ def page_text(html: str) -> str:
 def audit_page(path: Path) -> dict:
     html = path.read_text(encoding="utf-8")
     text = page_text(html)
-    for glyph in PLACEHOLDER_GLYPHS:
+    # Style patterns (em dash, quotes, bold) are prose tells; tables use em
+    # dashes as empty-value markers and bold as row keys, so measure prose only.
+    prose_html = strip_tables(html)
+    prose = page_text(prose_html)
+    for glyph in EXEMPT_GLYPHS:
         text = text.replace(glyph, "")
+        prose = prose.replace(glyph, "")
     counts = {
-        "em_dash": text.count("—"),
-        "curly_quotes": len(re.findall(r"[“”]", text)),
+        "em_dash": prose.count("—"),
+        "curly_quotes": len(re.findall(r"[“”]", prose)),
         "ai_vocab": sum(len(re.findall(p, text, re.I)) for p in AI_VOCAB),
         "neg_parallel": sum(len(re.findall(p, text, re.I)) for p in NEG_PARALLEL),
         "ing_tails": sum(len(re.findall(p, text, re.I)) for p in ING_TAILS),
         "emoji": len(EMOJI.findall(text)),
-        "bold": html.count("<strong>"),
+        "bold": prose_html.count("<strong>"),
     }
     counts["score"] = (counts["em_dash"] + counts["curly_quotes"]
                        + 3 * counts["ai_vocab"] + 3 * counts["neg_parallel"]

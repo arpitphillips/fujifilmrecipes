@@ -43,13 +43,13 @@ Rather than a handful, the entire user gallery was reviewed to avoid outliers. C
 2. **Clarity:** −2 → **0**. Per the quality standard (Clarity 0 unless needed); softness preserved via base + Sharpness −2. Verified the scans' softness doesn't *require* negative Clarity.
 
 ## Additional confirmations from the full gallery
-- **Warmth scales with the light:** near-neutral in overcast, clearly warm/golden in sun & golden hour, and **strongly amber indoors** (the "ELLA" fridge shot) — exactly the behaviour the recipe notes describe. +3R is the right all-conditions average.
-- **Warm accents (red/orange/yellow) consistently pop** (locomotive, yellow bench, restaurant signs, lifeguard tower) — validates Color +3 + CCE Weak.
-- **Greens are reliably muted olive; blues medium-to-pale** across every sky — validates Classic Chrome + CCFXB Off.
-- **Low contrast with soft warm highlights and open shadows** holds across all 35 — validates DR400 + Highlight −2 + Shadow +0.5.
+- Warmth scales with the light: near-neutral in overcast, clearly golden in sun and golden hour, and strongly amber indoors (the "ELLA" fridge shot). This is exactly the behaviour the recipe notes describe, and it makes +3R the right all-conditions average.
+- Warm accents (red, orange, yellow) consistently pop in the locomotive, yellow bench, restaurant sign and lifeguard tower scans, which validates Color +3 with CCE Weak.
+- Greens are reliably muted olive and blues medium-to-pale across every sky, which validates Classic Chrome with CCFXB Off.
+- Low contrast with soft warm highlights and open shadows holds across all 35 scans, which validates DR400, Highlight −2 and Shadow +0.5.
 
 ## Faithfulness verdict
-**High — confirmed across ~35 real scans** spanning overcast → sun → golden hour → twilight → indoor/artificial and every subject type, plus the Kodak E-7022 datasheet (see [`research.md`](research.md)). **No further setting changes needed** after the two evidence-based edits above. This meets the top **scan-validated** tier of the [validation methodology](../../../Knowledge/validation-methodology.md).
+High. Confirmed across roughly 35 real scans spanning overcast, sun, golden hour, twilight and indoor light, plus every subject type, plus the Kodak E-7022 datasheet (see [`research.md`](research.md)). After the two evidence-based edits above, nothing else needed changing. This meets the top scan-validated tier of the [validation methodology](../../../Knowledge/validation-methodology.md).
 
 ## Still open
-- Confirm on **your own** Gold 200 frames (scan pipeline varies warmth by ±1–2 on the WB shift) to personalise the WB lock.
+- Confirm on your own Gold 200 frames (scan pipelines vary warmth by ±1–2 on the WB shift) to personalise the WB lock.

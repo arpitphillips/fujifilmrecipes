@@ -1,61 +1,60 @@
 {% extends "base.html" %}
-{% block title %}About — {{ site_title }}{% endblock %}
 {% block content %}
 <section class="page-head">
   <div class="wrap">
     <h1>About</h1>
     <p class="page-lead">
-      A film-simulation recipe bank for the Fujifilm X-T5 that treats film looks as something you
-      <strong>research</strong>, not something you eyeball.
+      A film simulation recipe bank for the Fujifilm X-T5, researched instead of guessed.
     </p>
   </div>
 </section>
 
 <div class="wrap">
   <article class="md about-md">
-    <h2>The idea</h2>
-    <p>A recipe is a bundle of in-camera JPEG settings that makes the X-T5 render like a specific
-       film stock — warm Kodak Gold afternoons, cool Superia greens, gritty Tri-X street frames —
-       straight out of camera, no editing. Most recipe collections online are settings someone
-       liked, with a film name attached. This bank works the other way around: <strong>start from
-       what the film actually was, then build the look.</strong></p>
+    <h2>What this is</h2>
+    <p>A recipe is a set of in camera JPEG settings that makes the X-T5 render like a specific
+       film stock. Warm Kodak Gold afternoons. The cool green cast of a Superia print from a
+       90s minilab. Tri-X grain on a rainy street. All straight out of camera, with no editing
+       afterwards.</p>
+    <p>Most recipe collections online are settings someone liked, with a film name attached
+       after the fact. I wanted to work in the other direction: start from what the film
+       actually was, then build the look.</p>
 
-    <h2>Built from the receipts</h2>
-    <p>Every original recipe traces back to something checkable:</p>
-    <ul>
-      <li>📄 <strong>The manufacturer's technical datasheet</strong> — characteristic curves, RMS
-          granularity, colour balance, exposure latitude. If Kodak measured it in a lab, we used it.</li>
-      <li>🔬 <strong>Real film scans</strong> — for the top tier, actual frames shot on the actual
-          stock, compared against the recipe's output and used to tune it.</li>
-      <li>🧠 <strong>A written rationale for every setting</strong> — each recipe explains
-          <em>why</em> its grain is Strong/Small or its white balance leans +3 Red, so you can bend
-          it to your taste instead of obeying it.</li>
-    </ul>
-    <p>The <a href="{{ root }}knowledge/validation-methodology/">validation methodology</a> spells
-       out the evidence tiers behind the badges you'll see on every card — from
-       <em>datasheet-derived</em> up to <em>scan-validated</em>.</p>
+    <h2>Where the recipes come from</h2>
+    <p>Film stocks are unusually well documented. Kodak and Ilford published technical
+       datasheets for nearly everything: characteristic curves, granularity figures, colour
+       balance, exposure latitude. Those numbers say precise things about how a film renders,
+       and they map surprisingly well onto the X-T5's controls. A film with a long highlight
+       shoulder wants DR400 and a negative Highlight setting. A film with RMS granularity of 14
+       has no business wearing fine grain.</p>
+    <p>So every original recipe here starts with the datasheet. When I can get scans of the
+       real stock, from a lab roll or an archive, I compare them frame by frame against the
+       recipe's output and adjust. The badge on each card tells you how far up that ladder a
+       recipe has climbed. The <a href="{{ root }}knowledge/validation-methodology/">validation
+       methodology</a> explains exactly what each tier means, and each recipe page keeps its
+       grade analysis: the reasoning for every single setting, so you can bend it to your taste
+       instead of obeying it.</p>
 
-    <h2>Two shelves, clearly labelled</h2>
-    <p><strong><a href="{{ root }}">Originals</a></strong> are independently derived here — colour,
-       cinema, black &amp; white, and a set of designed creative looks that don't pretend to be
-       film at all.</p>
-    <p><strong><a href="{{ root }}community/">Community recipes</a></strong> come from the wider
-       Fujifilm world — Fuji X Weekly, Ross McConaghy, Luís Costa and others. They're here for
-       testing and comparison, every one credited and linked back to its creator.</p>
+    <h2>Two shelves</h2>
+    <p><a href="{{ root }}">Originals</a> are the recipes I derived myself: colour film, cinema
+       stocks, black and white, and a set of creative looks that don't pretend to be film at
+       all. <a href="{{ root }}community/">Community recipes</a> come from the wider Fujifilm
+       world. I keep those for testing and comparison, and every one is credited and linked to
+       its creator's page.</p>
 
-    <h2>Why in-camera matters</h2>
-    <p>Fujifilm's film simulations are physics-grounded colour models built by the company that
-       made the actual film — behaviour that can't be honestly replicated with curves and sliders
-       afterwards. (The knowledge base has a
-       <a href="{{ root }}knowledge/color-science-why-film-cannot-be-faked/">whole deep dive</a> on
-       why.) So the JPEG the camera writes <em>is</em> the photograph. The recipe is the darkroom,
-       and it runs in the half-second after you press the shutter.</p>
+    <h2>Why straight out of camera</h2>
+    <p>Fujifilm built its film simulations from measurements of its own emulsions, and the
+       resulting colour behaviour is baked into the camera's processing in ways that curves and
+       sliders can't honestly reproduce afterwards. I wrote a
+       <a href="{{ root }}knowledge/color-science-why-film-cannot-be-faked/">long piece</a> on
+       why. The short version: the JPEG the camera writes is the photograph. The recipe is your
+       darkroom, and it runs in the half second after you press the shutter.</p>
 
     <h2>The fine print</h2>
-    <p>Everything here targets the <strong>X-T5 and its X-Trans V sensor generation</strong>.
-       Running a recipe on an X-Trans IV body? Raise Color Chrome FX Blue one notch — the
-       <a href="{{ root }}knowledge/x-trans-v-and-conversion/">conversion guide</a> explains the
-       blue-rendering shift behind that rule.</p>
+    <p>Everything here targets the X-T5 and its X-Trans V sensor generation. On an X-Trans IV
+       body, raise Color Chrome FX Blue one notch. The
+       <a href="{{ root }}knowledge/x-trans-v-and-conversion/">conversion guide</a> covers the
+       blue rendering change behind that rule.</p>
   </article>
 </div>
 {% endblock %}

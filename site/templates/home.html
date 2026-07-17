@@ -1,16 +1,15 @@
 {% extends "base.html" %}
 {% from "_card.html" import recipe_card %}
-{% block title %}{{ site_title }} — film looks for the X-T5, straight out of camera{% endblock %}
 {% block content %}
 <section class="hero">
   <div class="wrap">
-    <p class="hero-kicker">35mm soul · digital body</p>
+    <p class="hero-kicker">Film simulation recipes · Fujifilm X-T5</p>
     <h1>Your X-T5 already<br>shoots film.</h1>
     <p class="hero-lead">
-      It just needs the right recipe. Every original look here is rebuilt from the film's actual
-      <strong>technical datasheet</strong> — characteristic curves, grain measurements, colour
-      balance — and the best are <strong>tuned frame-by-frame against real film scans</strong>.
-      Not vibes. Not copied settings. The real thing, understood.
+      It just needs the right recipe. Each original look on this site started from the film's
+      technical datasheet, the characteristic curves and grain measurements the manufacturer
+      published, and the best ones were then tuned against scans of the actual stock. Copying
+      settings off a forum can't tell you why a look works. That's the part I care about.
     </p>
     <div class="hero-stats">
       <div><b>{{ n_originals }}</b><span>original looks</span></div>
@@ -31,7 +30,7 @@
 
 <div class="wrap">
   <div class="filter-row">
-    <input id="filter" type="search" placeholder="Find your look — try “portra”, “teal”, “grain”…" aria-label="Filter recipes">
+    <input id="filter" type="search" placeholder="Find your look. Try &quot;portra&quot;, &quot;teal&quot; or &quot;grain&quot;" aria-label="Filter recipes">
   </div>
 
   {% for g in groups %}
@@ -46,15 +45,15 @@
 
   <section class="cta-panel">
     <h2>How this works</h2>
-    <p>A recipe is a bundle of in-camera JPEG settings — film simulation, white-balance shift,
-       dynamic range, tone curve, grain and friends — saved into one of the X-T5's
-       <strong>C1–C7 custom presets</strong>. Dial it in once, and the camera bakes the look into
-       every frame at the moment you press the shutter. No editing. No presets to buy. No
-       "I'll fix it later" folder.</p>
-    <p>New to the dials themselves? Start with
-       <a href="{{ root }}knowledge/film-simulations/">the film-simulation bases</a> and
-       <a href="{{ root }}knowledge/white-balance/">the white-balance shift grid</a> — twenty
-       minutes of reading that will change how you shoot.</p>
+    <p>A recipe is a bundle of in camera JPEG settings: film simulation, white balance shift,
+       dynamic range, tone curve, grain and a few others. You save it into one of the X-T5's
+       seven custom preset slots, and from then on the camera bakes that look into every frame
+       the moment you press the shutter. There is nothing to edit afterwards, which is the
+       whole appeal.</p>
+    <p>If the dials themselves are new to you, start with
+       <a href="{{ root }}knowledge/film-simulations/">the film simulation bases</a> and
+       <a href="{{ root }}knowledge/white-balance/">the white balance shift grid</a>. Twenty
+       minutes of reading and the rest of this site makes a lot more sense.</p>
   </section>
 </div>
 {% endblock %}

@@ -14,7 +14,7 @@
     <div class="meta-row">
       {% if r.sim %}<span class="sim-chip"><span class="sim-dot" style="background: {{ r.sim_color }}"></span>{{ r.sim }}</span>{% endif %}
       <span class="badge badge-{{ r.badge_class }}">{{ r.badge_label }}</span>
-      {% if r.video %}<span class="video-chip">🎬 movie-mode version included</span>{% endif %}
+      {% if r.video %}<span class="video-chip">includes a movie mode version</span>{% endif %}
     </div>
     {% if r.creator %}
     <p class="attribution">Recipe by <strong>{{ r.creator }}</strong>
@@ -47,8 +47,9 @@
       </div>
       {% endfor %}
     </div>
-    <p class="gallery-note">Sample frames are on the way. Shot something great with this recipe?
-      <a href="{{ root }}contact/">Send a frame</a> and it could live right here.</p>
+    <p class="gallery-note">These slots are waiting for real photographs. If you've shot with
+      this recipe, <a href="{{ root }}contact/">send me a frame</a> and I'll put it up with
+      your credit.</p>
     {% endif %}
   </section>
 

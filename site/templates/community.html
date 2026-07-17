@@ -1,28 +1,26 @@
 {% extends "base.html" %}
 {% from "_card.html" import recipe_card %}
-{% block title %}Community recipes — {{ site_title }}{% endblock %}
 {% block content %}
 <section class="page-head">
   <div class="wrap">
     <h1>Community recipes</h1>
     <p class="page-lead">
-      The wider Fujifilm world is full of brilliant recipe makers, and this shelf celebrates them.
-      These looks are kept here for testing and benchmarking against the originals —
-      <strong>every one is the work of its original creator</strong>: each card names them, and
-      every recipe page links straight back to the original publication. Found a favourite?
-      Go visit the source and show them some love.
+      The recipes on this shelf were made by other people. I keep them here to test my own
+      originals against the best of what the community has published, and because some of them
+      are simply excellent. Every card names its creator, and every page links to the original
+      publication. If one of these becomes your daily look, go tell the person who made it.
     </p>
     <p class="page-lead small">
-      Regular sources: <a href="https://fujixweekly.com/">Fuji X Weekly (Ritchie Roesch)</a> ·
-      <a href="https://www.rossandhisjpegs.com/fujifilm-recipes">Ross McConaghy</a> ·
-      <a href="https://lifeunintended.com/">Luís Costa</a>
+      The regulars: <a href="https://fujixweekly.com/">Fuji X Weekly (Ritchie Roesch)</a>,
+      <a href="https://www.rossandhisjpegs.com/fujifilm-recipes">Ross McConaghy</a> and
+      <a href="https://lifeunintended.com/">Luís Costa</a>.
     </p>
   </div>
 </section>
 
 <div class="wrap">
   <div class="filter-row">
-    <input id="filter" type="search" placeholder="Filter recipes — try “kodachrome”, “ross”, “b&w”…" aria-label="Filter recipes">
+    <input id="filter" type="search" placeholder="Find a look. Try &quot;kodachrome&quot;, &quot;ross&quot; or &quot;b&amp;w&quot;" aria-label="Filter recipes">
   </div>
   <div class="grid">
     {% for r in cards %}{{ recipe_card(r, root) }}{% endfor %}

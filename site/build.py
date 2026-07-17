@@ -24,6 +24,8 @@ SITE_DIR = Path(__file__).resolve().parent
 OUT = ROOT / "_site"
 
 SITE_TITLE = "Fujifilm Recipes"
+BASE_URL = "https://arpitphillips.github.io/fujifilmrecipes/"
+AUTHOR = "Arpit Phillips"
 CONTACT_EMAIL = "arpit.phillips@gmail.com"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
@@ -68,35 +70,21 @@ PROSE_CLEANUP = [
     (r"(?<![/(])`?\btest-shots/`?", "the sample gallery"),
 ]
 
-KNOWLEDGE_EMOJI = {
-    "film-simulations": "🎞️",
-    "white-balance": "🌡️",
-    "dynamic-range-and-tone": "📈",
-    "color-and-chrome": "🎨",
-    "grain-and-detail": "✨",
-    "iso-and-exposure": "☀️",
-    "x-trans-v-and-conversion": "🔬",
-    "video-mode-settings": "🎬",
-    "validation-methodology": "🧪",
-    "color-science-why-film-cannot-be-faked": "🧬",
-    "film-chemistry-fundamentals": "⚗️",
-    "pro400h-vs-proneghi-analog-comparison": "🆚",
-    "film-stocks-master-list": "🗂️",
-}
 
 ORIGINAL_CATEGORIES = [
-    ("", "Colour — negative & slide",
-     "Sun-soaked Kodak warmth, cool Fuji greens, slide-film snap — the classic "
-     "colour stocks, rebuilt from their own datasheets."),
+    ("", "Colour film",
+     "Kodak Gold for sunny afternoons, Superia for that cool Fuji green. Each "
+     "one rebuilt from the manufacturer's own published numbers."),
     ("cinema", "Cinema",
-     "Hollywood in a custom preset: Vision3 negatives, classic B&W cine stock, "
-     "reversal, and the teal-orange 2383 theatrical print look."),
+     "The Vision3 negatives are here, along with the black and white stock "
+     "Scorsese and Spielberg shot, and the 2383 print film behind twenty years "
+     "of teal shadows at the movies."),
     ("black-and-white", "Black & white",
-     "Silver, grain, and drama — six very different ways to make the world "
-     "monochrome, from etched Pan F to pushed Delta 3200."),
-    ("creative", "Creative / editorial",
-     "No film pretenses. Designed looks — airy, matte, noir, golden — built "
-     "because they're gorgeous, not because a datasheet said so."),
+     "Six films, six personalities. Pan F etches, Tri-X punches, and Delta "
+     "3200 turns grain into the whole point."),
+    ("creative", "Creative looks",
+     "These aren't emulations of anything. I designed them from scratch and "
+     "kept tuning until they felt right."),
 ]
 
 SIM_COLORS = [
@@ -146,7 +134,7 @@ def strip_first_h1(text: str) -> str:
 def display_title(raw: str) -> str:
     """'Kodak Gold 200 — Fujifilm X-T5 (X-Trans V) · STILLS' → 'Kodak Gold 200'."""
     t = re.sub(r"\s*—\s*Fujifilm X-T5.*$", "", raw)
-    return t.strip()
+    return t.strip().replace(" — ", ": ")
 
 
 def plain_text(md_text: str) -> str:
@@ -319,6 +307,7 @@ def creator_for(slug: str, credit: str | None, links) -> str:
     if slug in CREATOR_OVERRIDES:
         return CREATOR_OVERRIDES[slug]
     if credit:
+        credit = credit.replace(" — ", " · ")
         return re.sub(r"\s*\(", " · ", credit.replace(")", ""), count=1)
     for _, url in links:
         for domain, name in DOMAIN_CREATORS:
@@ -425,8 +414,8 @@ def load_knowledge_articles():
             "slug": path.stem,
             "url": "knowledge/" + path.stem + "/",
             "repo_path": path.relative_to(ROOT).as_posix(),
-            "title": first_h1(text),
-            "covers": covers,
+            "title": first_h1(text).replace(" — ", ": "),
+            "covers": covers.replace(" — ", ", "),
             "blurb": first_paragraph(strip_first_h1(text)),
             "text": text,
         })
@@ -467,13 +456,30 @@ def build():
     shutil.copy(SITE_DIR / "static" / "style.css", OUT / "static" / "style.css")
     (OUT / ".nojekyll").write_text("")
 
-    def emit(url: str, template: str, **ctx):
+    emitted_urls = []
+
+    def emit(url: str, template: str, jsonld: dict | None = None, **ctx):
         depth = url.rstrip("/").count("/") + 1 if url else 0
         root = "../" * depth
         page_dir = OUT / url
         page_dir.mkdir(parents=True, exist_ok=True)
-        html = env.get_template(template).render(root=root, url=url, **ctx)
+        html = env.get_template(template).render(
+            root=root, url=url, canonical=BASE_URL + url,
+            jsonld=json.dumps(jsonld, ensure_ascii=False) if jsonld else None,
+            **ctx)
         (page_dir / "index.html").write_text(html, encoding="utf-8")
+        emitted_urls.append(url)
+
+    def article_jsonld(headline: str, url: str, description: str) -> dict:
+        return {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": headline,
+            "description": description,
+            "url": BASE_URL + url,
+            "author": {"@type": "Person", "name": AUTHOR},
+            "publisher": {"@type": "Organization", "name": SITE_TITLE},
+        }
 
     # -- home (originals) --------------------------------------------------
     groups = []
@@ -486,13 +492,25 @@ def build():
          hero_frames=hero_frames,
          n_originals=len(originals), n_references=len(references),
          n_articles=len(articles),
-         meta_description="A research-backed bank of Fujifilm X-T5 film-simulation "
-                          "recipes, validated against manufacturer datasheets and real film scans.")
+         page_title="Fujifilm X-T5 film simulation recipes, built from film datasheets",
+         meta_description="Film simulation recipes for the Fujifilm X-T5, worked out "
+                          "from manufacturer datasheets and checked against real film "
+                          "scans. Kodak, Fuji, Ilford and cinema looks, straight out of camera.",
+         jsonld={
+             "@context": "https://schema.org",
+             "@type": "WebSite",
+             "name": SITE_TITLE,
+             "url": BASE_URL,
+             "description": "Research-backed film simulation recipes for the Fujifilm X-T5.",
+             "author": {"@type": "Person", "name": AUTHOR},
+         })
 
     # -- community ---------------------------------------------------------
     emit("community/", "community.html", nav="community", cards=references,
-         meta_description="Film-simulation recipes by the wider Fujifilm community — "
-                          "Fuji X Weekly, Ross McConaghy, Luís Costa and more — with full attribution.")
+         page_title="Community film simulation recipes for the Fujifilm X-T5",
+         meta_description="Fujifilm X-T5 recipes from creators across the community, "
+                          "including Fuji X Weekly, Ross McConaghy and Luís Costa. Every "
+                          "recipe is credited and linked to its original page.")
 
     # -- recipe pages ------------------------------------------------------
     for r in originals + references:
@@ -509,44 +527,71 @@ def build():
             shots_dir.mkdir(parents=True, exist_ok=True)
             for f in r["shot_files"]:
                 shutil.copy(f, shots_dir / f.name)
+        mood = r["mood"].rstrip(".")
+        desc = (f"Exact Fujifilm X-T5 settings for the {r['title']} look"
+                + (f", built on {r['sim']}" if r["sim"] else "")
+                + (f": {mood[0].lower()}{mood[1:]}." if mood else ".")
+                + " With the reasoning behind every setting.")
         emit(r["url"], "recipe.html",
              nav="originals" if r["tier"] == "original" else "community",
              r=r, sections=rendered_sections,
-             meta_description=(r["blurb"] or r["mood"])[:300])
+             page_title=f"{r['title']} film simulation recipe for the Fujifilm X-T5",
+             meta_description=desc,
+             jsonld=article_jsonld(
+                 f"{r['title']} film simulation recipe for the Fujifilm X-T5",
+                 r["url"], desc))
 
     # -- knowledge ---------------------------------------------------------
-    for a in articles:
-        a["emoji"] = KNOWLEDGE_EMOJI.get(a["slug"], "📖")
     emit("knowledge/", "knowledge_index.html", nav="knowledge", articles=articles,
-         meta_description="The knowledge layer: what every Fujifilm setting does, the "
-                          "color science of film simulations, film chemistry, and the validation methodology.")
+         page_title="Fujifilm settings and film science, explained",
+         meta_description="What every Fujifilm X-T5 image quality setting does and how "
+                          "settings combine into a look. Film simulation bases, white "
+                          "balance shift, grain, colour science and film chemistry.")
     for a in articles:
         body = demote_headings(strip_first_h1(a["text"]))
         emit(a["url"], "article.html", nav="knowledge", title=a["title"],
+             page_title=f"{a['title']} (Fujifilm X-T5 guide)",
              content=render_md(body, "Knowledge", "../../"),
-             meta_description=a["blurb"][:300])
+             meta_description=(a["covers"] or a["blurb"])[:300],
+             jsonld=article_jsonld(a["title"], a["url"],
+                                   (a["covers"] or a["blurb"])[:300]))
 
     # -- ranking -----------------------------------------------------------
     ranking = read(ROOT / "X-T5" / "RANKING.md")
     emit("ranking/", "article.html", nav="originals",
          title=first_h1(ranking),
+         page_title="Every recipe in the bank, ranked",
          content=render_md(demote_headings(strip_first_h1(ranking)), "X-T5", "../"),
-         meta_description="The full recipe bank ranked by aesthetic value and real-world popularity.")
+         meta_description="All the Fujifilm X-T5 recipes on this site ranked by how "
+                          "good they look and how much people actually use them.")
 
     # -- about -------------------------------------------------------------
     emit("about/", "about.html", nav="about",
          n_originals=len(originals), n_references=len(references),
-         meta_description="What this project is: a validated, research-backed Fujifilm "
-                          "recipe bank and the knowledge layer behind it.")
+         page_title="About Fujifilm Recipes",
+         meta_description="Why this recipe bank starts from film datasheets instead of "
+                          "guesswork, and what the validation badges on each recipe mean.")
 
     # -- contact -----------------------------------------------------------
     emit("contact/", "contact.html", nav="contact",
-         meta_description="Get in touch — questions, corrections, or film scans to help validate recipes.")
+         page_title="Contact Fujifilm Recipes",
+         meta_description="Questions, corrections, recipe requests, or sample frames "
+                          "and film scans you want to share.")
 
     # -- search index (client-side filter) ---------------------------------
     idx = [{"t": r["title"], "s": r["sim"], "m": r["mood"], "u": r["url"],
             "tier": r["tier"]} for r in originals + references]
     (OUT / "static" / "recipes.json").write_text(json.dumps(idx, ensure_ascii=False))
+
+    # -- sitemap + robots --------------------------------------------------
+    entries = "\n".join(
+        f"  <url><loc>{BASE_URL}{u}</loc></url>" for u in sorted(emitted_urls))
+    (OUT / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{entries}\n</urlset>\n")
+    (OUT / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}sitemap.xml\n")
 
     n_pages = sum(1 for _ in OUT.rglob("index.html"))
     print(f"Built {n_pages} pages → {OUT}")

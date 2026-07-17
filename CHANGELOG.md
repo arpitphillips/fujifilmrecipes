@@ -13,6 +13,17 @@
 
 ---
 
+## 2026-07-17 — Site v3 iteration 1: copy humanized, SEO layer, AI-tell audit (author: Claude session)
+**What changed:**
+- **All site-authored copy rewritten** per the humanizer skill (Wikipedia "Signs of AI writing"): removed em dashes, negative parallelisms, tailing-negation fragments, rule-of-three padding, emoji-decorated headings/bullets, and promotional vocabulary from every template (home, community, knowledge index, about, contact, footer, category intros). Site voice is now first-person (the owner's), with varied rhythm and plain copulas.
+- **SEO layer in `site/build.py` + `base.html`:** per-page unique `<title>` and hand-written meta descriptions (recipe pages get generated but natural ones), canonical URLs against the Pages base URL, Open Graph/Twitter meta, JSON-LD (WebSite on home; Article with author on recipe and knowledge pages), `sitemap.xml`, `robots.txt`.
+- **New `site/audit.py`** — scans built pages for AI-writing tells (em dash counts, AI vocabulary, negative parallelisms, participle tails, curly quotes, emoji, bold density), prints worst pages, exits non-zero if template pages aren't clean. Template pages now score 0; markdown-driven pages carry a total score of ~2,590 to work down in subsequent passes.
+- Display transforms: knowledge titles and recipe display titles render " — " as ": "; creator credits normalised.
+- **Index wording edit:** `X-T5/README.md` + `RANKING.md` Mumbai mood cell "Warm vibrant sunny street" → "Warm lively sunny street" ("vibrant" is a flagged AI-vocabulary word surfacing on the homepage).
+
+**Why:** User asked for the entire site copy redone with the humanizer skill + SEO best practices so the site reads as human-written, iterating in a loop until clean.
+**Follow-ups:** Loop continues: humanize the rendered markdown prose (knowledge articles and recipe files) in batches, preserving all settings, facts and sources — worst pages first. Decide whether table status glyphs (✅/❌) should stay exempt in the audit.
+
 ## 2026-07-17 — Site v2: internal references scrubbed, light/dark, image-led design (author: Claude session)
 **What changed (all in `site/`):**
 - **No internal-document references anywhere on the site.** Removed the per-page "Source file" footers and all GitHub links from the chrome. The link rewriter now *unlinks* anything that isn't a site page (instead of falling back to a GitHub URL), rewrites file-name link texts to human wording ("the research notes", "the grade analysis"), and a prose-cleanup pass rewrites remaining file/folder mentions (`recipe.md`, `_reference-sources/`, CHANGELOG, the manual PDFs…). Verified by scanner: 0 `.md`/`.pdf`/path mentions and 0 repo links across all 80 pages.

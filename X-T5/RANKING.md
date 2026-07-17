@@ -29,7 +29,7 @@ These are the research-derived / validated recipes that make up the sellable IP 
 | [Ilford Pan F Plus 50](originals/black-and-white/ilford-pan-f-plus-50/) | 8.0 | datasheet *(new 2026-07-16)* | Slowest, sharpest, "etched" fine-art B&W |
 | [Ilford Delta 3200](originals/black-and-white/ilford-delta-3200/) | 8.0 | datasheet + **scan** *(new 2026-07-16)* | Heaviest-grain pushed-speed B&W |
 | [Mumbai Monsoon](originals/mumbai-monsoon/) | 8.0 | original design | Overcast/rain cinematic |
-| [Mumbai (General)](originals/mumbai/) | 8.0 | original design | Warm vibrant sunny street |
+| [Mumbai (General)](originals/mumbai/) | 8.0 | original design | Warm lively sunny street |
 | [Fashion Editorial (Vogue)](originals/creative/fashion-editorial-vogue/) | 8.5 | creative design | Polished fashion/portrait |
 | [Golden Hour Glow](originals/creative/golden-hour-glow/) | 8.5 | creative design | Honeyed backlit warmth |
 | [Bleach Bypass Noir](originals/creative/bleach-bypass-noir/) | 8.5 | creative design | Silvery urban drama (EBB base) |

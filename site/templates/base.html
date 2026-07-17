@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site_title }}{% endblock %}</title>
+<meta name="description" content="{{ meta_description | default('Research-backed Fujifilm X-T5 film-simulation recipes.') }}">
+<link rel="stylesheet" href="{{ root }}static/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23151209'/><circle cx='50' cy='50' r='30' fill='none' stroke='%23e0a458' stroke-width='9'/><circle cx='50' cy='50' r='10' fill='%23e0a458'/></svg>">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ root }}">
+      <span class="brand-mark"></span>
+      <span class="brand-name">{{ site_title }}</span>
+      <span class="brand-sub">X-T5 · X-Trans V</span>
+    </a>
+    <nav class="tabs" aria-label="Main">
+      <a href="{{ root }}" {% if nav == 'originals' %}class="active"{% endif %}>Originals</a>
+      <a href="{{ root }}community/" {% if nav == 'community' %}class="active"{% endif %}>Community recipes</a>
+      <a href="{{ root }}knowledge/" {% if nav == 'knowledge' %}class="active"{% endif %}>Knowledge</a>
+      <a href="{{ root }}about/" {% if nav == 'about' %}class="active"{% endif %}>About</a>
+      <a href="{{ root }}contact/" {% if nav == 'contact' %}class="active"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>{{ site_title }}</strong> — a research-backed film-simulation recipe bank for the Fujifilm X-T5.
+       Original recipes are independently derived and validated; community recipes remain the work of
+       their original creators and always link back to the source.</p>
+    <p>
+      <a href="{{ root }}ranking/">Full ranking</a> ·
+      <a href="{{ root }}knowledge/validation-methodology/">Validation methodology</a> ·
+      <a href="{{ github }}">Source on GitHub</a>
+    </p>
+  </div>
+</footer>
+
+{% block scripts %}{% endblock %}
+</body>
+</html>

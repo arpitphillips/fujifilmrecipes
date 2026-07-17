@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}{{ r.title }} — {{ site_title }}{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs">
+      {% if r.tier == 'original' %}
+      <a href="{{ root }}">Originals</a>{% if r.category %} · {{ r.category.replace('-', ' ') }}{% endif %}
+      {% else %}
+      <a href="{{ root }}community/">Community recipes</a>
+      {% endif %}
+    </p>
+    <h1>{{ r.title }}</h1>
+    <div class="meta-row">
+      {% if r.sim %}<span class="sim-chip"><span class="sim-dot" style="background: {{ r.sim_color }}"></span>{{ r.sim }}</span>{% endif %}
+      <span class="badge badge-{{ r.badge_class }}">{{ r.badge_label }}</span>
+      {% if r.video %}<span class="video-chip">movie-mode version included</span>{% endif %}
+    </div>
+    {% if r.creator %}
+    <p class="attribution">Recipe by <strong>{{ r.creator }}</strong>
+      {% if r.source_links %}
+      — {% for label, url in r.source_links %}<a href="{{ url }}">{{ label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+      {% endif %}
+    </p>
+    {% endif %}
+    {% if sections | length > 1 %}
+    <nav class="section-nav" aria-label="On this page">
+      {% for s in sections %}<a href="#{{ s.id }}">{{ s.title }}</a>{% endfor %}
+    </nav>
+    {% endif %}
+  </div>
+</section>
+
+<div class="wrap">
+  <article class="md">
+    {% for s in sections %}
+    <section id="{{ s.id }}" class="recipe-section">
+      <h2 class="section-heading">{{ s.title }}</h2>
+      {{ s.html }}
+    </section>
+    {% endfor %}
+  </article>
+  <p class="src-note">Source files:
+    <a href="{{ github }}/tree/main/{{ r.repo_dir }}">{{ r.repo_dir }}</a></p>
+</div>
+{% endblock %}

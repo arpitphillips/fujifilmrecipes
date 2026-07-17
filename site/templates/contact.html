@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Contact — {{ site_title }}{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1>Contact</h1>
+    <p class="page-lead">Questions about a recipe, corrections, or a look you'd like built — get in touch.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="contact-cards">
+    <div class="contact-card">
+      <h3>Email</h3>
+      <p><a href="mailto:{{ email }}">{{ email }}</a></p>
+      <p class="small">Best for recipe requests, corrections, and anything about licensing the original recipe bank.</p>
+    </div>
+    <div class="contact-card">
+      <h3>GitHub</h3>
+      <p><a href="{{ github }}">arpitphillips/fujifilmrecipes</a></p>
+      <p class="small">The whole site is built from an open repository — every page traces back to a markdown
+         source file. Found an error? <a href="{{ github }}/issues">Open an issue</a>.</p>
+    </div>
+    <div class="contact-card">
+      <h3>Help validate a recipe</h3>
+      <p class="small">The single most valuable contribution is a <strong>real film scan</strong> — a lab scan or
+         a frame you shot on the actual stock. Scans are compared frame-by-frame against a recipe's
+         output to tune it (see the <a href="{{ root }}knowledge/validation-methodology/">validation
+         methodology</a>). Email one over, or open a pull request dropping it into the recipe's
+         <code>references/</code> folder.</p>
+    </div>
+  </div>
+
+  <div class="cta-panel">
+    <h2>Attribution &amp; takedowns</h2>
+    <p>Community recipes on this site are reproduced for testing and comparison, always with credit
+       and a link to the original creator. If you're a creator and would like your recipe's listing
+       changed or removed, email and it will be handled promptly.</p>
+  </div>
+</div>
+{% endblock %}

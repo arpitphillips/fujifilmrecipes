@@ -57,6 +57,10 @@ Full walkthrough: [How to Program Film Simulation Recipes to Your Fujifilm Camer
 
 Recipes under `originals/` are independently derived and validated as described above. Recipes under `reference-recipes/` originate with other members of the Fujifilm and film photography community — each carries a `Source` link to the original creator's page. No license is declared for this repository at present; third-party recipes remain the work of their original authors.
 
+## Website
+
+This repo renders into a static knowledge-base site (originals on the homepage, community recipes with full attribution, the knowledge layer, about and contact pages). The generator lives in [`site/`](site/) — `python3 site/build.py` builds it into `_site/` (deps: `pip install markdown jinja2`) — and [`.github/workflows/deploy-site.yml`](.github/workflows/deploy-site.yml) deploys it to GitHub Pages on every push to `main`.
+
 ## For contributors (human or AI)
 
 [`CLAUDE.md`](CLAUDE.md) documents the repo's conventions for anyone — human or AI agent — adding to it. [`CHANGELOG.md`](CHANGELOG.md) is the running log of every change and must be updated with each session.

@@ -4,3 +4,4 @@
 
 # Personal/local Claude Code settings (machine-specific permissions, not shared config)
 .claude/settings.local.json
+_site/

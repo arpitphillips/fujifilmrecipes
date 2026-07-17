@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% from "_card.html" import recipe_card %}
+{% block title %}{{ site_title }} — validated film-simulation recipes for the X-T5{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="wrap">
+    <p class="hero-kicker">Fujifilm X-T5 · X-Trans V</p>
+    <h1>Film looks you can trust,<br>straight out of camera.</h1>
+    <p class="hero-lead">
+      A research-backed bank of film-simulation recipes. Every original here is derived from the
+      manufacturer's <strong>technical datasheet</strong> — characteristic curves, granularity, colour
+      balance — and the best are <strong>validated frame-by-frame against real film scans</strong>.
+      Not copied settings: understood ones.
+    </p>
+    <div class="hero-stats">
+      <div><b>{{ n_originals }}</b><span>original recipes</span></div>
+      <div><b>{{ n_references }}</b><span>community recipes</span></div>
+      <div><b>{{ n_articles }}</b><span>knowledge articles</span></div>
+    </div>
+    <p class="hero-links">
+      <a class="btn" href="{{ root }}ranking/">See the full ranking</a>
+      <a class="btn btn-ghost" href="{{ root }}knowledge/">Explore the knowledge base</a>
+    </p>
+  </div>
+  <div class="filmstrip" aria-hidden="true"></div>
+</section>
+
+<div class="wrap">
+  <div class="filter-row">
+    <input id="filter" type="search" placeholder="Filter recipes — try “portra”, “classic neg”, “cinema”…" aria-label="Filter recipes">
+  </div>
+
+  {% for g in groups %}
+  <section class="cat-section">
+    <h2>{{ g.label }}</h2>
+    <p class="cat-intro">{{ g.intro }}</p>
+    <div class="grid">
+      {% for r in g.cards %}{{ recipe_card(r, root) }}{% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <section class="cta-panel">
+    <h2>How to use a recipe</h2>
+    <p>Each recipe is a bundle of in-camera JPEG settings — film simulation, white-balance shift,
+       dynamic range, tone curve, grain and more — programmed into one of the X-T5's
+       <strong>C1–C7 custom presets</strong> (Image Quality → Edit/Save Custom Setting).
+       The camera bakes the look in at capture time; there is no editing step.</p>
+    <p>New to the settings themselves? Start with
+       <a href="{{ root }}knowledge/film-simulations/">the film-simulation bases</a> and
+       <a href="{{ root }}knowledge/white-balance/">the white-balance shift grid</a>.</p>
+  </section>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+const input = document.getElementById('filter');
+if (input) input.addEventListener('input', () => {
+  const q = input.value.trim().toLowerCase();
+  document.querySelectorAll('.card').forEach(c => {
+    c.style.display = !q || c.dataset.search.includes(q) ? '' : 'none';
+  });
+  document.querySelectorAll('.cat-section').forEach(s => {
+    const any = [...s.querySelectorAll('.card')].some(c => c.style.display !== 'none');
+    s.style.display = any ? '' : 'none';
+  });
+});
+</script>
+{% endblock %}

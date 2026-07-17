@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} — {{ site_title }}{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1>{{ title }}</h1>
+  </div>
+</section>
+<div class="wrap">
+  <article class="md">
+    {{ content }}
+  </article>
+  {% if source_path %}
+  <p class="src-note">Source file:
+    <a href="{{ github }}/blob/main/{{ source_path }}">{{ source_path }}</a></p>
+  {% endif %}
+</div>
+{% endblock %}

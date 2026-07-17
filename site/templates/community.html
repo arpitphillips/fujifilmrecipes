@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% from "_card.html" import recipe_card %}
+{% block title %}Community recipes — {{ site_title }}{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1>Community recipes</h1>
+    <p class="page-lead">
+      Recipes created by the wider Fujifilm and film-photography community, kept here for testing and
+      benchmarking against the originals. <strong>Every recipe on this page is the work of its
+      original creator</strong> — each card names them, and every recipe page links back to the
+      original publication. If you enjoy one, visit the source and support their work.
+    </p>
+    <p class="page-lead small">
+      Regular sources: <a href="https://fujixweekly.com/">Fuji X Weekly (Ritchie Roesch)</a> ·
+      <a href="https://www.rossandhisjpegs.com/fujifilm-recipes">Ross McConaghy</a> ·
+      <a href="https://lifeunintended.com/">Luís Costa</a>
+    </p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="filter-row">
+    <input id="filter" type="search" placeholder="Filter recipes — try “kodachrome”, “ross”, “b&w”…" aria-label="Filter recipes">
+  </div>
+  <div class="grid">
+    {% for r in cards %}{{ recipe_card(r, root) }}{% endfor %}
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+const input = document.getElementById('filter');
+if (input) input.addEventListener('input', () => {
+  const q = input.value.trim().toLowerCase();
+  document.querySelectorAll('.card').forEach(c => {
+    c.style.display = !q || c.dataset.search.includes(q) ? '' : 'none';
+  });
+});
+</script>
+{% endblock %}

@@ -13,6 +13,17 @@
 
 ---
 
+## 2026-07-17 — Static knowledge-base website added (author: Claude session)
+**What changed:**
+- New **`site/`** — a static site generator (`build.py` + Jinja2 templates + `static/style.css`) that renders the whole repo into a browsable website (`_site/`, gitignored). No content is duplicated: the markdown stays the single source of truth, and every page footer links back to its source file on GitHub.
+- Site structure per the user's spec: **Originals** as the homepage (card grid grouped Colour / Cinema / B&W / Creative, ordered per the curated `X-T5/README.md` tables, with base-sim chips and validation-tier badges), **Community recipes** tab (every card names its creator; every page links to the original publication, plus an attribution-and-takedown note on the contact page), **Knowledge** (all 13 articles + index), **About** (rendered root README), **Contact**, plus a `/ranking/` page from `RANKING.md`. Client-side filter box on both recipe grids.
+- Relative-link rewriting: recipe↔knowledge↔Knowledge-article links resolve to site pages (per-recipe files become section anchors on one combined page — recipe / movie-mode / grade analysis / research / validation); anything outside the site (PDFs, CLAUDE.md, drop-folders) falls back to a GitHub link. Verified 0 broken internal links across the 80 built pages, and visually via screenshots.
+- New **`.github/workflows/deploy-site.yml`** — builds and deploys to **GitHub Pages** on push to `main` (also runnable manually via workflow_dispatch). `.gitignore` now excludes `_site/`.
+- Root `README.md` gained a short Website section.
+
+**Why:** User asked to turn the repo itself into a website — originals on the homepage, others' recipes with proper attribution, about and contact pages.
+**Follow-ups:** Enable Pages once merged to `main` (repo Settings → Pages → Source: **GitHub Actions**); site will publish at `arpitphillips.github.io/fujifilmrecipes`. The contact page currently shows the user's Gmail address — swap for an alias if spam becomes a concern. Recipe pages have no images yet; when `test-shots/` folders gain real frames, the generator could surface them as galleries.
+
 ## 2026-07-17 — Version control established; Gumroad go-to-market research; Higgsfield validation experiment (author: Claude session)
 **What changed:**
 - Initialized git for the repo, added `.gitignore` (excludes macOS `._*`/`.DS_Store` cruft and the personal `.claude/settings.local.json`), made the initial commit (302 files), added the GitHub remote (`github.com/arpitphillips/fujifilmrecipes`, **public**), and pushed `main`. The repo is under version control for the first time.

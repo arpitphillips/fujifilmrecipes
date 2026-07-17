@@ -13,6 +13,16 @@
 
 ---
 
+## 2026-07-17 — Site v2: internal references scrubbed, light/dark, image-led design (author: Claude session)
+**What changed (all in `site/`):**
+- **No internal-document references anywhere on the site.** Removed the per-page "Source file" footers and all GitHub links from the chrome. The link rewriter now *unlinks* anything that isn't a site page (instead of falling back to a GitHub URL), rewrites file-name link texts to human wording ("the research notes", "the grade analysis"), and a prose-cleanup pass rewrites remaining file/folder mentions (`recipe.md`, `_reference-sources/`, CHANGELOG, the manual PDFs…). Verified by scanner: 0 `.md`/`.pdf`/path mentions and 0 repo links across all 80 pages.
+- **About page rewritten** as site-native content (was the rendered root README, which is full of repo structure); Contact page rewritten without the GitHub card, adding "send a sample frame" and "send film scans" cards.
+- **Light/dark theming** via `prefers-color-scheme` — warm-paper light palette, darkroom-charcoal dark palette, all colors tokenised.
+- **Image-led layout:** every recipe card and page now has a photo slot. The generator publishes images found in a recipe's `test-shots/` folder (cover on the card + gallery on the page); until real frames exist it renders film-frame placeholders tinted with the recipe's base-sim colour, and each empty gallery invites readers to submit a frame via the contact page. Also: hero film-strip of the flagship looks' sim colours, per-article emoji on the knowledge index, punchier copy throughout ("Your X-T5 already shoots film.").
+
+**Why:** User feedback on site v1 — remove internal-doc references, make it fun, follow system light/dark, and design image-heavy with space for sample images.
+**Follow-ups:** Drop real JPEGs into any recipe's `test-shots/` and rebuild — they'll appear automatically. `references/` scans stay unpublished by design (third-party material, analysis-only).
+
 ## 2026-07-17 — Static knowledge-base website added (author: Claude session)
 **What changed:**
 - New **`site/`** — a static site generator (`build.py` + Jinja2 templates + `static/style.css`) that renders the whole repo into a browsable website (`_site/`, gitignored). No content is duplicated: the markdown stays the single source of truth, and every page footer links back to its source file on GitHub.

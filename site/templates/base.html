@@ -14,7 +14,7 @@
     <a class="brand" href="{{ root }}">
       <span class="brand-mark"></span>
       <span class="brand-name">{{ site_title }}</span>
-      <span class="brand-sub">X-T5 · X-Trans V</span>
+      <span class="brand-sub">film, minus the film</span>
     </a>
     <nav class="tabs" aria-label="Main">
       <a href="{{ root }}" {% if nav == 'originals' %}class="active"{% endif %}>Originals</a>
@@ -32,14 +32,15 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p><strong>{{ site_title }}</strong> — a research-backed film-simulation recipe bank for the Fujifilm X-T5.
-       Original recipes are independently derived and validated; community recipes remain the work of
-       their original creators and always link back to the source.</p>
+    <p><strong>{{ site_title }}</strong> — film looks for the Fujifilm X-T5, built the hard way:
+       datasheets first, real scans when we can get them, and a grade rationale for every setting.
+       Community recipes always belong to — and link back to — their original creators.</p>
     <p>
-      <a href="{{ root }}ranking/">Full ranking</a> ·
-      <a href="{{ root }}knowledge/validation-methodology/">Validation methodology</a> ·
-      <a href="{{ github }}">Source on GitHub</a>
+      <a href="{{ root }}ranking/">The ranking</a> ·
+      <a href="{{ root }}knowledge/">Knowledge base</a> ·
+      <a href="{{ root }}contact/">Say hello</a>
     </p>
+    <p class="footer-fine">Made with love, film datasheets, and an unreasonable number of white-balance shifts.</p>
   </div>
 </footer>
 

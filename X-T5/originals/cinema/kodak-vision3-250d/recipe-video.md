@@ -1,8 +1,8 @@
 # Kodak Vision3 250D (5207) — Fujifilm X-T5 (X-Trans V) · CINEMA · VIDEO
 
-Movie-mode version of the [stills recipe](recipe.md). Cinema looks are arguably *better* suited to video than stills — but movie mode **drops Grain, Color Chrome Effect, Color Chrome FX Blue, and Clarity** (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)). Target: **standard film-simulation recording**, not F-Log/HLG.
+Movie-mode version of the [stills recipe](recipe.md). Cinema looks are arguably *better* suited to video than stills, but movie mode drops Grain, Color Chrome Effect, Color Chrome FX Blue, and Clarity (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)). Target: standard film-simulation recording, not F-Log/HLG.
 
-Set in the movie shooting display → **IMAGE QUALITY SETTING** tab.
+Set in the movie shooting display → IMAGE QUALITY SETTING tab.
 
 | Setting | Value | vs stills |
 |---|---|---|
@@ -17,5 +17,5 @@ Set in the movie shooting display → **IMAGE QUALITY SETTING** tab.
 | Interframe NR | AUTO | movie-only |
 | ISO | Auto, up to ISO 6400 | same |
 
-- **Grain** unavailable → add fine grain in post if wanted (Vision3 is fine-grained anyway).
-- **Clarity** was 0 already — nothing lost.
+- Grain unavailable → add fine grain in post if wanted (Vision3 is fine-grained anyway).
+- Clarity was 0 already, nothing lost.

@@ -2,7 +2,7 @@
 
 Movie-mode version of the [stills recipe](recipe.md). Movie mode drops Grain, Color Chrome Effect, Color Chrome FX Blue and Clarity (see [video-mode-settings](../../../Knowledge/video-mode-settings.md)), so the teal-warm colour split is preserved through the WB shift and Classic Negative, and the lost richness is partly compensated. The target is standard film-simulation recording with the look baked in, not F-Log/HLG.
 
-Set in the movie shooting display → **IMAGE QUALITY SETTING** tab.
+Set in the movie shooting display → IMAGE QUALITY SETTING tab.
 
 | Setting | Value | vs stills |
 |---|---|---|

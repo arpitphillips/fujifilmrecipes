@@ -4,7 +4,7 @@ A cinematic documentary video recipe inspired by [Merlin Krumme's "The Silent At
 
 > **Note:** this is a video-only recipe. Movie mode drops Grain, Color Chrome Effect, Color Chrome FX Blue and Clarity (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)), and the recipe is designed around that constraint from the ground up.
 
-Set in the movie shooting display → **IMAGE QUALITY SETTING** tab.
+Set in the movie shooting display → IMAGE QUALITY SETTING tab.
 
 | Setting | Value | Reasoning |
 |---|---|---|
@@ -39,6 +39,6 @@ Set in the movie shooting display → **IMAGE QUALITY SETTING** tab.
 - Mumbai Monsoon shares the Classic Neg and teal shadow mood, but runs cooler and wetter. Silent Atlas is warmer and more amber-dominant.
 
 ### Reference
-- [Merlin Krumme — "The Silent Atlas"](https://www.youtube.com/watch?v=peeq2ajU40E) (YouTube, Mar 2026). Shot on Sony FX30 with Sigma 18-35 f/1.8 + Sony 11mm f/1.8, Tiffen Glimmerglass filter. Graded in post with custom LUTs. Shot in the Atlas Mountains, Morocco.
+- [Merlin Krumme, "The Silent Atlas"](https://www.youtube.com/watch?v=peeq2ajU40E) (YouTube, Mar 2026). Shot on Sony FX30 with Sigma 18-35 f/1.8 + Sony 11mm f/1.8, Tiffen Glimmerglass filter. Graded in post with custom LUTs. Shot in the Atlas Mountains, Morocco.
 
 > **Provenance:** original creative design. Not a recreation of Merlin's exact Sony/LUT pipeline, but a Fujifilm-native straight-out-of-camera video grade that targets the same teal-warm documentary aesthetic using the X-T5's available movie-mode controls.

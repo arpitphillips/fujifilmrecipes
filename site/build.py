@@ -298,7 +298,7 @@ def parse_sources(md_text: str):
         credit = m.group(1).strip()
         links.append(("Original recipe", m.group(2)))
     for m in re.finditer(r"\[Source(?::\s*([^\]]+))?\]\((https?://[^)\s]+)\)", md_text):
-        label = ("Original recipe — " + m.group(1)) if m.group(1) else "Original recipe"
+        label = ("Original recipe: " + m.group(1)) if m.group(1) else "Original recipe"
         links.append((label, m.group(2)))
     return credit, links
 

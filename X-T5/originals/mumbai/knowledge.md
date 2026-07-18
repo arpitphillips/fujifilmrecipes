@@ -19,7 +19,7 @@ Fetched from Wikimedia Commons (analysis-only), spanning dusk, harsh sun, haze, 
 | 10 | Station platform performers | Night/flash | Terracotta pavers, blue tarp again, brass/wood warmth, flash-lit skin against black |
 | 11 | Home Ganpati shrine | Indoor mixed | Festival density: **marigold orange, rani pink, deep red, brass/copper, diya flame** |
 
-(A 12th "Monsoon" hit was Kashmir, not Mumbai — discarded; its cool grey-blue supports the separate [Mumbai Monsoon](../mumbai-monsoon/knowledge.md) recipe.)
+(A 12th "Monsoon" hit was Kashmir, not Mumbai, discarded; its cool grey-blue supports the separate [Mumbai Monsoon](../mumbai-monsoon/knowledge.md) recipe.)
 
 ## The soul, distilled
 Across every image, Bombay is warmth wrapped in haze, with colour that refuses to be dulled:

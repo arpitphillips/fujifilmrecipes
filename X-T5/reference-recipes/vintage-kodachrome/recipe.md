@@ -1,9 +1,9 @@
 # Vintage Kodachrome — Fujifilm X-T5 (X-Trans V) · STILLS
 
-**Status:** Reference recipe **translated by us** from an X-Trans III original → X-T5, as a worked example of older-model→X-T5 porting.
-**Original source/credit:** [Fuji X Weekly (Ritchie Roesch), X100F / X-Trans III](https://fujixweekly.com/2017/10/21/my-fujifilm-x100f-vintage-kodachrome-film-simulation-recipe/)
+Status: Reference recipe translated by us from an X-Trans III original → X-T5, as a worked example of older-model→X-T5 porting.
+Original source/credit: [Fuji X Weekly (Ritchie Roesch), X100F / X-Trans III](https://fujixweekly.com/2017/10/21/my-fujifilm-x100f-vintage-kodachrome-film-simulation-recipe/)
 
-Emulates the **1935–1960 (first-era) Kodachrome** slide look: cyan-leaning blues, darkened reds, and bronze/orange skin — an old, painterly transparency aesthetic. Classic Chrome base. Translation reasoning in [`knowledge.md`](knowledge.md).
+Emulates the 1935–1960 (first-era) Kodachrome slide look: cyan-leaning blues, darkened reds, and bronze/orange skin, an old, painterly transparency aesthetic. Classic Chrome base. Translation reasoning in [`knowledge.md`](knowledge.md).
 
 ## X-T5 (X-Trans V): translated
 | Setting | Value | Note |
@@ -26,6 +26,6 @@ Emulates the **1935–1960 (first-era) Kodachrome** slide look: cyan-leaning blu
 ## Original X-Trans III settings (for reference)
 Classic Chrome · DR200 · Highlight +4 · Shadow −2 · Color +4 · Sharpening +1 · Noise Reduction −3 · Grain Strong · WB Auto +2R/−4B · ISO Auto 6400 · Exp −1/3 to −1.
 
-> Two translation **caveats** (concrete evidence, not assumption):
-> 1. **Blues will render slightly deeper on X-T5.** X-Trans V deepens Classic Chrome blues, and Color Chrome FX Blue can't go below Off — so the V result is a touch more saturated in the blues than the original III look. Unavoidable.
-> 2. **Auto WB differs.** X-Trans V uses a newer AI AWB; if the cast drifts from the original, substitute a fixed WB (~5500K, +2R/−4B) to lock it.
+> Two translation caveats (concrete evidence, not assumption):
+> 1. Blues will render slightly deeper on X-T5. X-Trans V deepens Classic Chrome blues, and Color Chrome FX Blue can't go below Off, so the V result is a touch more saturated in the blues than the original III look. Unavoidable.
+> 2. Auto WB differs. X-Trans V uses a newer AI AWB; if the cast drifts from the original, substitute a fixed WB (~5500K, +2R/−4B) to lock it.

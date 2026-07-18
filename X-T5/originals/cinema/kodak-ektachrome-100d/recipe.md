@@ -20,7 +20,7 @@ A color reversal (slide/positive) motion-picture stock, structurally different f
 | ISO | Auto, up to ISO 800 |
 | Exposure Compensation | −1/3 to 0 (typically — reversal-film discipline: expose for highlights) |
 
-This **stills** recipe uses the grain and Color Chrome effects that movie mode can't. For the movie-mode adaptation see [`recipe-video.md`](recipe-video.md).
+This stills recipe uses the grain and Color Chrome effects that movie mode can't. For the movie-mode adaptation see [`recipe-video.md`](recipe-video.md).
 
 ### Why these values
 - Provia base, not Eterna. This is the one cinema recipe in the bank that deliberately skips Eterna: Eterna models negative-film cinema tonality with its low contrast and soft shoulder, while Ektachrome 100D is a reversal stock, structurally a slide film. It needs Provia's balanced-slide character, the same reasoning used for the still [Kodak Ektachrome E100](../../kodak-ektachrome-e100/) original.
@@ -35,4 +35,4 @@ This **stills** recipe uses the grain and Color Chrome effects that movie mode c
 ### A stylised "Poor Things" variant
 For a heavier, more overtly stylised push closer to that film's specific grade, set Grain Strong/Large, Clarity +2 and Color +3. It trades the emulsion-faithful reading for a more dramatic, grain-forward interpretation.
 
-**Validation tier:** datasheet-validated (the saturation, sharpness and balance language, from the archived PDF) and characteristic-validated against a specific, well-documented recent production (*Poor Things*, 2023) rather than a generic review. That is a strong, independently checkable evidence class. No Commons frame-grabs exist for actual cinema footage, so scan-validation would need a user-supplied reference.
+Validation tier: datasheet-validated (the saturation, sharpness and balance language, from the archived PDF) and characteristic-validated against a specific, well-documented recent production (*Poor Things*, 2023) rather than a generic review. That is a strong, independently checkable evidence class. No Commons frame-grabs exist for actual cinema footage, so scan-validation would need a user-supplied reference.

@@ -1,6 +1,6 @@
 # Kodak Double-X 5222 — Fujifilm X-T5 (X-Trans V) · CINEMA · B&W · VIDEO
 
-Movie-mode version of the [stills recipe](recipe.md). Movie mode **drops Grain and Clarity** (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)) — this hits Double-X's identity harder than most, since heavy grain *is* the look. Target: **standard film-simulation recording**, not F-Log/HLG.
+Movie-mode version of the [stills recipe](recipe.md). Movie mode drops Grain and Clarity (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)). This hits Double-X's identity harder than most, since heavy grain *is* the look. Target: standard film-simulation recording, not F-Log/HLG.
 
 | Setting | Value | vs stills |
 |---|---|---|

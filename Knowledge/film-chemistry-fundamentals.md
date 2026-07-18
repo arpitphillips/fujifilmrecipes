@@ -1,6 +1,6 @@
 # Film chemistry fundamentals: why film looks the way it does
 
-*Source: [The Chemistry of Black and White Photography — Tim Johnson, UW–Eau Claire Chem 115](https://www.chem.uwec.edu/Chem115_F00/johnstim/Chemandphoto.htm) · cross-referenced by the [Imaging Resource Definitive Guide](https://www.imaging-resource.com/news/2020/08/18/fujifilm-film-simulations-definitive-guide), which cites this exact page as its film-chemistry reference.*
+*Source: [The Chemistry of Black and White Photography, Tim Johnson, UW–Eau Claire Chem 115](https://www.chem.uwec.edu/Chem115_F00/johnstim/Chemandphoto.htm) · cross-referenced by the [Imaging Resource Definitive Guide](https://www.imaging-resource.com/news/2020/08/18/fujifilm-film-simulations-definitive-guide), which cites this exact page as its film-chemistry reference.*
 
 ---
 

@@ -62,10 +62,13 @@ def audit_page(path: Path) -> dict:
     for glyph in EXEMPT_GLYPHS:
         text = text.replace(glyph, "")
         prose = prose.replace(glyph, "")
+    # Direct quotations (datasheet/manual wording) are not our authorship;
+    # vocabulary inside double quotes is exempt.
+    unquoted = re.sub(r'"[^"\n]{0,120}"', " ", text)
     counts = {
         "em_dash": prose.count("—"),
         "curly_quotes": len(re.findall(r"[“”]", prose)),
-        "ai_vocab": sum(len(re.findall(p, text, re.I)) for p in AI_VOCAB),
+        "ai_vocab": sum(len(re.findall(p, unquoted, re.I)) for p in AI_VOCAB),
         "neg_parallel": sum(len(re.findall(p, text, re.I)) for p in NEG_PARALLEL),
         "ing_tails": sum(len(re.findall(p, text, re.I)) for p in ING_TAILS),
         "emoji": len(EMOJI.findall(text)),

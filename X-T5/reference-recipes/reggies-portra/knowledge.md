@@ -3,10 +3,10 @@
 > Read alongside [`recipe.md`](recipe.md) and the [Knowledge base](../../../Knowledge/README.md).
 
 ## Origin
-Created by photographer **Reggie Ballesteros**, who took Fuji X Weekly's Kodak Portra 400 recipe as a starting point and tuned it to match his own Portra scans and shooting style. It is currently the **single most popular recipe** on Fuji X Weekly. It's a Portra-inspired look, but deliberately built for **versatility** rather than a single fixed cast.
+Created by photographer Reggie Ballesteros, who took Fuji X Weekly's Kodak Portra 400 recipe as a starting point and tuned it to match his own Portra scans and shooting style. It is currently the single most popular recipe on Fuji X Weekly. It's a Portra-inspired look, but deliberately built for versatility rather than a single fixed cast.
 
 ## The grade in one line
-A **balanced, warm-natural portrait colour** that adapts to the scene — flattering skin, gentle contrast, clean fine grain, and no fixed colour cast.
+A balanced, warm-natural portrait colour that adapts to the scene, flattering skin, gentle contrast, clean fine grain, and no fixed colour cast.
 
 ## How the settings build that grade
 | Setting | Value | What it contributes |
@@ -33,17 +33,17 @@ Three deliberate choices set it apart from the fixed Portra recipes:
 The result is a look you can leave on the camera as an everyday default and trust across conditions.
 
 ## Reading the tonal/colour signature
-- **Contrast:** gentle and balanced (Highlight −1 / Shadow −1), not as aggressively lifted as Portra 400 v2.
-- **Saturation:** natural, warm-leaning.
-- **Cast:** mild consistent warmth *relative to* whatever Auto WB decides — so it reads warm without ever fighting the scene.
-- **Texture:** clean (Weak/Small grain, no clarity).
+- Contrast: gentle and balanced (Highlight −1 / Shadow −1), not as aggressively lifted as Portra 400 v2.
+- Saturation: natural, warm-leaning.
+- Cast: mild consistent warmth *relative to* whatever Auto WB decides, so it reads warm without ever fighting the scene.
+- Texture: clean (Weak/Small grain, no clarity).
 
 ## Author's note on exposure & diffusion
-- Reggie gives **no fixed exposure-comp suggestion** — he insists each frame be judged individually (see [iso-and-exposure](../../../Knowledge/iso-and-exposure.md)).
-- He often shoots this with a **5% CineBloom diffusion filter** on the lens for a subtle highlight bloom / softer rendering. Optional, but part of the intended look.
+- Reggie gives no fixed exposure-comp suggestion, he insists each frame be judged individually (see [iso-and-exposure](../../../Knowledge/iso-and-exposure.md)).
+- He often shoots this with a 5% CineBloom diffusion filter on the lens for a subtle highlight bloom / softer rendering. Optional, but part of the intended look.
 
 ## X-Trans V note
-Reggie confirms the settings are **identical** on X-Trans IV and V except **Color Chrome FX Blue = Off** on 5th-gen (was Weak on IV). See [conversion notes](../../../Knowledge/x-trans-v-and-conversion.md).
+Reggie confirms the settings are identical on X-Trans IV and V except Color Chrome FX Blue = Off on 5th-gen (was Weak on IV). See [conversion notes](../../../Knowledge/x-trans-v-and-conversion.md).
 
 ## Related in this collection
-- [Kodak Portra 400 v2](../kodak-portra-400-v2/knowledge.md) — the fixed-cast, golden-hour Portra. Choose Reggie's for an everyday, adaptive people/travel look; choose Portra 400 v2 for a dependable warm portrait grade.
+- [Kodak Portra 400 v2](../kodak-portra-400-v2/knowledge.md), the fixed-cast, golden-hour Portra. Choose Reggie's for an everyday, adaptive people/travel look; choose Portra 400 v2 for a dependable warm portrait grade.

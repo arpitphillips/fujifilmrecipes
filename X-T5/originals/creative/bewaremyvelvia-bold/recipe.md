@@ -1,6 +1,6 @@
 # BewareMyVelvia (Bold) — Fujifilm X-T5 (X-Trans V) · STILLS
 
-A **bold, saturated, dramatic, high-contrast** creative look inspired by the vivid Velvia style of **Tom Baumgaertel (@bewaremyfuji)** — deep punchy colour and inky blacks, made for graphic, high-impact frames (and multiple-exposure work). *Inspired-by* original design, not his recipe; drop his posts into [`references/`](references/) to tune. See [creative README](../README.md).
+A bold, saturated, dramatic, high-contrast creative look inspired by the vivid Velvia style of Tom Baumgaertel (@bewaremyfuji), deep punchy colour and inky blacks, made for graphic, high-impact frames (and multiple-exposure work). *Inspired-by* original design, not his recipe; drop his posts into [`references/`](references/) to tune. See [creative README](../README.md).
 
 | Setting | Value |
 |---|---|
@@ -27,6 +27,6 @@ A **bold, saturated, dramatic, high-contrast** creative look inspired by the viv
 - Expose −1/3 to 0: protect Velvia's easily-clipped highlights and let colour saturate.
 
 ### Tuning
-- **Multiple exposure** (Baumgaertel's signature): use the X-T5's Multiple Exposure mode (Additive/Average) — this recipe's punch suits layered frames.
-- **Even bolder:** Color **+3**, WB **+2R/−3B**. **Less intense:** Color **+1**, Clarity **+1**.
-- **Video:** Velvia + WB + DR (manual) + Tone Curve + Sharpness transfer; Clarity/CCE/CCFXB drop → set **Color +3** to keep the punch; add contrast in grade.
+- Multiple exposure (Baumgaertel's signature): use the X-T5's Multiple Exposure mode (Additive/Average). This recipe's punch suits layered frames.
+- Even bolder: Color +3, WB +2R/−3B. Less intense: Color +1, Clarity +1.
+- Video: Velvia + WB + DR (manual) + Tone Curve + Sharpness transfer; Clarity/CCE/CCFXB drop → set Color +3 to keep the punch; add contrast in grade.

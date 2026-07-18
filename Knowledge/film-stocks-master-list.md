@@ -4,7 +4,7 @@ The reference canon of the most important film stocks per manufacturer, with thi
 
 > **Datasheets:** official technical datasheets for nearly every stock below (46 PDFs covering characteristic curves, spectral sensitivity and granularity) are archived in [`X-T5/_reference-sources/datasheets/`](../X-T5/_reference-sources/datasheets/README.md), organised by manufacturer. Gaps are listed in that folder's README.
 
-**Coverage legend:**
+Coverage legend:
 - ✅ original: a validated or research-derived recipe in `X-T5/originals/`
 - 📗 reference: an attributed recipe in `X-T5/reference-recipes/`
 - 🔎 available: a known X-Trans V recipe exists (Fuji X Weekly unless noted) but isn't in the bank yet

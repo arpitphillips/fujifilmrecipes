@@ -13,6 +13,17 @@
 
 ---
 
+## 2026-07-18 — Site v3 final iteration: audit reaches zero across all 80 pages (author: Claude session)
+**What changed:**
+- **Bulk prose passes across all rendered recipe files + Knowledge articles:** debolded 752 prose spans (blockquote callout keys and all table content kept), converted 138 em dashes with connective continuations to commas/semicolons, then the ~355 residual prose em dashes to commas, protecting any line where the dash sits inside a quotation.
+- **Repairs from reviewing that pass:** restored 103 H1 title dashes the comma pass had broken (recipe titles were showing their "— Fujifilm X-T5" suffixes on the site), and hand-fixed 19 run-on sentences it created, including a meaning inversion in validation-methodology ("don't fight it, switch hosts…" read as a negated list).
+- **Individual residue fixes:** two "reflecting…" participle tails, two "not just/not merely" parallelisms, "crucial" ×2 and "vibrant" ×1 in our own prose (Fujifilm's quoted manual wording kept verbatim), ✓-glyphs in two datasheet-check notes rewritten as words, and the recipe-page source-link label "Original recipe — X" → "Original recipe: X".
+- **`site/audit.py`:** vocabulary matches inside double-quoted spans are now exempt (quotations aren't our authorship).
+- **Final state: audit score 0 on all 80 pages** (from 2,593 at the start of the loop); 0 broken internal links; sitemap covers all 80 pages; screenshots verified in both colour schemes.
+
+**Why:** Completes the user's /loop task: entire site copy humanized per the humanizer skill, SEO layer complete.
+**Follow-ups:** none for copy. The audit gate (`python3 site/audit.py`) can run in CI or before any future content merge to keep new copy clean.
+
 ## 2026-07-17 — Site v3 iteration 5: bulk bullet-key transform + knowledge articles (author: Claude session)
 **What changed:**
 - **Mechanical repo-wide transform** across all rendered recipe files, Knowledge articles and RANKING.md (207 lines in 50 files): `- **Key** — explanation` list items became `- Key: explanation`, and `## Heading — subtitle` became `## Heading: subtitle`. Applied only outside tables and code fences; diff sampled and verified readable. This is the single most common machine-styling pattern in the bank.

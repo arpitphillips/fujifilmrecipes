@@ -1,6 +1,6 @@
 # Fujicolor Natura 1600 — Fujifilm X-T5 (X-Trans V)
 
-Classic Negative base. Emulates **Fujicolor Natura 1600** (2003–2017, Japan-only) — the legendary high-ISO colour negative sold for the Fujifilm Natura camera; possibly a variant of Superia 1600. Soft, muted, grainy low-light "Japanese snapshot" look. Fills the bank's high-ISO colour-negative gap.
+Classic Negative base. Emulates Fujicolor Natura 1600 (2003–2017, Japan-only), the legendary high-ISO colour negative sold for the Fujifilm Natura camera; possibly a variant of Superia 1600. Soft, muted, grainy low-light "Japanese snapshot" look. Fills the bank's high-ISO colour-negative gap.
 
 [Source](https://fujixweekly.com/2024/02/29/fujicolor-natura-1600-fujifilm-x-t5-x-trans-v-film-simulation-recipe/)
 
@@ -21,7 +21,7 @@ Classic Negative base. Emulates **Fujicolor Natura 1600** (2003–2017, Japan-on
 | ISO | Auto, up to ISO 6400 |
 | Exposure Comp | +1/3 to +1 (typically) |
 
-**Notes**
+Notes
 - Versatile across lighting conditions; shines in dim/mixed light where a 1600-speed film belongs.
 - Clarity -4 (strong soft glow) slows shot-to-shot saving.
 - Direct V-generation adaptation of the X-Trans IV version (CCFXB adjusted for V blues).

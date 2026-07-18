@@ -19,7 +19,7 @@
     {% if r.creator %}
     <p class="attribution">Recipe by <strong>{{ r.creator }}</strong>
       {% if r.source_links %}
-      — {% for label, url in r.source_links %}<a href="{{ url }}">{{ label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+      · {% for label, url in r.source_links %}<a href="{{ url }}">{{ label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
       {% endif %}
     </p>
     {% endif %}

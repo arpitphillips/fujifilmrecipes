@@ -19,7 +19,7 @@ This recipe was derived from the Kodak E-7022 datasheet and analysis of referenc
 | ISO | Auto, up to ISO 6400 |
 | Exposure Compensation | +2/3 to +1 (typically) |
 
-> Two settings changed after scan analysis: White Balance went from +4R to **+3R** because flat-light scans showed +4R over-warms, and Clarity went from −2 to **0** since the base simulation and Sharpness −2 already carry the softness without Clarity's processing penalty.
+> Two settings changed after scan analysis: White Balance went from +4R to +3R because flat-light scans showed +4R over-warms, and Clarity went from −2 to 0 since the base simulation and Sharpness −2 already carry the softness without Clarity's processing penalty.
 
 ### Handling notes
 - Best in warm, sunny daylight, which is where Gold's amber warmth sings. Real Gold shifts cooler and greener in flat overcast, so in dull light reduce the Red shift (to +2R, say) or expect a flatter result.

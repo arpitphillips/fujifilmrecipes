@@ -1,6 +1,6 @@
 # Kodak Portra 400 v2 — Fujifilm X-T5 (X-Trans V)
 
-Classic Chrome base. Warm, low-contrast professional portrait film look — one of the site author's personal favorites for golden hour.
+Classic Chrome base. Warm, low-contrast professional portrait film look, one of the site author's personal favorites for golden hour.
 
 [Source](https://fujixweekly.com/2022/12/16/kodak-portra-400-v2-fujifilm-x-t5-x-trans-v-film-simulation-recipe/)
 
@@ -21,4 +21,4 @@ Classic Chrome base. Warm, low-contrast professional portrait film look — one 
 | ISO | Auto, up to ISO 6400 |
 | Exposure Comp | +1/3 to +1 (typically) |
 
-> **Datasheet check (2026-07-15):** Kodak E-4050 calls Portra 400 the "world's finest grain high-speed film" — Grain **Strong**/Small renders it grainier than the emulsion spec (Weak/Small would match). Consistent with *scanned* Portra as commonly seen online, not the film itself. See [VALIDATION-AUDIT.md](../../VALIDATION-AUDIT.md); a datasheet-faithful original lives at [originals/kodak-portra-400](../../originals/kodak-portra-400/).
+> **Datasheet check (2026-07-15):** Kodak E-4050 calls Portra 400 the "world's finest grain high-speed film", Grain Strong/Small renders it grainier than the emulsion spec (Weak/Small would match). Consistent with *scanned* Portra as commonly seen online, not the film itself. See [VALIDATION-AUDIT.md](../../VALIDATION-AUDIT.md); a datasheet-faithful original lives at [originals/kodak-portra-400](../../originals/kodak-portra-400/).

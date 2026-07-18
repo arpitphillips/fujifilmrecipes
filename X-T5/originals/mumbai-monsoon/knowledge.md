@@ -40,5 +40,5 @@ Overcast fools the meter: the bright grey sky makes the camera underexpose your 
 For a dreamier, more filmic take, swap the base to Eterna, keep DR400 and Highlight −2, and set Shadow +2, Color +2 (Eterna is desaturated so it needs the bump), Clarity −2, and WB 6300K +1R/−2B. Flatter and softer. Better for slow, atmospheric rain work, worse for snappy street.
 
 ## Related
-- For **night rain with neon**, use [CineStill 800T](../../reference-recipes/cinestill-800t/knowledge.md) instead (tungsten-blue night specialist).
+- For night rain with neon, use [CineStill 800T](../../reference-recipes/cinestill-800t/knowledge.md) instead (tungsten-blue night specialist).
 - Shares the Classic Negative base with [Pacific Blues](../../reference-recipes/pacific-blues/knowledge.md) (cooler, beachy) and [Reala Ace](../../reference-recipes/reala-ace/knowledge.md) (neutral). Compare them to see how the same base is steered to very different moods.

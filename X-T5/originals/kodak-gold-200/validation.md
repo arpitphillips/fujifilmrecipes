@@ -1,6 +1,6 @@
 # Kodak Gold 200 — Validation & Proof of Faithfulness
 
-Recipe validated against **real Gold 200 film scans** across multiple lighting conditions, plus the Kodak datasheet. This is the proof layer behind [`recipe.md`](recipe.md). Reference scans were analysed only (not redistributed); source is [The Darkroom's Gold 200 gallery](https://thedarkroom.com/film/gold-200/) (local copy in `X-T5/_reference-sources/`).
+Recipe validated against real Gold 200 film scans across multiple lighting conditions, plus the Kodak datasheet. This is the proof layer behind [`recipe.md`](recipe.md). Reference scans were analysed only (not redistributed); source is [The Darkroom's Gold 200 gallery](https://thedarkroom.com/film/gold-200/) (local copy in `X-T5/_reference-sources/`).
 
 ## Scans analysed (the FULL Darkroom gallery: ~35 images across every condition)
 Rather than a handful, the entire user gallery was reviewed to avoid outliers. Coverage:
@@ -39,8 +39,8 @@ Rather than a handful, the entire user gallery was reviewed to avoid outliers. C
 | Visible-but-fine grain | **Grain Strong, Small** confirmed |
 
 ## Changes made from the pre-validation recipe
-1. **White Balance:** +4 Red → **+3 Red** (−5 Blue unchanged). Evidence: flat-light scans showed +4R over-warms.
-2. **Clarity:** −2 → **0**. Per the quality standard (Clarity 0 unless needed); softness preserved via base + Sharpness −2. Verified the scans' softness doesn't *require* negative Clarity.
+1. White Balance: +4 Red → +3 Red (−5 Blue unchanged). Evidence: flat-light scans showed +4R over-warms.
+2. Clarity: −2 → 0. Per the quality standard (Clarity 0 unless needed); softness preserved via base + Sharpness −2. Verified the scans' softness doesn't *require* negative Clarity.
 
 ## Additional confirmations from the full gallery
 - Warmth scales with the light: near-neutral in overcast, clearly golden in sun and golden hour, and strongly amber indoors (the "ELLA" fridge shot). This is exactly the behaviour the recipe notes describe, and it makes +3R the right all-conditions average.

@@ -44,6 +44,6 @@ WB shift precision (±1–2 on each axis) is the one value worth tuning against 
 ## Sources
 - [Kodak GOLD 200 Technical Data E-7022 (PDF)](https://business.kodakmoments.com/sites/default/files/files/resources/E7022_Gold_200.pdf)
 - [Kodak GOLD 200 product page](https://www.kodak.com/en/still-film/product/consumer/gold-200-film/)
-- [The Darkroom — Gold 200 review](https://thedarkroom.com/film/gold-200/)
-- [50mmF2 — Gold 200 review](https://50mmf2.com/writings/kodak-gold-200-review)
-- [My Favourite Lens — Gold 200 review](https://www.myfavouritelens.com/kodak-gold-200-35mm-film-review/)
+- [The Darkroom, Gold 200 review](https://thedarkroom.com/film/gold-200/)
+- [50mmF2, Gold 200 review](https://50mmf2.com/writings/kodak-gold-200-review)
+- [My Favourite Lens, Gold 200 review](https://www.myfavouritelens.com/kodak-gold-200-35mm-film-review/)

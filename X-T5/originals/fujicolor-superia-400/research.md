@@ -40,7 +40,7 @@ Fujifilm designed the Classic Negative film simulation to emulate Superia consum
 
 ## Sources
 - [Fujifilm Superia X-Tra 400 datasheet (AF3-0217E, PDF)](https://asset.fujifilm.com/master/emea/files/2020-10/9a958fdcc6bd1442a06f71e134b811f6/films_superia-xtra400_datasheet_01.pdf)
-- [The Darkroom — Superia X-Tra 400](https://thedarkroom.com/film/superia-x-tra-400/)
-- [Analog.Cafe — Superia X-Tra 400 review](https://www.analog.cafe/r/fujifilm-superia-x-tra-400-film-review-zc0y)
-- [Alex Luyckx — Film Review No.80](http://www.alexluyckx.com/blog/2022/02/14/film-review-blog-no-80-fujifilm-superia-x-tra-400/)
-- [Wikipedia — Fujifilm Superia X-tra 400](https://en.wikipedia.org/wiki/Fujifilm_Superia_X-tra_400)
+- [The Darkroom, Superia X-Tra 400](https://thedarkroom.com/film/superia-x-tra-400/)
+- [Analog.Cafe, Superia X-Tra 400 review](https://www.analog.cafe/r/fujifilm-superia-x-tra-400-film-review-zc0y)
+- [Alex Luyckx, Film Review No.80](http://www.alexluyckx.com/blog/2022/02/14/film-review-blog-no-80-fujifilm-superia-x-tra-400/)
+- [Wikipedia, Fujifilm Superia X-tra 400](https://en.wikipedia.org/wiki/Fujifilm_Superia_X-tra_400)

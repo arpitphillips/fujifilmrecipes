@@ -1,6 +1,6 @@
 # Pastel Dream — Fujifilm X-T5 (X-Trans V) · STILLS
 
-A **soft, sweet, candy-pastel** look — light airy tones, gentle colour that reads sugared rather than saturated, flattering skin. Built on **Astia** (Fujifilm's soft profile) with a bright, lifted exposure. Creative design; drop pastel mood-boards into [`references/`](references/) to tune. See [creative README](../README.md).
+A soft, sweet, candy-pastel look, light airy tones, gentle colour that reads sugared rather than saturated, flattering skin. Built on Astia (Fujifilm's soft profile) with a bright, lifted exposure. Creative design; drop pastel mood-boards into [`references/`](references/) to tune. See [creative README](../README.md).
 
 | Setting | Value |
 |---|---|
@@ -27,4 +27,4 @@ A **soft, sweet, candy-pastel** look — light airy tones, gentle colour that re
 - Clarity −2, Sharpness −1: soft, dreamy rendering (justified deviation: softness is the look).
 
 ### Variant: "Fruit Pastel" energy
-For punchier candy colours, swap the base to **Velvia** and keep everything else (the community-proven vivid-base/lifted-tone trick): sweeter, louder pastels; slightly riskier skin.
+For punchier candy colours, swap the base to Velvia and keep everything else (the community-proven vivid-base/lifted-tone trick): sweeter, louder pastels; slightly riskier skin.

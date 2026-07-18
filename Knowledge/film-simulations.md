@@ -49,7 +49,7 @@ The Film Simulation is the master colour and contrast profile. Every other setti
 ## The monochrome bases
 
 ### ACROS
-- Manual: "Shoot in Black and White in rich details with sharpness." Available as **ACROS**, **ACROS+Ye**, **ACROS+R**, **ACROS+G**.
+- Manual: "Shoot in Black and White in rich details with sharpness." Available as ACROS, ACROS+Ye, ACROS+R, ACROS+G.
 - Character: The premium B&W profile, with richer tonality, finer perceived grain structure, and better detail than plain Monochrome. The colour-filter suffix mimics shooting B&W film through a coloured filter:
   - +Ye (Yellow): slightly more contrast, darkens skies a little. The classic all-rounder.
   - +R (Red): strong contrast, dramatically darkened skies, lightened reds.

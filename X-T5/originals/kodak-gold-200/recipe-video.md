@@ -2,7 +2,7 @@
 
 Movie-mode adaptation of the [stills recipe](recipe.md). Movie mode drops Grain, Color Chrome Effect, Color Chrome FX Blue, and Clarity (see [video-mode-settings](../../../Knowledge/video-mode-settings.md)), so this version reproduces Gold's colour and tone foundation and compensates for the missing richness and softness controls. The target is standard film-simulation recording with the look baked in, not F-Log/HLG.
 
-Set these in the movie shooting display → **IMAGE QUALITY SETTING** tab (stored separately from stills).
+Set these in the movie shooting display → IMAGE QUALITY SETTING tab (stored separately from stills).
 
 | Setting | Value | vs stills |
 |---|---|---|

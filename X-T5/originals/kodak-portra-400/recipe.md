@@ -1,8 +1,8 @@
 # Kodak Portra 400 — Fujifilm X-T5 (X-Trans V) · STILLS
 
-Research-backed **original**, derived from the Kodak E-4050 datasheet (archived: [`_reference-sources/datasheets/kodak-still/portra-400_e4050.pdf`](../../_reference-sources/datasheets/README.md)). Reproduces the emulsion the sheet describes: **the world's finest-grain high-speed colour negative — warm-neutral skin, low contrast, wide latitude, grain you barely see.** Derivation in [`knowledge.md`](knowledge.md).
+Research-backed original, derived from the Kodak E-4050 datasheet (archived: [`_reference-sources/datasheets/kodak-still/portra-400_e4050.pdf`](../../_reference-sources/datasheets/README.md)). Reproduces the emulsion the sheet describes: the world's finest-grain high-speed colour negative, warm-neutral skin, low contrast, wide latitude, grain you barely see. Derivation in [`knowledge.md`](knowledge.md).
 
-Distinct from [kodak-portra-400-v2](../../reference-recipes/kodak-portra-400-v2/) (reference), which renders the grainier *scanned-Portra* look popular online — this recipe targets the **film as specified**.
+Distinct from [kodak-portra-400-v2](../../reference-recipes/kodak-portra-400-v2/) (reference), which renders the grainier *scanned-Portra* look popular online. This recipe targets the film as specified.
 
 | Setting | Value |
 |---|---|
@@ -23,7 +23,7 @@ Distinct from [kodak-portra-400-v2](../../reference-recipes/kodak-portra-400-v2/
 
 ### Why these values (short)
 - Classic Chrome base: Portra's palette is muted-warm with gentle hue separation; Classic Chrome's restrained saturation is the right canvas (the whole Portra recipe family agrees), warmed back via WB shift.
-- Grain Weak/Small: datasheet: "**world's finest grain** high-speed film"; **Print Grain Index 37** on a 4×6 (threshold of visibility = 25). Real Portra grain is *barely* perceptible — Strong grain models scans, not film.
+- Grain Weak/Small: datasheet: "world's finest grain high-speed film"; Print Grain Index 37 on a 4×6 (threshold of visibility = 25). Real Portra grain is *barely* perceptible, Strong grain models scans, not film.
 - WB Daylight +2R/−4B: Portra's warm-neutral balance; fixed preset for repeatability (per [methodology](../../../Knowledge/validation-methodology.md): fixed WB for colour-critical film).
 - DR400 + Highlight −1.5: the famous negative latitude (clean to +3 over) and long soft shoulder; highlights never bite.
 - Shadow −1: low-contrast open shadows; Portra never crushes.
@@ -33,7 +33,7 @@ Distinct from [kodak-portra-400-v2](../../reference-recipes/kodak-portra-400-v2/
 
 ### Handling
 - Overexpose freely: the film is optimized for generous exposure (skin density targets sit high); +2/3 is the sweet spot, +1 in flat light.
-- Gray-card forehead density targets in the sheet (1.08–1.18 light complexion) are the reference for skin placement — expose skin bright.
+- Gray-card forehead density targets in the sheet (1.08–1.18 light complexion) are the reference for skin placement; expose skin bright.
 - Under tungsten/fluorescent the real film needs colour-compensating filters; digitally, correct WB toward the source or accept the warm cast.
 
-**Validation tier:** Datasheet-validated (E-4050: PGI, latitude, balance, skin-density aims — archived PDF). Characteristic pass strong (best-documented film in the bank's sources). **Scan-validation pending** — drop real Portra 400 scans into [`references/`](references/).
+Validation tier: Datasheet-validated (E-4050: PGI, latitude, balance, skin-density aims, archived PDF). Characteristic pass strong (best-documented film in the bank's sources). Scan-validation pending; drop real Portra 400 scans into [`references/`](references/).

@@ -1,9 +1,9 @@
 # California Summer — Fujifilm X-T5 (X-Trans V) · STILLS
 
-**Status:** Reference capture (attributed) — for testing/benchmarking.
-**Source/credit:** [Fuji X Weekly (Ritchie Roesch)](https://fujixweekly.com/2024/06/04/california-summer-fujifilm-x100vi-x-trans-v-film-simulation-recipe/)
+Status: Reference capture (attributed), for testing/benchmarking.
+Source/credit: [Fuji X Weekly (Ritchie Roesch)](https://fujixweekly.com/2024/06/04/california-summer-fujifilm-x100vi-x-trans-v-film-simulation-recipe/)
 
-A warm, faded, sun-drenched **Nostalgic Neg.** look (amber highlights, rich shadows, printed-photo vibe). Nostalgic Neg. is an **X-Trans V-generation** film simulation, so this recipe is not portable to older bodies.
+A warm, faded, sun-drenched Nostalgic Neg. look (amber highlights, rich shadows, printed-photo vibe). Nostalgic Neg. is an X-Trans V-generation film simulation, so this recipe is not portable to older bodies.
 
 | Setting | Value |
 |---|---|
@@ -23,4 +23,4 @@ A warm, faded, sun-drenched **Nostalgic Neg.** look (amber highlights, rich shad
 | Exposure Compensation | +2/3 to +1⅓ (typically) |
 
 ### Compatibility
-Fifth-generation only (X-T5, X-H2/S, X-S20, X100VI, X-T50 …) because it requires the **Nostalgic Neg.** film simulation. No X-Trans IV/III equivalent.
+Fifth-generation only (X-T5, X-H2/S, X-S20, X100VI, X-T50 …) because it requires the Nostalgic Neg. film simulation. No X-Trans IV/III equivalent.

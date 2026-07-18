@@ -1,6 +1,6 @@
 # Kodak Vision3 250D (5207) — Fujifilm X-T5 (X-Trans V) · CINEMA
 
-Daylight cinema. Reproduces the clean, natural, low-contrast **daylight motion-picture** look — soft protected highlights, open detailed shadows, gentle filmic colour. Eterna base. Grounded in Kodak Vision3 250D technical data (daylight-balanced 5500K, EI 250, 2-stop highlight latitude, reduced shadow grain). See [`knowledge.md`](knowledge.md) and the [cinema README](../README.md).
+Daylight cinema. Reproduces the clean, natural, low-contrast daylight motion-picture look, soft protected highlights, open detailed shadows, gentle filmic colour. Eterna base. Grounded in Kodak Vision3 250D technical data (daylight-balanced 5500K, EI 250, 2-stop highlight latitude, reduced shadow grain). See [`knowledge.md`](knowledge.md) and the [cinema README](../README.md).
 
 ## Stills settings
 | Setting | Value |
@@ -20,7 +20,7 @@ Daylight cinema. Reproduces the clean, natural, low-contrast **daylight motion-p
 | ISO | Auto, up to ISO 6400 |
 | Exposure Compensation | 0 to +1/3 (typically) |
 
-This **stills** recipe uses the grain and Color Chrome effects that movie mode can't. For the movie-mode adaptation see [`recipe-video.md`](recipe-video.md).
+This stills recipe uses the grain and Color Chrome effects that movie mode can't. For the movie-mode adaptation see [`recipe-video.md`](recipe-video.md).
 
 ### Why these values
 - Eterna + DR400 + Highlight −2: the wide-latitude, soft-highlight core of the Vision3 look (2-stop highlight headroom).

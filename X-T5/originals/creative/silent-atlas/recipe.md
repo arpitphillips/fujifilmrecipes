@@ -2,7 +2,7 @@
 
 The stills companion to the [video recipe](recipe-video.md): a cinematic documentary teal-and-warm travel-film grade inspired by [Merlin Krumme's "The Silent Atlas"](https://www.youtube.com/watch?v=peeq2ajU40E), shot in the Atlas Mountains of Morocco. Warm amber and terracotta in the midtones and skin, cool teal shadows, deep rich blacks, soft misty highlights, muted filmic saturation. Full grade analysis in [`knowledge.md`](knowledge.md).
 
-The video version was designed first (the reference is a film); this stills build expresses the same grade using the controls movie mode lacks — grain and the Color Chrome effects.
+The video version was designed first (the reference is a film); this stills build expresses the same grade using the controls movie mode lacks, grain and the Color Chrome effects.
 
 | Setting | Value |
 |---|---|

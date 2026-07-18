@@ -138,7 +138,7 @@ Some adjustments are safe after the simulation is applied; others break the per-
 - Sky gets a moderate blue saturation boost with a hint of magenta retained
 - Oranges shift slightly toward yellow. Without this shift, yellows and oranges look muddy and hard to separate visually
 - Light cyan-blues shift toward pure blue, an industry-wide digital convention for pleasing skies, applied conservatively here
-- Fujifilm's marketing calls it "the ace of spades — the strongest card of all", and it is the factory default on every camera
+- Fujifilm's marketing calls it "the ace of spades, the strongest card of all", and it is the factory default on every camera
 
 ### VELVIA 50
 - Based on FUJICHROME Velvia, the professional reversal film introduced in 1991 and beloved by landscape photographers
@@ -152,7 +152,7 @@ Some adjustments are safe after the simulation is applied; others break the per-
 ### ASTIA / Soft
 - Highlights roll off substantially softer than PROVIA
 - Shadows run darker than PROVIA, so overall contrast stays high despite the soft highlights
-- Skin renders less rosy and at lower saturation, so this is not merely a softer PROVIA. Caucasian skin lands almost dead-on its true colour, and darker skin tones get increased saturation, producing richer tones for darker complexions
+- Skin renders less rosy and at lower saturation, so the profile treats skin its own way rather than softening PROVIA's rendering. Caucasian skin lands almost dead-on its true colour, and darker skin tones get increased saturation, producing richer tones for darker complexions
 - Hides skin blemishes and blotchiness better than any other simulation
 - The colour map reads like a blend of Provia and Velvia: dark greens more saturated than Provia, yellows and oranges less, darker blues noticeably more saturated
 - Fujifilm also recommends it for adapted vintage lenses, since its harder shadows compensate for older optics' lower contrast
@@ -163,7 +163,7 @@ Some adjustments are safe after the simulation is applied; others break the per-
 - Shadow contrast is harder and highlight contrast softer, the opposite of ASTIA
 - The sky's magenta component is intentionally and completely removed, a documented Fujifilm design decision
 - Cyan and blue hues behave non-monotonically: bright cyan stays near true colour, medium blue desaturates and shifts toward cyan, dark blue shifts differently again
-- Imaging Resource states it plainly: this one "cannot be approximated in Photoshop — the sorts of changes just aren't possible through any manual adjustment"
+- Imaging Resource states it plainly: this one "cannot be approximated in Photoshop, the sorts of changes just aren't possible through any manual adjustment"
 - Target use is street and documentary. It evokes the Life/Look magazine aesthetic of the 1970s
 
 ### PRO Neg.Std

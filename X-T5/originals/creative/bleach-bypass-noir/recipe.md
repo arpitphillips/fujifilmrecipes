@@ -1,6 +1,6 @@
 # Bleach Bypass Noir — Fujifilm X-T5 (X-Trans V) · STILLS
 
-A **silvery, desaturated, high-contrast urban drama** look — the bleach-bypass process feel (skipped bleach = retained silver: low saturation *and* high contrast) pushed toward noir street/architecture. Uses the bank's first **Eterna Bleach Bypass** base — the community's consensus most-underrated film sim. Creative design; see [creative README](../README.md).
+A silvery, desaturated, high-contrast urban drama look, the bleach-bypass process feel (skipped bleach = retained silver: low saturation *and* high contrast) pushed toward noir street/architecture. Uses the bank's first Eterna Bleach Bypass base, the community's consensus most-underrated film sim. Creative design; see [creative README](../README.md).
 
 | Setting | Value |
 |---|---|

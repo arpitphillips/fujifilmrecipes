@@ -1,6 +1,6 @@
 # Kodak Vision3 50D (5203) — Fujifilm X-T5 (X-Trans V) · CINEMA · VIDEO
 
-Movie-mode version of the [stills recipe](recipe.md). Movie mode **drops Grain, Color Chrome Effect, Color Chrome FX Blue, and Clarity** (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)). Target: **standard film-simulation recording**, not F-Log/HLG.
+Movie-mode version of the [stills recipe](recipe.md). Movie mode drops Grain, Color Chrome Effect, Color Chrome FX Blue, and Clarity (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)). Target: standard film-simulation recording, not F-Log/HLG.
 
 | Setting | Value | vs stills |
 |---|---|---|
@@ -15,6 +15,6 @@ Movie-mode version of the [stills recipe](recipe.md). Movie mode **drops Grain, 
 | Interframe NR | AUTO | movie-only |
 | ISO | Auto, up to ISO 1600 | same |
 
-- **Grain** unavailable → this stock has almost none anyway; skip adding grain in post unless deliberately styling it grittier.
-- **Clarity** was 0 already — nothing lost.
-- Best for daylight-exterior video work — bright, clean, sharp; pairs naturally with the still recipe's exposure latitude.
+- Grain unavailable → this stock has almost none anyway; skip adding grain in post unless deliberately styling it grittier.
+- Clarity was 0 already, nothing lost.
+- Best for daylight-exterior video work, bright, clean, sharp; pairs naturally with the still recipe's exposure latitude.

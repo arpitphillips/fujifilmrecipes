@@ -1,6 +1,6 @@
 # Golden Hour Glow — Fujifilm X-T5 (X-Trans V) · STILLS
 
-A **warm, creamy, sun-drenched glow** — honeyed light, soft radiant highlights, gentle skin: the look of the last hour of sun, bottled. Works its magic in real warm light (golden hour, backlight) and gilds ordinary daylight. Astia base. Creative design; see [creative README](../README.md).
+A warm, creamy, sun-drenched glow, honeyed light, soft radiant highlights, gentle skin: the look of the last hour of sun, bottled. Works its magic in real warm light (golden hour, backlight) and gilds ordinary daylight. Astia base. Creative design; see [creative README](../README.md).
 
 | Setting | Value |
 |---|---|
@@ -28,4 +28,4 @@ A **warm, creamy, sun-drenched glow** — honeyed light, soft radiant highlights
 - Clarity −2, Sharpness −1: the soft glow (justified deviation); pair with a 1/8 Black Pro-Mist to intensify.
 
 ### Best use
-Golden hour, backlit portraits, beaches, fields, weddings. In blue/overcast light it will fight the scene — switch to [Matte Editorial](../matte-editorial/recipe.md) or [Pastel Dream](../pastel-dream/recipe.md) there.
+Golden hour, backlit portraits, beaches, fields, weddings. In blue/overcast light it will fight the scene; switch to [Matte Editorial](../matte-editorial/recipe.md) or [Pastel Dream](../pastel-dream/recipe.md) there.

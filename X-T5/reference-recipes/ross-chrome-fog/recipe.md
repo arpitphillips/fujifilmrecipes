@@ -22,8 +22,8 @@ Classic Chrome base. A **creative atmospheric "foggy/hazy" look** — an in-came
 | Exposure Compensation | author unspecified — judge per scene |
 
 **Notes**
-- **Clarity −5 is the whole point** — the maximum negative value, producing the soft, glowing, hazy "steamy window" quality. This is the bank's most extreme Clarity deviation, and here it *is* the look. (Note: any non-zero Clarity slows shot-to-shot saving — see [grain-and-detail](../../../Knowledge/grain-and-detail.md).)
-- **Color +4 + Shadow +2.5** — the haze desaturates perceived contrast, so colour and shadow lift are pushed hard to keep the image from going flat/muddy under the fog.
+- Clarity −5 is the whole point: the maximum negative value, producing the soft, glowing, hazy "steamy window" quality. This is the bank's most extreme Clarity deviation, and here it *is* the look. (Note: any non-zero Clarity slows shot-to-shot saving — see [grain-and-detail](../../../Knowledge/grain-and-detail.md).)
+- Color +4 + Shadow +2.5: the haze desaturates perceived contrast, so colour and shadow lift are pushed hard to keep the image from going flat/muddy under the fog.
 - Compare to our [Golden Hour Glow](../../originals/creative/golden-hour-glow/) and [Matte Editorial](../../originals/creative/matte-editorial/), which use softness differently (glow vs matte-lift); Chrome Fog is specifically the *diffusion-filter* emulation.
 
 > **X-Trans V — verified correct as-published (2026-07-16).** Ross authors on an X-Trans V-category body (proven by his Nostalgic Neg. recipe [Pumpkin Soup](../ross-pumpkin-soup/) — that sim exists only on X-Processor 5 cameras). So this recipe's blue rendering already matches the X-T5; **Color Chrome FX Blue stays Strong** — no IV→V drop needed. *Fallback:* Classic Chrome is a blue-affected sim, so in the unlikely event a particular frame's blues look over-deep, dropping CCFXB to Weak is the standard remedy. See [x-trans-v-and-conversion.md](../../../Knowledge/x-trans-v-and-conversion.md).

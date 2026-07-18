@@ -18,15 +18,15 @@ Research-backed **original**, derived from the Ilford Pan F Plus datasheet (arch
 | Exposure Compensation | 0 to +1/3 (typically) |
 
 ### Why these values (short)
-- **Acros base** — richest tonality of the monochrome sims; the right canvas for a fine-art-grade stock.
-- **Grain Weak, Small** — datasheet: "**extremely fine grain**... These characteristics make it the natural choice where fine detail and lack of grain are more important [than speed]." The finest-grain B&W setting in the bank alongside Acros 100.
-- **DR200, Highlight 0, Shadow +1** — a firm, contrasty, "snappy" curve rather than a soft one; Pan F is not a latitude-forgiving film, it's a controlled-light precision stock.
-- **Sharpness +2** — the highest sharpness value used anywhere in this bank. Datasheet: "outstanding resolution, sharpness, **and edge contrast**."
-- **Clarity +2** — the second deliberate deviation from the Clarity-0 default (after Tri-X). "Edge contrast" in the datasheet's own words is a micro-contrast/acutance property — exactly what Clarity models. Faithfulness demands it here.
-- **ISO capped at 400** — this is the slowest film in the entire bank (true ISO 50); keeping the digital ceiling low preserves the ultra-fine, ultra-clean character. Pushing it to 3200+ would betray the whole point of the stock.
+- Acros base: richest tonality of the monochrome sims; the right canvas for a fine-art-grade stock.
+- Grain Weak, Small: datasheet: "**extremely fine grain**... These characteristics make it the natural choice where fine detail and lack of grain are more important [than speed]." The finest-grain B&W setting in the bank alongside Acros 100.
+- DR200, Highlight 0, Shadow +1: a firm, contrasty, "snappy" curve rather than a soft one; Pan F is not a latitude-forgiving film, it's a controlled-light precision stock.
+- Sharpness +2: the highest sharpness value used anywhere in this bank. Datasheet: "outstanding resolution, sharpness, **and edge contrast**."
+- Clarity +2: the second deliberate deviation from the Clarity-0 default (after Tri-X). "Edge contrast" in the datasheet's own words is a micro-contrast/acutance property — exactly what Clarity models. Faithfulness demands it here.
+- ISO capped at 400: this is the slowest film in the entire bank (true ISO 50); keeping the digital ceiling low preserves the ultra-fine, ultra-clean character. Pushing it to 3200+ would betray the whole point of the stock.
 
 ### Handling
-- **Architecture, product, fine-art, controlled-light portraiture** — needs good light; this is not a low-light film.
+- Architecture, product, fine-art, controlled-light portraiture: needs good light; this is not a low-light film.
 - For a softer, less "etched" alternative use [Fujifilm Acros 100](../fujifilm-acros-100/recipe.md) (Clarity 0); for a *daylight contrast filter* option try +Ye or +R on this base for classic architectural sky drama.
 
 **Validation tier:** Datasheet-validated (grain, resolution, sharpness, edge-contrast language — archived PDF). **No authentic real-film scan found this pass** (only a software-emulated preset, discarded as unreliable per the [core validation principle](../../../../Knowledge/validation-methodology.md) — never build on non-authentic reference material). Characteristic pass strong (well-documented classic stock). Real scans needed to reach the top validation tier — drop into [`references/`](references/).

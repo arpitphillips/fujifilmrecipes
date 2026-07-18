@@ -13,6 +13,15 @@
 
 ---
 
+## 2026-07-17 — Site v3 iteration 5: bulk bullet-key transform + knowledge articles (author: Claude session)
+**What changed:**
+- **Mechanical repo-wide transform** across all rendered recipe files, Knowledge articles and RANKING.md (207 lines in 50 files): `- **Key** — explanation` list items became `- Key: explanation`, and `## Heading — subtitle` became `## Heading: subtitle`. Applied only outside tables and code fences; diff sampled and verified readable. This is the single most common machine-styling pattern in the bank.
+- **`Knowledge/film-chemistry-fundamentals.md`** and **`Knowledge/film-simulations.md`** hand-humanized: prose em dashes and bold removed (chemical equations debolded but untouched in content; Fujifilm's own quoted manual descriptions kept verbatim, including the quoted word "vibrant" — quotations are not our copy).
+- Sitewide audit score 1,295 → 822; template pages remain 0.
+
+**Why:** Loop continues; the bulk transform safely cleared the long tail's dominant pattern.
+**Follow-ups:** Remaining ~70 pages average ~11 points (light em dash/bold residue). Next: validation-methodology, ektar-100, vision3-50d, pro-400h, pro400h-comparison, grain-and-detail, double-x, video-mode-settings.
+
 ## 2026-07-17 — Site v3 iteration 4: content humanization batch 3 (author: Claude session)
 **What changed:**
 - **`originals/mumbai/`** (all 3 files), **`originals/mumbai-monsoon/`** (all 3 files), **`originals/cinema/kodak-ektachrome-100d/`** (recipe.md + knowledge.md): prose humanized — em dashes, "**Key** — explanation" bullet scaffolding and remaining "vibrant" vocabulary removed; all settings, variants, study evidence and citations preserved.

@@ -3,7 +3,7 @@
 ## The film
 Kodak Professional Ektachrome E100 (2018 revival of the E100G lineage; original Ektachrome discontinued 2013). Kodak's only current colour transparency stock — Process E-6, daylight balanced. The datasheet (pub. **E-4000**, archived in [`_reference-sources/datasheets/`](../../_reference-sources/datasheets/README.md)) specifies:
 
-- **Diffuse RMS granularity 8** — "extremely fine"
+- Diffuse RMS granularity 8: "extremely fine"
 - **Low contrast tone scale** with "extended tonal range"
 - **Neutral color balance** with "moderately enhanced color saturation"
 - **Low D-min** → "whiter, brighter whites"
@@ -36,7 +36,7 @@ Cultural register: the *National Geographic* slide of the 1990s–2000s — clea
 
 ## Validation status
 - **Datasheet tier: ✅** (E-4000 archived PDF; curves + RMS + MTF read directly, 2026-07-15)
-- **Characteristic tier: partial** — community consensus (neutral, fine-grained, clean whites, cooler than Fujichrome) is well established but ≥3 sources not yet formally logged
-- **Scan tier: pending** — needs ≥5 real E100 scans across light/subjects per [validation methodology](../../../Knowledge/validation-methodology.md); drop scans in [`references/`](references/)
+- Characteristic tier: partial: community consensus (neutral, fine-grained, clean whites, cooler than Fujichrome) is well established but ≥3 sources not yet formally logged
+- Scan tier: pending: needs ≥5 real E100 scans across light/subjects per [validation methodology](../../../Knowledge/validation-methodology.md); drop scans in [`references/`](references/)
 
 *Derived 2026-07-15 from the archived datasheet. See also [VALIDATION-AUDIT.md](../../VALIDATION-AUDIT.md).*

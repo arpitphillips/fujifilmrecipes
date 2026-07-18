@@ -23,8 +23,8 @@ Daylight cinema. Reproduces the clean, natural, low-contrast **daylight motion-p
 This **stills** recipe uses the grain and Color Chrome effects that movie mode can't. For the movie-mode adaptation see [`recipe-video.md`](recipe-video.md).
 
 ### Why these values
-- **Eterna + DR400 + Highlight −2** — the wide-latitude, soft-highlight core of the Vision3 look (2-stop highlight headroom).
-- **Shadow 0** — Vision3's clean, detailed, *open* shadows (Dye Layering reduces shadow grain); no crushing.
-- **Color +2, CCE Strong** — lifts Eterna's low saturation to natural graded-cinema colour with dimensional skin.
-- **WB Daylight +1R/−1B** — 250D is daylight-balanced; a whisper warm for pleasing skin.
-- **Grain Weak/Small, Sharpness −1, Clarity 0** — fine-grained, gently soft, clean (faithful to a fine daylight negative).
+- Eterna + DR400 + Highlight −2: the wide-latitude, soft-highlight core of the Vision3 look (2-stop highlight headroom).
+- Shadow 0: Vision3's clean, detailed, *open* shadows (Dye Layering reduces shadow grain); no crushing.
+- Color +2, CCE Strong: lifts Eterna's low saturation to natural graded-cinema colour with dimensional skin.
+- WB Daylight +1R/−1B: 250D is daylight-balanced; a whisper warm for pleasing skin.
+- Grain Weak/Small, Sharpness −1, Clarity 0: fine-grained, gently soft, clean (faithful to a fine daylight negative).

@@ -20,11 +20,11 @@ A polished high-fashion **magazine cover / editorial** look: refined and luxurio
 | Exposure Compensation | 0 to +1/3 (typically) |
 
 ### Why
-- **PRO Neg. Hi** — the portrait profile with slightly enhanced contrast and excellent skin: the fashion-cover base.
-- **Shadow +2 + DR400** — deep luxurious editorial blacks while clean highlights stay protected (retouched-highlight feel).
-- **Color −1, CCE Weak, cool WB** — controlled, sophisticated, slightly desaturated colour (not candy).
-- **Sharpness +1 + Clarity −1** — crisp garments/detail, but **Clarity −1 smooths skin** flatteringly (the deliberate deviation — flawless skin is the point).
-- **Weak/Small grain** — clean, polished, high-production.
+- PRO Neg. Hi: the portrait profile with slightly enhanced contrast and excellent skin: the fashion-cover base.
+- Shadow +2 + DR400: deep luxurious editorial blacks while clean highlights stay protected (retouched-highlight feel).
+- Color −1, CCE Weak, cool WB: controlled, sophisticated, slightly desaturated colour (not candy).
+- Sharpness +1 + Clarity −1: crisp garments/detail, but **Clarity −1 smooths skin** flatteringly (the deliberate deviation — flawless skin is the point).
+- Weak/Small grain: clean, polished, high-production.
 
 ### Tuning
 - **B&W couture:** switch Film Sim to **Acros**, keep Shadow +2 / Sharpness +1, Clarity −1 → classic monochrome fashion.

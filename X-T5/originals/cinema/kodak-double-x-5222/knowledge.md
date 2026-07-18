@@ -9,10 +9,10 @@ Eastman Double-X Negative Film 5222/7222 — in continuous production since **19
 This isn't a guess — researched directly. Double-X's filmography is one of the strongest credibility signals of any stock in this bank: **Raging Bull**, **Schindler's List**, **Manhattan**, and it remains the reference point critics reach for whenever describing "the moody intensity of Old Hollywood and film noir." It is *the* stock people mean when they say a modern film "looks like classic black-and-white cinema."
 
 ## Datasheet specifics used in the derivation
-- **Diffuse RMS granularity: 14** — moderately heavy; heavier than any fine-grain still stock in this bank, in the same territory as the bank's dedicated push stocks (Delta 3200, T-Max P3200), though Double-X isn't itself a push stock — this is its *native* grain.
+- Diffuse RMS granularity: 14: moderately heavy; heavier than any fine-grain still stock in this bank, in the same territory as the bank's dedicated push stocks (Delta 3200, T-Max P3200), though Double-X isn't itself a push stock — this is its *native* grain.
 - **Control gamma 0.65–0.70** (developed to this contrast target, measured via Status M blue densitometry) — a moderate, versatile contrast, not an extreme one.
-- **Resolving power 32 lines/mm (1.6:1) to 100 lines/mm (1000:1)** — lower than still-photo B&W stocks, appropriate for cinema (motion, projection, and telecine don't demand still-print-level per-frame resolution).
-- **EI 250 daylight / 200 tungsten** — a genuinely fast negative, usable in dim conditions.
+- Resolving power 32 lines/mm (1.6:1) to 100 lines/mm (1000:1): lower than still-photo B&W stocks, appropriate for cinema (motion, projection, and telecine don't demand still-print-level per-frame resolution).
+- EI 250 daylight / 200 tungsten: a genuinely fast negative, usable in dim conditions.
 
 ## The grade in one line
 Classic cinema black & white — moderate contrast with rich, deep blacks, moderately heavy grain, built for both studio control and available-light location work.

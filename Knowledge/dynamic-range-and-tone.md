@@ -2,7 +2,7 @@
 
 These settings shape the **contrast curve**: how highlights and shadows are rendered, and how much tonal range is preserved. Together with the film-sim base they define whether a grade is punchy or flat, and where detail is protected.
 
-## Dynamic Range — DR100 / DR200 / DR400 (manual p.130)
+## Dynamic Range: DR100 / DR200 / DR400 (manual p.130)
 
 Dynamic Range protects **highlights** from clipping by underexposing the sensor and lifting the mid/shadow tones back up in processing.
 
@@ -29,7 +29,7 @@ A separate, more aggressive tone-flattening mode (AUTO / STRONG / WEAK / OFF) th
 - When D Range Priority is **anything other than OFF**, it *takes over* **Tone Curve** and **Dynamic Range** and adjusts them automatically — you lose manual control of contrast.
 - Therefore recipes that grade contrast by hand keep **D Range Priority OFF** (it isn't listed in the recipes precisely because it must stay off for Tone Curve/DR to be honoured).
 
-## Tone Curve — Highlight & Shadow (manual p.131)
+## Tone Curve: Highlight & Shadow (manual p.131)
 
 The Tone Curve independently bends the two ends of the contrast curve. Both run **−2 to +4**:
 

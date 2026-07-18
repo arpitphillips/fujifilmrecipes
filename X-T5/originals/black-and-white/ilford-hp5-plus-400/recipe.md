@@ -17,10 +17,10 @@ The classic British reportage B&W: **balanced, forgiving, with even visible grai
 | Exposure Compensation | 0 to +2/3 (typically) |
 
 ### Notes
-- **Grain Strong, Small** — HP5's prominent but *even, well-distributed* grain (vs Tri-X's clumpy Large). The real scan showed clearly-visible, structured grain in smooth areas.
-- **Highlight 0 / Shadow +2** — HP5's balanced, medium contrast with deep natural shadows that hold their darkness (it "lets shadows be shadows").
-- **Sharpness 0** — HP5 is a touch softer/smoother than Acros or Tri-X.
-- **Clarity 0** — HP5 is a smooth, balanced stock; grit would be unfaithful (unlike Tri-X).
-- **Forgiving & pushes well** — let ISO climb; HP5 tolerates it gracefully.
+- Grain Strong, Small: HP5's prominent but *even, well-distributed* grain (vs Tri-X's clumpy Large). The real scan showed clearly-visible, structured grain in smooth areas.
+- Highlight 0 / Shadow +2: HP5's balanced, medium contrast with deep natural shadows that hold their darkness (it "lets shadows be shadows").
+- Sharpness 0: HP5 is a touch softer/smoother than Acros or Tri-X.
+- Clarity 0: HP5 is a smooth, balanced stock; grit would be unfaithful (unlike Tri-X).
+- Forgiving & pushes well: let ISO climb; HP5 tolerates it gracefully.
 - **Filter:** plain Acros default; **+Ye** for a little more sky contrast.
 - **Video:** Film Sim + DR (manual) + Tone Curve transfer; grain is lost (add in post).

@@ -5,9 +5,9 @@
 ## The film
 Fujifilm's flagship professional colour negative (discontinued 2021 in 35mm, 2022 in 120) — for over a decade the default choice for wedding and portrait photographers wanting a cool, soft, "airy" look. The datasheet (archived: [`_reference-sources/datasheets/fujifilm/fujicolor-pro-400h.pdf`](../../_reference-sources/datasheets/README.md)) specifies:
 
-- **Diffuse RMS granularity value: 4** — the finest grain of any film in this bank (finer than Acros' RMS 7, finer than Portra's PGI 37, finer than Ektar's PGI <25).
+- Diffuse RMS granularity value: 4: the finest grain of any film in this bank (finer than Acros' RMS 7, finer than Portra's PGI 37, finer than Ektar's PGI <25).
 - **"Superb skin tones with smoothly continuous gradation from highlights to shadows."**
-- **"Excellent three-dimensional appearance"** — clearer highlight colours, **"appropriately controlled color saturation in the shadows"** — i.e. shadows are deliberately less saturated than highlights, which is what reads as the film's signature cool/blue-green shadow cast.
+- "Excellent three-dimensional appearance": clearer highlight colours, **"appropriately controlled color saturation in the shadows"** — i.e. shadows are deliberately less saturated than highlights, which is what reads as the film's signature cool/blue-green shadow cast.
 - **Faithful reproduction of neutral grays** with sharply improved fidelity across a wide exposure range, under to over.
 
 ## Corroborating evidence: a direct film-vs-simulation study

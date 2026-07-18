@@ -47,7 +47,7 @@ Kodak Professional Portra 400 (current emulsion 2010→, T-GRAIN). The modern pr
 
 ## Validation status
 - **Datasheet tier: ✅** (E-4050 archived PDF; PGI table + exposure/latitude + skin aims read directly, 2026-07-15)
-- **Characteristic tier: strong** — the most-documented colour negative in circulation; formal ≥3-source log to be added
-- **Scan tier: pending** — needs ≥5 scans across light/subjects (note scanner pipeline per [methodology](../../../Knowledge/validation-methodology.md)); drop into [`references/`](references/)
+- Characteristic tier: strong: the most-documented colour negative in circulation; formal ≥3-source log to be added
+- Scan tier: pending: needs ≥5 scans across light/subjects (note scanner pipeline per [methodology](../../../Knowledge/validation-methodology.md)); drop into [`references/`](references/)
 
 *Derived 2026-07-15 from the archived datasheet. See also [VALIDATION-AUDIT.md](../../VALIDATION-AUDIT.md).*

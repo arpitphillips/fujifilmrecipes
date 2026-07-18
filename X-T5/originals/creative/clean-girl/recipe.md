@@ -20,18 +20,18 @@ The **clean girl aesthetic**: bright, airy, white-dominant, minimal — crisp ne
 | Exposure Compensation | **+2/3 to +1⅓** (typically — high-key bright is the point) |
 
 ### Why these values
-- **Auto White Priority WB** — the recipe's engine, and the reason whites stay *white-white*. This is Fujifilm's AWB mode designed specifically to neutralise warm casts and keep whites clean (see [white-balance.md](../../../../Knowledge/white-balance.md)) — cream linen and white walls render crisp-neutral instead of drifting yellow indoors. The tiny **+1R/−1B** shift keeps skin alive so the neutrality never turns clinical.
-- **Astia base** — soft gradation and the most flattering skin of the colour sims; luminous, never harsh.
-- **DR400 + Highlight −1.5** — you're exposing bright (+2/3 to +1⅓), so the whites need maximum headroom and a soft roll-off: bright and luminous *with* fabric/skin detail held, never clipped.
-- **Shadow −1** — gently lifted, airy shadows. Deliberately *not* −2: that reads faded/matte ([Matte Editorial](../matte-editorial/)'s territory); clean girl keeps dimensional freshness.
-- **Color +1, CCE Weak, CCFXB Off** — fresh restraint: healthy lips/blush warmth without vividness; blues stay light and airy rather than deep.
-- **Grain Off** — the defining "clean" choice. The only recipe in the bank with grain fully off besides Kodachrome 25 — texture is the enemy of this look.
-- **Sharpness −1, Clarity 0** — soft polish, no halos, no grit; instant saves.
-- **ISO capped at 1600** — cleanliness demands low noise; this look lives in good light (window light, bright daylight, softboxes).
+- Auto White Priority WB: the recipe's engine, and the reason whites stay *white-white*. This is Fujifilm's AWB mode designed specifically to neutralise warm casts and keep whites clean (see [white-balance.md](../../../../Knowledge/white-balance.md)) — cream linen and white walls render crisp-neutral instead of drifting yellow indoors. The tiny **+1R/−1B** shift keeps skin alive so the neutrality never turns clinical.
+- Astia base: soft gradation and the most flattering skin of the colour sims; luminous, never harsh.
+- DR400 + Highlight −1.5: you're exposing bright (+2/3 to +1⅓), so the whites need maximum headroom and a soft roll-off: bright and luminous *with* fabric/skin detail held, never clipped.
+- Shadow −1: gently lifted, airy shadows. Deliberately *not* −2: that reads faded/matte ([Matte Editorial](../matte-editorial/)'s territory); clean girl keeps dimensional freshness.
+- Color +1, CCE Weak, CCFXB Off: fresh restraint: healthy lips/blush warmth without vividness; blues stay light and airy rather than deep.
+- Grain Off: the defining "clean" choice. The only recipe in the bank with grain fully off besides Kodachrome 25 — texture is the enemy of this look.
+- Sharpness −1, Clarity 0: soft polish, no halos, no grit; instant saves.
+- ISO capped at 1600: cleanliness demands low noise; this look lives in good light (window light, bright daylight, softboxes).
 
 ### Shooting notes
 - **Light is 80% of this aesthetic:** big soft sources — window light, open shade, overcast, diffused daylight. Harsh midday sun fights it.
-- **Expose bright and trust the recipe** — DR400 + Highlight −1.5 are built to hold the whites at +1.
+- Expose bright and trust the recipe: DR400 + Highlight −1.5 are built to hold the whites at +1.
 - **Styling does the rest:** whites/creams/beiges in frame reinforce the palette; the recipe keeps them neutral.
 - **Golden variant** (clean girl at golden hour): WB **Daylight, +2R & −2B** — warmth returns but stays polished.
 - **More studio polish** (crisper editorial version): base **PRO Neg. Hi**, Highlight −1 — a touch more contrast and snap.

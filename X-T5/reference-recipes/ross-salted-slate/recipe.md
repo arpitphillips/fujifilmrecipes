@@ -22,8 +22,8 @@ Acros +G base. A **creative dark, slate-grey B&W** with prominent grain — a mo
 | Exposure Compensation | **−1/3 to −2/3** (underexpose for the dark slate tone) |
 
 **Notes**
-- **DR100 + Highlight +1.5 + Shadow +4** — the darkest, most crushed-shadow tone curve of any B&W in the bank, giving the heavy "slate" greys. Underexposing (−1/3 to −2/3) deepens it further and protects highlights.
-- **Acros +G** — the green filter (normally for flattering skin) is used here for its mid-grey tonal rendering rather than for portraits.
+- DR100 + Highlight +1.5 + Shadow +4: the darkest, most crushed-shadow tone curve of any B&W in the bank, giving the heavy "slate" greys. Underexposing (−1/3 to −2/3) deepens it further and protects highlights.
+- Acros +G: the green filter (normally for flattering skin) is used here for its mid-grey tonal rendering rather than for portraits.
 - **CCFXB Strong** has no colour effect on a monochrome base, so sensor generation is irrelevant here — leave as-is.
 - Sits alongside the bank's other B&W as the *creative/moody* option, vs the datasheet-faithful emulations ([Acros 100](../../originals/black-and-white/fujifilm-acros-100/), [Tri-X](../../originals/black-and-white/kodak-tri-x-400/), etc.).
 

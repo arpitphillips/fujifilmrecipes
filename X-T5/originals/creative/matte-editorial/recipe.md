@@ -20,11 +20,11 @@ A **muted, faded, soft, airy** lifestyle-magazine look (Kinfolk / minimalist edi
 | Exposure Compensation | +1/3 to +2/3 (typically) |
 
 ### Why
-- **Eterna** — low-contrast, muted, rich-shadow cine base: the natural foundation for a soft matte look.
-- **Highlight −2 + Shadow −2** — the signature **matte** curve: soft highlights *and* lifted, un-crushed blacks (nothing hits pure black).
-- **Color −2, CCE Weak** — desaturated, calm, restrained palette.
-- **Clarity −2 + Sharpness −1** — soft, dreamy, smooth mid-tones (the deliberate deviation for the airy softness).
-- **Expose +1/3 to +2/3** — bright and high-key; overexposure enhances the faded, airy feel.
+- Eterna: low-contrast, muted, rich-shadow cine base: the natural foundation for a soft matte look.
+- Highlight −2 + Shadow −2: the signature **matte** curve: soft highlights *and* lifted, un-crushed blacks (nothing hits pure black).
+- Color −2, CCE Weak: desaturated, calm, restrained palette.
+- Clarity −2 + Sharpness −1: soft, dreamy, smooth mid-tones (the deliberate deviation for the airy softness).
+- Expose +1/3 to +2/3: bright and high-key; overexposure enhances the faded, airy feel.
 
 ### Tuning
 - **Warmer / cosier:** WB **+2R/−2B**. **Cooler / Scandi:** WB **−1R/+1B**.

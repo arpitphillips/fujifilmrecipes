@@ -22,14 +22,14 @@ Distinct from [thommys-ektachrome](../../reference-recipes/thommys-ektachrome/) 
 | Exposure Compensation | 0 to +1/3 (typically) |
 
 ### Why these values (short)
-- **Provia base** — Fuji's balanced-slide standard is the structural analogue of Kodak's balanced slide: vivid-but-faithful, moderate contrast. (Classic Chrome is too desaturated/hard; Astia too skin-biased.)
-- **Grain Weak/Small** — datasheet: diffuse **RMS 8, "extremely fine."**
-- **WB Daylight −1R/+1B** — E100 is daylight-balanced with a **neutral-to-cool** rendering (its R/G/B characteristic curves run tightly bundled — no warm crossover). The cool nudge counteracts Fuji's native warmth.
-- **H−1 / S−0.5** — datasheet: "**low contrast tone scale**, extended tonal range"; curve shows a gentle shoulder into a high D-max — so soften highlights, keep most shadow density (slides still go deep).
-- **Color +1, CCE Weak** — "**moderately** enhanced color saturation with a **neutral** balance."
-- **CCFXB Weak** — E100's clean but not exaggerated blue skies (Strong would push toward Fuji-slide blues).
-- **Sharpness +1** — MTF holds ~100% response past 20 cycles/mm; a crisp transparency.
-- **Clarity 0** — per quality standard; nothing in the sheet argues for grit or glow.
+- Provia base: Fuji's balanced-slide standard is the structural analogue of Kodak's balanced slide: vivid-but-faithful, moderate contrast. (Classic Chrome is too desaturated/hard; Astia too skin-biased.)
+- Grain Weak/Small: datasheet: diffuse **RMS 8, "extremely fine."**
+- WB Daylight −1R/+1B: E100 is daylight-balanced with a **neutral-to-cool** rendering (its R/G/B characteristic curves run tightly bundled — no warm crossover). The cool nudge counteracts Fuji's native warmth.
+- H−1 / S−0.5: datasheet: "**low contrast tone scale**, extended tonal range"; curve shows a gentle shoulder into a high D-max — so soften highlights, keep most shadow density (slides still go deep).
+- Color +1, CCE Weak: "**moderately** enhanced color saturation with a **neutral** balance."
+- CCFXB Weak: E100's clean but not exaggerated blue skies (Strong would push toward Fuji-slide blues).
+- Sharpness +1: MTF holds ~100% response past 20 cycles/mm; a crisp transparency.
+- Clarity 0: per quality standard; nothing in the sheet argues for grit or glow.
 
 ### Handling
 - **Daylight or flash only by design** (5500K film) — under tungsten it goes deep amber unless you correct WB, exactly like the film.

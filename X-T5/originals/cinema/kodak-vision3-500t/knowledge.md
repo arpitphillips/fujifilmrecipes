@@ -10,8 +10,8 @@ Kodak Vision3 500T (5219/7219) is the **tungsten-balanced (3200K), high-speed (E
 
 ## The CineStill relationship (important)
 **CineStill 800T *is* Vision3 500T** with the anti-halation *remjet* layer removed (so bright lights bloom red) and pushed to ISO 800. So:
-- **This recipe = the clean, accurate 500T** — Incandescent WB, fine grain, Clarity 0, no exaggerated glow.
-- **[CineStill 800T](../../../reference-recipes/cinestill-800t/knowledge.md) = the stylised version** — Fluorescent-3 WB (stronger cool cast), Strong/Large grain, Clarity −5 (glow standing in for halation).
+- This recipe = the clean, accurate 500T: Incandescent WB, fine grain, Clarity 0, no exaggerated glow.
+- [CineStill 800T](../../../reference-recipes/cinestill-800t/knowledge.md) = the stylised version: Fluorescent-3 WB (stronger cool cast), Strong/Large grain, Clarity −5 (glow standing in for halation).
 Having both lets the user choose accurate vs stylised for night work.
 
 ## How it's built

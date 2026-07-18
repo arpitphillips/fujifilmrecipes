@@ -23,8 +23,8 @@ The classic **theatrical film-print** look — the "Hollywood" **teal-shadow / w
 This **stills** recipe uses the grain and Color Chrome effects that movie mode can't. For the movie-mode adaptation see [`recipe-video.md`](recipe-video.md).
 
 ### Why these values
-- **Classic Negative** — its native teal-leaning shadows are the print "teal" side; hard tonality gives the print's added contrast.
-- **WB Daylight +2R/−2B** — warms skin and highlights (the "orange" side); against Classic Neg's cool shadows this is the teal-orange split.
-- **DR200 + Highlight 0 + Shadow +2** — print-stock contrast: punchy, deep rich shadows, controlled highlights.
-- **Color +2, CCE Strong** — rich but controlled print saturation with dimensional skin.
-- **Grain Weak/Small, Clarity 0** — clean projected-print rendering.
+- Classic Negative: its native teal-leaning shadows are the print "teal" side; hard tonality gives the print's added contrast.
+- WB Daylight +2R/−2B: warms skin and highlights (the "orange" side); against Classic Neg's cool shadows this is the teal-orange split.
+- DR200 + Highlight 0 + Shadow +2: print-stock contrast: punchy, deep rich shadows, controlled highlights.
+- Color +2, CCE Strong: rich but controlled print saturation with dimensional skin.
+- Grain Weak/Small, Clarity 0: clean projected-print rendering.

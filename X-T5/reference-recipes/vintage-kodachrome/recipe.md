@@ -5,7 +5,7 @@
 
 Emulates the **1935–1960 (first-era) Kodachrome** slide look: cyan-leaning blues, darkened reds, and bronze/orange skin — an old, painterly transparency aesthetic. Classic Chrome base. Translation reasoning in [`knowledge.md`](knowledge.md).
 
-## X-T5 (X-Trans V) — translated
+## X-T5 (X-Trans V): translated
 | Setting | Value | Note |
 |---|---|---|
 | Film Simulation | Classic Chrome | direct |

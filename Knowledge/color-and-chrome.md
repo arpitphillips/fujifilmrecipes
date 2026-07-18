@@ -40,8 +40,8 @@ This one-notch reduction is the most common IV→V conversion adjustment and app
 ## Monochromatic Color (manual p.124)
 
 Only active on **Acros** and **Monochrome** bases. Two axes:
-- **WARM ↔ COOL** — adds a red/warm or blue/cool tone to the greys.
-- **G (Green) ↔ M (Magenta)** — the tint's secondary direction.
+- WARM ↔ COOL: adds a red/warm or blue/cool tone to the greys.
+- G (Green) ↔ M (Magenta): the tint's secondary direction.
 
 Used to tone a black-and-white image (e.g. a subtle cool or warm cast) without turning it into full sepia. Most classic B&W recipes leave this at 0/0 (neutral) but it's available for split-toned looks.
 

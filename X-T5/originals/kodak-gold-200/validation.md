@@ -2,7 +2,7 @@
 
 Recipe validated against **real Gold 200 film scans** across multiple lighting conditions, plus the Kodak datasheet. This is the proof layer behind [`recipe.md`](recipe.md). Reference scans were analysed only (not redistributed); source is [The Darkroom's Gold 200 gallery](https://thedarkroom.com/film/gold-200/) (local copy in `X-T5/_reference-sources/`).
 
-## Scans analysed (the FULL Darkroom gallery — ~35 images across every condition)
+## Scans analysed (the FULL Darkroom gallery: ~35 images across every condition)
 Rather than a handful, the entire user gallery was reviewed to avoid outliers. Coverage:
 
 | Light condition | Example scans |

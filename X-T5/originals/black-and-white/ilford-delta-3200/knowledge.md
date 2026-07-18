@@ -11,7 +11,7 @@ An overcast street scene (a man at a bus stop, UK high street): **prominent, obv
 ## The grade in one line
 The **grainiest** B&W in the bank — a "shoot it in the dark" push-speed stock with a smoother, more organic pushed tonality than Kodak's equivalent.
 
-## Delta 3200 vs Kodak T-Max P3200 — a deliberate distinction
+## Delta 3200 vs Kodak T-Max P3200: a deliberate distinction
 Both are true-ISO-~1000 stocks designed for EI 3200 push development — direct competitors. Community/reviewer consensus (well-documented) describes Delta 3200 as slightly **smoother and more "creamy"** in midtone rendering, where T-Max P3200 reads **snappier and more clinical**. This recipe reflects that: Highlight 0 / Shadow +2 / Sharpness 0 / Clarity +1 (Delta) vs Highlight +1 / Shadow +3 / Sharpness +2 / Clarity +1 ([T-Max P3200](../../../reference-recipes/kodak-t-max-p3200/), reference) — Delta pulled back a notch on contrast and sharpness while keeping the same grain intensity and a similar light touch of Clarity.
 
 ## How the settings embody it

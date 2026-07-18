@@ -23,10 +23,10 @@ Press **MENU/OK** in the movie shooting display and select the **H (IMAGE QUALIT
 These stills controls are **absent** from the movie Image Quality menu, so their character **cannot be baked into video**:
 
 - **Grain Effect** (roughness/size) — no in-camera film grain in video.
-- **Color Chrome Effect** — no extra depth in reds/yellows/greens.
-- **Color Chrome FX Blue** — no extra blue depth. *(This also means the X-Trans IV→V blue conversion rule is irrelevant to video.)*
-- **Clarity** — no mid-tone micro-contrast control.
-- **Smooth Skin Effect** — unavailable.
+- Color Chrome Effect: no extra depth in reds/yellows/greens.
+- Color Chrome FX Blue: no extra blue depth. *(This also means the X-Trans IV→V blue conversion rule is irrelevant to video.)*
+- Clarity: no mid-tone micro-contrast control.
+- Smooth Skin Effect: unavailable.
 
 Consequence: **a stills recipe can never be reproduced 1:1 in video.** The colour and tonal *foundation* transfers (Film Sim + WB + DR + Tone Curve + Color + Sharpness), but the *texture and colour-richness layer* (grain, chrome effects, clarity) is lost.
 

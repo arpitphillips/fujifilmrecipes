@@ -26,9 +26,9 @@ A **balanced, warm-natural portrait colour** that adapts to the scene — flatte
 
 ## Why it's the "versatile" Portra
 Three deliberate choices set it apart from the fixed Portra recipes:
-1. **Auto WB** — adapts across daylight, shade, and mixed light instead of locking a warm cast.
-2. **DR-Auto** — adaptive contrast per scene.
-3. **Clarity 0** — no per-shot processing penalty, and a neutral mid-tone that suits any subject.
+1. Auto WB: adapts across daylight, shade, and mixed light instead of locking a warm cast.
+2. DR-Auto: adaptive contrast per scene.
+3. Clarity 0: no per-shot processing penalty, and a neutral mid-tone that suits any subject.
 
 The result is a look you can leave on the camera as an everyday default and trust across conditions.
 

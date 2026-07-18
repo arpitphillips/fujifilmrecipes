@@ -1,12 +1,12 @@
 # X-T5 Recipe Bank — Ranking (aesthetic value × popularity)
 
 **Method.** Two signals:
-- **Popularity** — concrete page-view rank from [Fuji X Weekly's "26 Most Popular Recipes of 2026 (Q1)"](https://fujixweekly.com/2026/03/31/the-26-most-popular-fujifilm-recipes-of-2026-so-far-first-quarter/) where the recipe (or its family) appears. This is the best public proxy for real-world demand. "n/a" = not on that list (original designs or niche/other-source recipes).
-- **Aesthetic (my score, /10)** — reasoned judgment on distinctiveness, versatility, faithfulness to the target look, and visual appeal.
+- Popularity: concrete page-view rank from [Fuji X Weekly's "26 Most Popular Recipes of 2026 (Q1)"](https://fujixweekly.com/2026/03/31/the-26-most-popular-fujifilm-recipes-of-2026-so-far-first-quarter/) where the recipe (or its family) appears. This is the best public proxy for real-world demand. "n/a" = not on that list (original designs or niche/other-source recipes).
+- Aesthetic (my score, /10): reasoned judgment on distinctiveness, versatility, faithfulness to the target look, and visual appeal.
 
 Overall rank blends both, leaning on popularity as the market signal for a sellable bank. Newly-designed originals are unproven in the market, so they're placed on aesthetic merit with a flag.
 
-## Validated originals (the product) — ranked by aesthetic
+## Validated originals (the product): ranked by aesthetic
 These are the research-derived / validated recipes that make up the sellable IP (see [validation-methodology](../Knowledge/validation-methodology.md)).
 
 | Recipe | Aesthetic /10 | Validation | Best for |

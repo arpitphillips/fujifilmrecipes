@@ -24,7 +24,7 @@ Acros base. Emulates **Kodak Plus-X 125** (mid-century, discontinued 2011) — a
 **Notes**
 - Unusual **+9 Red & +9 Blue** WB shift — both pushed to their positive extremes simultaneously — was derived by the author directly from Plus-X's published spectral-sensitivity curve, not by eye.
 - **Negative exposure-comp convention** (like [Ilford FP4 Plus 125](../ilford-fp4-plus-125/)) — slight underexposure protects highlights and builds the gentle-but-defined contrast Plus-X is known for.
-- **Weak, Large grain** — an unusual combination (fine roughness, large size) that reads as soft-edged but visible grain clumps, distinct from the crisp small grain of Pan F or Acros.
+- Weak, Large grain: an unusual combination (fine roughness, large size) that reads as soft-edged but visible grain clumps, distinct from the crisp small grain of Pan F or Acros.
 - Compatible with X-Trans IV (except X-T3/X-T30) and X-Trans V, plus newer GFX.
 
 > **Datasheet check (2026-07-16):** Kodak's Plus-X Pan sheet (F-8, archived: [`kodak-still/plus-x-pan_f8.pdf`](../../_reference-sources/datasheets/README.md)) describes a classic medium-speed pictorial curve. The recipe's negative EC convention and moderate Highlight/Shadow (−1/+1) are consistent with a gentle, forgiving mid-century B&W stock. Not yet cross-checked against the sheet's granularity table in detail — flag for a future audit pass.

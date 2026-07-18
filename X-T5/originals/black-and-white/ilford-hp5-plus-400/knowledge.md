@@ -18,7 +18,7 @@ HP5 is the **middle ground**:
 HP5 keeps **Clarity 0** — it's a smooth, balanced stock, not a gritty one.
 
 ## Datasheet confirmation (Harman/Ilford HP5 Plus technical sheet, fetched & extracted)
-- **"High speed, fine grain, medium contrast"** — the sheet's own words → confirms Highlight 0 (medium contrast) and grain visible-but-not-clumpy.
+- "High speed, fine grain, medium contrast": the sheet's own words → confirms Highlight 0 (medium contrast) and grain visible-but-not-clumpy.
 - **Push range documented to EI 3200/36** ("responds well to push-processing") → confirms the high ISO ceiling; grain/contrast rise gracefully with EI.
 - Development aims produce "negatives of average contrast suitable for printing in all enlargers" → HP5's *balanced* curve is by design; our Shadow +2 carries the "lets shadows be shadows" depth without inflating overall contrast.
 

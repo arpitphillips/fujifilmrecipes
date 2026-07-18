@@ -23,8 +23,8 @@ Tungsten cinema — the high-speed **night / interior** motion-picture stock. A 
 This **stills** recipe uses the grain and Color Chrome effects that movie mode can't. For the movie-mode adaptation see [`recipe-video.md`](recipe-video.md).
 
 ### Why these values
-- **Incandescent WB (3200K)** — matches the film's tungsten balance: warm artificial light renders naturally, while daylight/LED goes cinematic cool-blue. The **+1 Blue** nudge keeps a subtle cool night lean.
-- **Eterna + DR400 + Highlight −2** — wide latitude, soft highlights (holds bright practicals/windows).
-- **Shadow +1** — a touch of night density over Eterna's clean shadows, without crushing.
-- **Grain Weak/Small + Clarity 0** — this is the *clean* 500T: fine grain, no halation glow. (For the stylised glowing-neon CineStill version, use [CineStill 800T](../../../reference-recipes/cinestill-800t/recipe.md): Fluorescent WB, Strong/Large grain, Clarity −5.)
-- **ISO to 12800** — it's a 500-speed night stock; let ISO climb.
+- Incandescent WB (3200K): matches the film's tungsten balance: warm artificial light renders naturally, while daylight/LED goes cinematic cool-blue. The **+1 Blue** nudge keeps a subtle cool night lean.
+- Eterna + DR400 + Highlight −2: wide latitude, soft highlights (holds bright practicals/windows).
+- Shadow +1: a touch of night density over Eterna's clean shadows, without crushing.
+- Grain Weak/Small + Clarity 0: this is the *clean* 500T: fine grain, no halation glow. (For the stylised glowing-neon CineStill version, use [CineStill 800T](../../../reference-recipes/cinestill-800t/recipe.md): Fluorescent WB, Strong/Large grain, Clarity −5.)
+- ISO to 12800: it's a 500-speed night stock; let ISO climb.

@@ -17,7 +17,7 @@ The definitive fine-grain B&W. Fujifilm's **Acros** film simulation is named aft
 | Exposure Compensation | −1/3 to +1/3 (typically) |
 
 ### Notes
-- **Keep ISO low** — Acros is a 100-speed film prized for near-invisible grain; the ISO 3200 cap keeps that clean look (raise only when needed).
+- Keep ISO low: Acros is a 100-speed film prized for near-invisible grain; the ISO 3200 cap keeps that clean look (raise only when needed).
 - **Filters:** plain Acros is the neutral, faithful default. **+Ye** for slightly darker skies / more contrast; **+R** for dramatic skies; **+G** for portraits.
 - **Clarity 0** is correct here — Acros is a *smooth* stock; grit would be unfaithful.
 - **Video:** Film Sim + DR (manual) + Tone Curve + Sharpness transfer; grain is already minimal so little is lost.

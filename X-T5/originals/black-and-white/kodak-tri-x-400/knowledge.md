@@ -9,11 +9,11 @@ Kodak Tri-X 400 is the most iconic B&W film in history — the stock of classic 
 **Gritty, high-contrast, deep-black reportage B&W** with heavy characterful grain and mid-tone bite.
 
 ## How it's built
-- **Acros+Ye base** — Acros gives the richest tonality; the yellow filter adds Tri-X's slight contrast and darker skies.
-- **DR200 + Highlight +1 + Shadow +2** — punchy contrast with deep rich blacks (Tri-X renders greys darker and blacks deeper than HP5).
-- **Grain Strong, Large** — the heavy, clumpy Tri-X grain.
-- **Clarity +3** — the crucial move: Tri-X's tactile, gritty mid-tone bite. This overrides the Clarity-0 default *because faithfulness demands it* (Tri-X without grit isn't Tri-X).
-- **High ISO** — pushes the grain and grit; Tri-X lives at 400–1600+.
+- Acros+Ye base: Acros gives the richest tonality; the yellow filter adds Tri-X's slight contrast and darker skies.
+- DR200 + Highlight +1 + Shadow +2: punchy contrast with deep rich blacks (Tri-X renders greys darker and blacks deeper than HP5).
+- Grain Strong, Large: the heavy, clumpy Tri-X grain.
+- Clarity +3: the crucial move: Tri-X's tactile, gritty mid-tone bite. This overrides the Clarity-0 default *because faithfulness demands it* (Tri-X without grit isn't Tri-X).
+- High ISO: pushes the grain and grit; Tri-X lives at 400–1600+.
 
 ## Datasheet confirmation & an honest nuance (Kodak F-4017, fetched & extracted)
 The F-4017 datasheet confirms: **fine grain for its speed, wide exposure latitude, "rich tonality"** — and a development aim of **contrast index 0.56** (i.e. box-speed Tri-X, normally developed, is actually *moderate* contrast). The sheet also documents that **pushing raises contrast and graininess and sinks shadow detail** — which is exactly the point: the iconic "Tri-X look" (deep blacks, heavy grit) is substantially a product of **push-processing and printing choices**, not the base curve.

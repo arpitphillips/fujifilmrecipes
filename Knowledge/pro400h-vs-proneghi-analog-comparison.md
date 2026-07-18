@@ -28,9 +28,9 @@ This document captures key findings from a side-by-side comparison of actual **F
 PRO Neg. Hi is the closest built-in simulation to Pro 400H's general aesthetic register, but it is not a direct replica.
 
 ### Where It Matches Well
-- **Overall contrast level** — both have reduced contrast vs. PROVIA or Classic Chrome
-- **Skin tone direction** — neutral to slightly cool, not warm-rosy like ASTIA or consumer profiles
-- **Highlight handling** — Pro Neg. Hi's softer highlight rolloff mirrors Pro 400H's long shoulder
+- Overall contrast level: both have reduced contrast vs. PROVIA or Classic Chrome
+- Skin tone direction: neutral to slightly cool, not warm-rosy like ASTIA or consumer profiles
+- Highlight handling: Pro Neg. Hi's softer highlight rolloff mirrors Pro 400H's long shoulder
 
 ### Key Differences
 | Characteristic | Pro 400H (Film) | PRO Neg. Hi (Simulation) |
@@ -68,11 +68,11 @@ The film was designed to perform across a wide ISO range and in difficult lighti
 
 When building recipes inspired by Pro 400H:
 
-1. **Base on PRO Neg. Hi** — it's the closest starting point
+1. Base on PRO Neg. Hi: it's the closest starting point
 2. **Apply a blue-leaning WB shift** to simulate shadow cast
 3. **Lower highlight tone** significantly (-2) for shoulder simulation
-4. **Keep saturation restrained** — Pro 400H is not a vivid film
-5. **Validate against actual Pro 400H scans** — use scanned film prints as reference captures in the `X-T5/` reference folder
+4. Keep saturation restrained: Pro 400H is not a vivid film
+5. Validate against actual Pro 400H scans: use scanned film prints as reference captures in the `X-T5/` reference folder
 
 ---
 

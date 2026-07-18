@@ -7,13 +7,13 @@ These settings control **texture and micro-detail** — how film-like or how cri
 Two independent sub-settings:
 
 **Roughness:**
-- **STRONG** — rougher, more visible grain.
-- **WEAK** — smoother, subtle grain.
-- **OFF** — no grain.
+- STRONG: rougher, more visible grain.
+- WEAK: smoother, subtle grain.
+- OFF: no grain.
 
 **Size:**
-- **LARGE** — coarser grain clumps (reads as older/higher-ISO film).
-- **SMALL** — finer grain (reads as fine-grained/lower-ISO film).
+- LARGE: coarser grain clumps (reads as older/higher-ISO film).
+- SMALL: finer grain (reads as fine-grained/lower-ISO film).
 
 Recipes write these together, e.g. **"Strong, Large"** or **"Weak, Small"**. The pairing sets the "film stock speed" feel:
 - **Weak + Small** → clean, fine-grained, modern/slide-film feel (Kodachrome, Reala Ace).

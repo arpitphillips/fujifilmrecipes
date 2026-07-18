@@ -5,7 +5,7 @@
 
 A warm, everyday **Classic Negative** daily-driver — punchy Fuji-color with a warm cast and coarse grain. A good counterpoint to test against our Classic-Neg recipes (Pacific Blues, Reala Ace).
 
-## X-T5 (X-Trans V) — translated
+## X-T5 (X-Trans V): translated
 | Setting | Value | Note |
 |---|---|---|
 | Film Simulation | Classic Negative | direct |

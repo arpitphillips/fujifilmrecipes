@@ -20,11 +20,11 @@ A **bold, saturated, dramatic, high-contrast** creative look inspired by the viv
 | Exposure Compensation | −1/3 to 0 (typically) |
 
 ### Why
-- **Velvia** — the most saturated, high-contrast base; the foundation of the bold look.
-- **Color +2 + CCE Strong + CCFXB Weak** — pushes already-punchy Velvia to vivid, dramatic, deep-blue-and-rich-warm colour.
-- **DR200 + Shadow +2** — punchy contrast with inky dramatic blacks.
-- **Clarity +2** — the deliberate deviation: adds graphic punch and mid-tone drama (bold, not soft).
-- **Expose −1/3 to 0** — protect Velvia's easily-clipped highlights and let colour saturate.
+- Velvia: the most saturated, high-contrast base; the foundation of the bold look.
+- Color +2 + CCE Strong + CCFXB Weak: pushes already-punchy Velvia to vivid, dramatic, deep-blue-and-rich-warm colour.
+- DR200 + Shadow +2: punchy contrast with inky dramatic blacks.
+- Clarity +2: the deliberate deviation: adds graphic punch and mid-tone drama (bold, not soft).
+- Expose −1/3 to 0: protect Velvia's easily-clipped highlights and let colour saturate.
 
 ### Tuning
 - **Multiple exposure** (Baumgaertel's signature): use the X-T5's Multiple Exposure mode (Additive/Average) — this recipe's punch suits layered frames.

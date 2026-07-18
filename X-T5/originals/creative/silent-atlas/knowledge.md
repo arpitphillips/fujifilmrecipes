@@ -1,13 +1,13 @@
 # Silent Atlas — Grade Analysis & Knowledge
 
 ## Target aesthetic
-A **cinematic documentary teal-and-warm** travel-film grade, derived from studying Merlin Krumme's *The Silent Atlas* (2026) — a short film shot in the Atlas Mountains of Morocco. The look is characterised by:
-- **Warm amber/terracotta midtones and highlights** (earth, walls, skin)
-- **Cool teal shadows** (building shade, overcast sky, mist)
-- **Deep, rich blacks** with retained shadow detail
-- **Soft, non-clipping highlights** (misty/cloudy mountain scenes)
-- **Muted overall saturation** — filmic, not digital-vivid
-- **Slightly soft/halated rendering** (physical Glimmerglass filter in the reference)
+A cinematic documentary teal-and-warm travel-film grade, derived from studying Merlin Krumme's *The Silent Atlas* (2026), a short film shot in the Atlas Mountains of Morocco. The look is characterised by:
+- Warm amber and terracotta midtones and highlights (earth, walls, skin)
+- Cool teal shadows (building shade, overcast sky, mist)
+- Deep, rich blacks with retained shadow detail
+- Soft, non-clipping highlights (misty and cloudy mountain scenes)
+- Muted overall saturation, filmic rather than digital-vivid
+- Slightly soft, halated rendering (a physical Glimmerglass filter in the reference)
 
 This is the "teal-and-orange" cinematic split expressed through Moroccan earth tones rather than Hollywood neon.
 
@@ -19,7 +19,7 @@ This is the "teal-and-orange" cinematic split expressed through Moroccan earth t
 | Classic Chrome | More muted and editorial; great for Kodak emulations | Shadow contrast is grey-blue, not teal-cyan; would need more WB pushing | ❌ Close second, but missing the teal shadow key |
 | Eterna | Low-contrast cine base; designed for cinema | Too flat and desaturated for this level of contrast; needs heavy contrast boosting | ❌ Too much departure needed |
 
-## White Balance strategy: +3R / −2B *(corrected from −3B — see verification below)*
+## White Balance strategy: +3R / −2B *(corrected from −3B; see verification below)*
 
 The reference film has a clear warm lean on sunlit surfaces and skin, against cool teal backgrounds. Classic Negative already has a cool shadow tone; the warm WB shift (+3R from Daylight) pushes:
 - Skin → golden/peach warmth
@@ -27,11 +27,11 @@ The reference film has a clear warm lean on sunlit surfaces and skin, against co
 
 While Classic Neg's shadow character stays teal, creating the colour split.
 
-The blue shift is deliberately **gentler than the red push** (−2B, not −3B): the second frame-verification pass showed the reference's skies and mist land consistently **teal-cyan** — a −3B shift would strip too much blue and push the atmosphere toward khaki/yellow-grey, whereas −2B leaves enough blue for Classic Negative's native cyan lean to do the teal work.
+The blue shift is deliberately gentler than the red push (−2B, not −3B). The second frame-verification pass showed the reference's skies and mist land consistently teal-cyan. A −3B shift would strip too much blue and push the atmosphere toward khaki, whereas −2B leaves enough blue for Classic Negative's native cyan lean to do the teal work.
 
-## Frame verification — second independent pass (2026-07-16)
+## Frame verification: second independent pass (2026-07-16)
 
-The original derivation (2026-07-15, other machine) studied frames at ~60s/105s/150s/195s via browser capture. A second, independent pass re-fetched **4 actual video frames** (YouTube's auto-generated stills: ~25% mist landscape, ~50% portrait, ~75% clear-sky, plus the full-res hero frame) and checked every design decision:
+The original derivation (2026-07-15, on the other machine) studied frames at roughly 60s, 105s, 150s and 195s via browser capture. A second, independent pass re-fetched 4 actual video frames (YouTube's auto-generated stills: mist landscape at 25%, portrait at 50%, clear sky at 75%, plus the full-resolution hero frame) and checked every design decision:
 
 | Observation across all 4 frames | Recipe element | Verdict |
 |---|---|---|
@@ -42,13 +42,13 @@ The original derivation (2026-07-15, other machine) studied frames at ~60s/105s/
 | Muted overall saturation (teal-warm split carries the colour interest) | Color +3 video / +2 stills | ✅ within range; drop stills to +1 if results read richer than the reference |
 | **Fine grain texture visible in the mist** (hero frame) | Stills Grain Weak/Large | ✅ confirmed — grain is genuinely part of the reference look |
 
-One caveat kept in mind during this pass: YouTube's auto-frames are heavily compressed, which mutes absolute saturation — so hue relationships (teal vs warm) were treated as reliable evidence, absolute saturation only loosely.
+One caveat during this pass: YouTube's auto-frames are heavily compressed, which mutes absolute saturation. Hue relationships (teal against warm) were treated as reliable evidence; absolute saturation only loosely.
 
 ## DR200 + Highlight −1 + Shadow +2
 
-- **DR200** (not 400): the reference has real contrast — deep blacks, present shadows. DR400 would flatten this too much. DR200 gives 1 stop of highlight headroom for the misty/cloudy skies without sacrificing the punchy shadow character.
-- **Highlight −1**: gentle roll-off — the reference preserves cloud/sky detail without flat-looking highlights.
-- **Shadow +2**: deepens blacks, giving the moody cinematic depth. Classic Neg's teal cast intensifies in deep shadows, which is the desired effect.
+- DR200 rather than 400, because the reference has real contrast: deep blacks, present shadows. DR400 would flatten this too much, while DR200 gives 1 stop of highlight headroom for the misty skies without sacrificing the punchy shadow character.
+- Highlight −1 is a gentle roll-off. The reference preserves cloud and sky detail without flat-looking highlights.
+- Shadow +2 deepens blacks for the moody cinematic depth. Classic Neg's teal cast intensifies in deep shadows, which is exactly the desired effect.
 
 ## Color +3 (compensating for absent CCE/CCFXB)
 
@@ -56,15 +56,15 @@ In stills, Color Chrome Effect and FX Blue add richness and depth to reds/blues.
 
 ## Sharpness −1 and the Glimmerglass question
 
-The reference film uses a **Tiffen Glimmerglass** diffusion filter — a physical optical element that creates halation (highlight bloom/glow) and reduces micro-contrast. This can't be replicated in-camera. Sharpness −1 is the closest in-camera approximation: slightly soft, filmic edges without going blurry. The real Glimmerglass look requires the physical filter.
+The reference film uses a Tiffen Glimmerglass diffusion filter, a physical optical element that creates halation (highlight bloom) and reduces micro-contrast. This can't be replicated in-camera. Sharpness −1 is the closest approximation: slightly soft, filmic edges without going blurry. The real Glimmerglass look requires the physical filter.
 
 ## Video-first design, stills companion added
 
-The recipe was designed from scratch for movie mode (the reference is a film), with settings chosen knowing that Grain, CCE, CCFXB, and Clarity are unavailable there. A **[stills companion](recipe.md)** was added 2026-07-16: same WB split, tone curve, and softness, but with Color pulled back to +2 (Color Chrome Effect Strong now carries the warm-tone depth), CCFXB Weak adding teal shadow depth, and Weak/Large grain for a subtle cine texture — i.e. the stills build uses the richer toolset to express the same grade, rather than the video build's saturation-compensation approach.
+The recipe was designed from scratch for movie mode (the reference is a film), with settings chosen knowing that Grain, CCE, CCFXB and Clarity are unavailable there. A [stills companion](recipe.md) was added 2026-07-16: same WB split, tone curve and softness, but with Color pulled back to +2 since Color Chrome Effect Strong now carries the warm-tone depth, CCFXB Weak adding teal shadow depth, and Weak/Large grain for a subtle cine texture. The stills build uses the richer toolset to express the same grade, where the video build had to compensate with saturation.
 
 ## Relationship to the 2383 Print recipe
 
-This is conceptually a sibling of the [Kodak 2383 Print](../../cinema/kodak-2383-print/knowledge.md) recipe — same Classic Negative base, same teal-orange concept. The differences:
+This is conceptually a sibling of the [Kodak 2383 Print](../../cinema/kodak-2383-print/knowledge.md) recipe: same Classic Negative base, same teal-orange concept. The differences:
 
 | | 2383 Print (video) | Silent Atlas |
 |---|---|---|
@@ -82,4 +82,4 @@ This is conceptually a sibling of the [Kodak 2383 Print](../../cinema/kodak-2383
 - Post-graded with custom LUTs (available at tinted.sellfy.store).
 - Location: Atlas Mountains, Morocco (Imlil, mountain villages).
 
-*Last updated: 2026-07-16. Originally derived 2026-07-15 in a session on the second machine (frame-by-frame study of the reference video at ~60s/105s/150s/195s); ported into this repo copy 2026-07-16, when the stills companion was added.*
+*Last updated: 2026-07-17. Originally derived 2026-07-15 in a session on the second machine (frame-by-frame study of the reference video at ~60s/105s/150s/195s); ported into this repo copy 2026-07-16, when the stills companion was added.*

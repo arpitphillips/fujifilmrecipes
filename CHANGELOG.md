@@ -13,6 +13,16 @@
 
 ---
 
+## 2026-07-17 — Site v3 iteration 3: content humanization batch 2 (author: Claude session)
+**What changed:**
+- **`Knowledge/color-science-why-film-cannot-be-faked.md` fully rewritten for prose style** (largest offender: 59 prose em dashes): headings de-title-cased, "**Key** — explanation" bullet scaffolding converted to sentences, em dashes replaced with natural punctuation. Every fact, figure, table, citation and cross-link preserved; footer date bumped.
+- **`originals/creative/silent-atlas/`** (recipe.md, recipe-video.md, knowledge.md): same prose treatment, including the ✓-mark verification summary rewritten as sentences. All settings, the −3B→−2B correction record, and verification history intact.
+- **`originals/fujicolor-superia-400/`** (all 4 files): same treatment; datasheet claims, validation status and caveats preserved verbatim in meaning.
+- Sitewide audit score 1,720 → 1,462; template pages remain clean.
+
+**Why:** Loop continues toward fully human-reading site copy.
+**Follow-ups:** Next batch: mumbai (61, has 2 vocab hits), kodak-ektachrome-100d (57, 1 -ing tail), mumbai-monsoon (57), film-chemistry-fundamentals (56), kodak-ektar-100 (53), fujicolor-pro-400h (52), then the ~40-point tier.
+
 ## 2026-07-17 — Site v3 iteration 2: content humanization batch 1 (author: Claude session)
 **What changed:**
 - **Audit refinement (`site/audit.py`):** style tells (em dash, curly quotes, bold) are now measured on prose only, with `<table>` content excluded, and coverage/status glyphs (✅📗🔎🔶❌⚠️) exempted — tables legitimately use em dashes as empty-value markers, bold as row keys, and glyphs as data notation. Sitewide score dropped 2,593 → 1,848 from measurement fairness alone.

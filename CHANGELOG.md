@@ -13,6 +13,15 @@
 
 ---
 
+## 2026-07-17 — Site v3 iteration 4: content humanization batch 3 (author: Claude session)
+**What changed:**
+- **`originals/mumbai/`** (all 3 files), **`originals/mumbai-monsoon/`** (all 3 files), **`originals/cinema/kodak-ektachrome-100d/`** (recipe.md + knowledge.md): prose humanized — em dashes, "**Key** — explanation" bullet scaffolding and remaining "vibrant" vocabulary removed; all settings, variants, study evidence and citations preserved.
+- **Two more stale-value fixes found and corrected in mumbai-monsoon:** knowledge.md's design-response table and recipe-video.md's compensation notes both still said "Clarity −1" from before the Clarity-0 quality standard; both now match the recipe's actual Clarity 0.
+- Sitewide audit score 1,462 → 1,295; 7 pages fully clean; template pages remain 0.
+
+**Why:** Loop continues toward fully human-reading site copy.
+**Follow-ups:** Next: film-chemistry-fundamentals (56), kodak-ektar-100 (53), fujicolor-pro-400h (52), validation-methodology (50), kodak-double-x-5222 (49), kodak-ektachrome-e100 (45), then the ~40-and-below tail (~60 pages).
+
 ## 2026-07-17 — Site v3 iteration 3: content humanization batch 2 (author: Claude session)
 **What changed:**
 - **`Knowledge/color-science-why-film-cannot-be-faked.md` fully rewritten for prose style** (largest offender: 59 prose em dashes): headings de-title-cased, "**Key** — explanation" bullet scaffolding converted to sentences, em dashes replaced with natural punctuation. Every fact, figure, table, citation and cross-link preserved; footer date bumped.

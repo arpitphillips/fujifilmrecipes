@@ -1,6 +1,6 @@
 # Kodak Double-X 5222 — Fujifilm X-T5 (X-Trans V) · CINEMA · B&W · VIDEO
 
-Movie-mode version of the [stills recipe](recipe.md). Movie mode **drops Grain and Clarity** (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)) — this hits Double-X's identity harder than most, since heavy grain *is* the look. Target: **standard film-simulation recording**, not F-Log/HLG.
+Movie-mode version of the [stills recipe](recipe.md). Movie mode drops Grain and Clarity (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)). This hits Double-X's identity harder than most, since heavy grain *is* the look. Target: standard film-simulation recording, not F-Log/HLG.
 
 | Setting | Value | vs stills |
 |---|---|---|
@@ -14,4 +14,4 @@ Movie-mode version of the [stills recipe](recipe.md). Movie mode **drops Grain a
 | Interframe NR | AUTO | movie-only |
 | ISO | Auto, up to ISO 12800 | same |
 
-- **Grain (Strong/Large) and Clarity (+1) are both unavailable** — this is the single biggest video-mode compromise in the cinema collection, since Double-X's screen identity is substantially *about* its grain. Add heavy film grain in post-production for anything approaching the real character; consider this recipe a "base layer" for grading rather than a finished look on its own.
+- Grain (Strong/Large) and Clarity (+1) are both unavailable: this is the single biggest video-mode compromise in the cinema collection, since Double-X's screen identity is substantially *about* its grain. Add heavy film grain in post-production for anything approaching the real character; consider this recipe a "base layer" for grading rather than a finished look on its own.

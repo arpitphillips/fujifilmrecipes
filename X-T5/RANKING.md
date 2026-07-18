@@ -1,12 +1,12 @@
-# X-T5 Recipe Bank — Ranking (aesthetic value × popularity)
+# X-T5 Recipe Bank, Ranking (aesthetic value × popularity)
 
-**Method.** Two signals:
-- **Popularity** — concrete page-view rank from [Fuji X Weekly's "26 Most Popular Recipes of 2026 (Q1)"](https://fujixweekly.com/2026/03/31/the-26-most-popular-fujifilm-recipes-of-2026-so-far-first-quarter/) where the recipe (or its family) appears. This is the best public proxy for real-world demand. "n/a" = not on that list (original designs or niche/other-source recipes).
-- **Aesthetic (my score, /10)** — reasoned judgment on distinctiveness, versatility, faithfulness to the target look, and visual appeal.
+Method. Two signals:
+- Popularity: concrete page-view rank from [Fuji X Weekly's "26 Most Popular Recipes of 2026 (Q1)"](https://fujixweekly.com/2026/03/31/the-26-most-popular-fujifilm-recipes-of-2026-so-far-first-quarter/) where the recipe (or its family) appears. This is the best public proxy for real-world demand. "n/a" = not on that list (original designs or niche/other-source recipes).
+- Aesthetic (my score, /10): reasoned judgment on distinctiveness, versatility, faithfulness to the target look, and visual appeal.
 
 Overall rank blends both, leaning on popularity as the market signal for a sellable bank. Newly-designed originals are unproven in the market, so they're placed on aesthetic merit with a flag.
 
-## Validated originals (the product) — ranked by aesthetic
+## Validated originals (the product): ranked by aesthetic
 These are the research-derived / validated recipes that make up the sellable IP (see [validation-methodology](../Knowledge/validation-methodology.md)).
 
 | Recipe | Aesthetic /10 | Validation | Best for |
@@ -29,7 +29,7 @@ These are the research-derived / validated recipes that make up the sellable IP 
 | [Ilford Pan F Plus 50](originals/black-and-white/ilford-pan-f-plus-50/) | 8.0 | datasheet *(new 2026-07-16)* | Slowest, sharpest, "etched" fine-art B&W |
 | [Ilford Delta 3200](originals/black-and-white/ilford-delta-3200/) | 8.0 | datasheet + **scan** *(new 2026-07-16)* | Heaviest-grain pushed-speed B&W |
 | [Mumbai Monsoon](originals/mumbai-monsoon/) | 8.0 | original design | Overcast/rain cinematic |
-| [Mumbai (General)](originals/mumbai/) | 8.0 | original design | Warm vibrant sunny street |
+| [Mumbai (General)](originals/mumbai/) | 8.0 | original design | Warm lively sunny street |
 | [Fashion Editorial (Vogue)](originals/creative/fashion-editorial-vogue/) | 8.5 | creative design | Polished fashion/portrait |
 | [Golden Hour Glow](originals/creative/golden-hour-glow/) | 8.5 | creative design | Honeyed backlit warmth |
 | [Bleach Bypass Noir](originals/creative/bleach-bypass-noir/) | 8.5 | creative design | Silvery urban drama (EBB base) |
@@ -41,7 +41,7 @@ These are the research-derived / validated recipes that make up the sellable IP 
 
 ## Full bank (originals + reference captures) by aesthetic × popularity
 
-> **Note:** this table predates the 2026-07-15/16 expansions (Portra 400, Ektachrome E100, Ektar 100, Pro 400H, Delta 3200, Pan F Plus 50, and the 12 new reference recipes) — it needs a full refresh. The "Validated originals" table above is current; treat this section as historical until rebuilt.
+> **Note:** this table predates the 2026-07-15/16 expansions (Portra 400, Ektachrome E100, Ektar 100, Pro 400H, Delta 3200, Pan F Plus 50, and the 12 new reference recipes), it needs a full refresh. The "Validated originals" table above is current; treat this section as historical until rebuilt.
 
 | # | Recipe | Aesthetic /10 | Popularity (FXW Q1'26) | Best for | Status |
 |---|---|---|---|---|---|
@@ -64,13 +64,13 @@ These are the research-derived / validated recipes that make up the sellable IP 
 | 17 | [Vintage Kodachrome](reference-recipes/vintage-kodachrome/) | 7.0 | #22 | Painterly 1st-era Kodachrome | reference (III→V port) |
 
 ## Reading the ranking
-- **Top tier (1–4):** the universally-loved, versatile, iconic looks — the anchors of any sellable bank. Reggie's Portra, Kodachrome 64, Tri-X, Gold 200.
-- **Strong colour specialists (5–10):** distinctive, high-appeal looks that are situational (golden-hour, coastal, night, vintage).
-- **B&W:** Tri-X (gritty, #3) and Acros Red (dramatic, #11) cover the two main monochrome poles.
-- **Mood/utility:** Mumbai Monsoon (#12) is unproven but purpose-built and distinctive — a candidate flagship once field-tested.
-- **Clean/neutral (13–16):** valuable as dependable defaults but less "wow"; lower aesthetic distinctiveness.
+- Top tier (1–4): the universally-loved, versatile, iconic looks, the anchors of any sellable bank. Reggie's Portra, Kodachrome 64, Tri-X, Gold 200.
+- Strong colour specialists (5–10): distinctive, high-appeal looks that are situational (golden-hour, coastal, night, vintage).
+- B&W: Tri-X (gritty, #3) and Acros Red (dramatic, #11) cover the two main monochrome poles.
+- Mood/utility: Mumbai Monsoon (#12) is unproven but purpose-built and distinctive, a candidate flagship once field-tested.
+- Clean/neutral (13–16): valuable as dependable defaults but less "wow"; lower aesthetic distinctiveness.
 
 ## Caveats
-- Popularity is **page-view** data (interest), not usage — a known-imperfect proxy (Fuji X Weekly states this).
-- Aesthetic scores are my reasoned judgment and should be re-weighted against **your** taste and, ideally, side-by-side field tests.
-- For monetization, the **original / research-backed** rows (Gold 200, Mumbai Monsoon) are the clean IP; the **reference** rows are a research/testing library to be re-derived as originals before shipping (see project notes).
+- Popularity is page-view data (interest), not usage, a known-imperfect proxy (Fuji X Weekly states this).
+- Aesthetic scores are my reasoned judgment and should be re-weighted against your taste and, ideally, side-by-side field tests.
+- For monetization, the original / research-backed rows (Gold 200, Mumbai Monsoon) are the clean IP; the reference rows are a research/testing library to be re-derived as originals before shipping (see project notes).

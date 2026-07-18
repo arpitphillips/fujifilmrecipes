@@ -1,6 +1,6 @@
 # Kodak Vision3 500T (5219) — Fujifilm X-T5 (X-Trans V) · CINEMA · VIDEO
 
-Movie-mode version of the [stills recipe](recipe.md). Movie mode **drops Grain, Color Chrome Effect, Color Chrome FX Blue, and Clarity** (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)). Target: **standard film-simulation recording**, not F-Log/HLG.
+Movie-mode version of the [stills recipe](recipe.md). Movie mode drops Grain, Color Chrome Effect, Color Chrome FX Blue, and Clarity (see [video-mode-settings](../../../../Knowledge/video-mode-settings.md)). Target: standard film-simulation recording, not F-Log/HLG.
 
 | Setting | Value | vs stills |
 |---|---|---|
@@ -15,5 +15,5 @@ Movie-mode version of the [stills recipe](recipe.md). Movie mode **drops Grain, 
 | Interframe NR | AUTO | movie-only |
 | ISO | Auto, up to ISO 12800 | same — night stock |
 
-- **Grain** unavailable → add in post for the motion-picture texture.
-- **Clarity** was 0 already — nothing lost. (For the stylised glowing-neon night look, see [CineStill 800T](../../../reference-recipes/cinestill-800t/recipe.md).)
+- Grain unavailable → add in post for the motion-picture texture.
+- Clarity was 0 already, nothing lost. (For the stylised glowing-neon night look, see [CineStill 800T](../../../reference-recipes/cinestill-800t/recipe.md).)

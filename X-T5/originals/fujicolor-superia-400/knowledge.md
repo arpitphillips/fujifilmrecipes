@@ -3,10 +3,10 @@
 > Original (research-backed). Read alongside [`recipe.md`](recipe.md), [`recipe-video.md`](recipe-video.md), [`research.md`](research.md), and the [Knowledge base](../../../Knowledge/README.md).
 
 ## The film
-Fujifilm's iconic consumer colour negative — the green-boxed **Superia X-Tra 400** that defined "the Fuji look" for a generation of point-and-shoot and travel photography. Where Kodak Gold is *warm*, Superia is *cool*: green/magenta-leaning, with bright cool blue highlights, medium saturation and contrast, fine grain, and famously good skin. Daylight-balanced, wide latitude, discontinued 2024.
+Fujifilm's iconic consumer colour negative: the green-boxed Superia X-Tra 400 that defined "the Fuji look" for a generation of point-and-shoot and travel photography. Where Kodak Gold is warm, Superia is cool. Green and magenta leaning, with bright cool blue highlights, medium saturation and contrast, fine grain, and famously good skin. Daylight-balanced, wide latitude, discontinued in 2024.
 
 ## The grade in one line
-A **cool, green-leaning, medium-contrast consumer-negative** with clean fine grain, sharp detail, and natural skin — the everyday "Fuji look" opposite of warm Kodak Gold.
+A cool, green-leaning, medium-contrast consumer negative with clean fine grain, sharp detail and natural skin. The everyday "Fuji look", and the opposite of warm Kodak Gold.
 
 ## How the settings build it
 | Setting | Value | Contribution |
@@ -21,16 +21,16 @@ A **cool, green-leaning, medium-contrast consumer-negative** with clean fine gra
 | **Clarity 0** | — | Quality standard; nothing about Superia needs mid-tone softening. |
 
 ## Reading the signature
-- **Cast:** cool, green/magenta — the defining contrast with Kodak Gold's amber.
-- **Contrast:** medium; open shadows, controlled cool highlights.
-- **Saturation:** medium; greens and cool blues lead, skin stays natural.
-- **Texture:** clean and sharp — Superia's fine grain, not a gritty stock (bump grain for indoor/low-light).
+- Cast: cool green-magenta, the defining contrast with Kodak Gold's amber.
+- Contrast: medium, with open shadows and controlled cool highlights.
+- Saturation: medium. Greens and cool blues lead, skin stays natural.
+- Texture: clean and sharp. Superia is a fine-grained stock, not a gritty one; bump the grain for indoor and low-light work.
 
 ## The Kodak Gold ↔ Fuji Superia pairing
-These two are the archetypal warm-vs-cool consumer negatives, and make a great pair in the bank:
-- [Kodak Gold 200](../kodak-gold-200/knowledge.md) — **warm**, amber, Classic Chrome.
-- Superia X-Tra 400 (this) — **cool**, green, Classic Negative.
-Same "everyday snapshot" role, opposite colour temperament.
+These two are the archetypal warm-against-cool consumer negatives, and they make a great pair in the bank:
+- [Kodak Gold 200](../kodak-gold-200/knowledge.md): warm, amber, Classic Chrome.
+- Superia X-Tra 400 (this one): cool, green, Classic Negative.
+Same everyday-snapshot role, opposite colour temperament.
 
 ## Relationship to Reggie's Superia
 
@@ -44,7 +44,7 @@ Same "everyday snapshot" role, opposite colour temperament.
 | Dynamic Range | DR200 | DR-Auto |
 | Design intent | Match what the Superia datasheet says the film does | **Explicitly the opposite of "flat, detail-preserving imagery"** — chases a vintage film feel and flatters portrait skin, at the deliberate expense of emulsion accuracy |
 
-**Important nuance:** don't assume Reggie's Superia behaves like his versatile, adaptive Reggie's Portra just because they share an author and an Auto-WB convention — the two have **opposite philosophies**. Portra is built to be gentle and forgiving across lighting; Superia is built to be heavy-handed and moody on purpose. This is the **same emulsion-faithful vs artifact/purpose-faithful tension** as the [Portra comparison](../kodak-portra-400/knowledge.md#relationship-to-the-reference-recipes) — this original answers "what does Superia actually look like," Reggie's Superia answers "how do I get a moody, vintage-feeling, skin-flattering portrait out of Classic Negative." If you shoot mostly people (especially deeper skin tones) and want mood over accuracy, Reggie's is worth trying instead of this one; for documentation/street/landscape fidelity, stay with this original.
+One nuance worth stating plainly: don't assume Reggie's Superia behaves like his versatile, adaptive Reggie's Portra just because they share an author and an Auto-WB convention. The two have opposite philosophies. Portra is built to be gentle and forgiving across lighting; Superia is built to be heavy-handed and moody on purpose. It's the same emulsion-faithful against purpose-faithful tension as the [Portra comparison](../kodak-portra-400/knowledge.md#relationship-to-the-reference-recipes). This original answers "what does Superia actually look like." Reggie's Superia answers "how do I get a moody, vintage-feeling, skin-flattering portrait out of Classic Negative." If you shoot mostly people, especially deeper skin tones, and want mood over accuracy, Reggie's is worth trying instead of this one. For documentation, street and landscape fidelity, stay with this original.
 
 ## Related
 - Same Classic Negative base, different intents: [Pacific Blues](../../reference-recipes/pacific-blues/knowledge.md) (stylised cool coastal), [Reala Ace](../../reference-recipes/reala-ace/knowledge.md) (neutral true-to-life), [Mumbai Monsoon](../mumbai-monsoon/knowledge.md) (moody rain), [Reggie's Superia](../../reference-recipes/reggies-superia/) (portrait interpretation). Compare to see how the Superia-derived base is steered.

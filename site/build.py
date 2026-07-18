@@ -14,6 +14,7 @@ import posixpath
 import re
 import shutil
 from pathlib import Path
+from urllib.parse import quote
 
 import markdown
 from jinja2 import Environment, FileSystemLoader
@@ -22,10 +23,11 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE_DIR = Path(__file__).resolve().parent
 OUT = ROOT / "_site"
 
-GITHUB_REPO = "https://github.com/arpitphillips/fujifilmrecipes"
-GITHUB_BLOB = GITHUB_REPO + "/blob/main/"
 SITE_TITLE = "Fujifilm Recipes"
+BASE_URL = "https://arpitphillips.github.io/fujifilmrecipes/"
+AUTHOR = "Arpit Phillips"
 CONTACT_EMAIL = "arpit.phillips@gmail.com"
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 MD_EXTENSIONS = ["tables", "fenced_code", "sane_lists"]
 
@@ -38,19 +40,51 @@ RECIPE_SECTIONS = [
     ("validation.md", "validation", "Validation"),
 ]
 
+# How internal file names read on the site (the site never shows repo paths).
+SECTION_INLINE_NAMES = {
+    "recipe": "the recipe",
+    "video": "the movie-mode version",
+    "knowledge": "the grade analysis",
+    "research": "the research notes",
+    "validation": "the validation report",
+}
+
+# Prose cleanup: internal file/folder mentions → friendly wording.
+PROSE_CLEANUP = [
+    (r"`X-T5/<recipe>/recipe-video\.md`", "the movie-mode version"),
+    (r"`(?:X-T5/)?_reference-sources/[\w./-]*`", "the source archive"),
+    (r"(?<![/(])`?\brecipe-video\.md\b`?", "the movie-mode version"),
+    (r"(?<![/(])`?\brecipe\.md\b`?", "the recipe"),
+    (r"(?<![/(])`?\bknowledge\.md\b`?", "the grade analysis"),
+    (r"(?<![/(])`?\bresearch\.md\b`?", "the research notes"),
+    (r"(?<![/(])`?\bvalidation\.md\b`?", "the validation report"),
+    (r"(?<![/(])`?\bRANKING\.md\b`?", "the ranking"),
+    (r"(?<![/(])`?\bCHANGELOG\.md\b`?", "the project log"),
+    (r"(?<![/(])`?\bCLAUDE\.md\b`?", "the project notes"),
+    (r"\bCHANGELOG\b", "the project log"),
+    (r"(?<![/(])`?(?:X-T5/)?x-t5_manual_en_s_f\.pdf`?", "the X-T5 Owner's Manual"),
+    (r"(?<![/(])`?(?:X-T5/)?x-t5_nfg_en_s_f\.pdf`?", "the X-T5 New Features Guide"),
+    (r"(?<![/(])`?(?:X-T5/)?README\.md\b`?", "the recipe index"),
+    (r"(?<![/(])`?\b_reference-sources/`?", "the source archive"),
+    (r"(?<![/(])`?\breferences/`?", "the reference-scan collection"),
+    (r"(?<![/(])`?\btest-shots/`?", "the sample gallery"),
+]
+
+
 ORIGINAL_CATEGORIES = [
-    ("", "Colour — negative & slide",
-     "Faithful emulations of colour still films, each derived from the "
-     "manufacturer's datasheet and, where scans exist, tuned against real frames."),
+    ("", "Colour film",
+     "Kodak Gold for sunny afternoons, Superia for that cool Fuji green. Each "
+     "one rebuilt from the manufacturer's own published numbers."),
     ("cinema", "Cinema",
-     "Motion-picture stocks — Vision3 negatives, B&W cinema, reversal and the "
-     "2383 theatrical print grade. Researched, not just assumed notable."),
+     "The Vision3 negatives are here, along with the black and white stock "
+     "Scorsese and Spielberg shot, and the 2383 print film behind twenty years "
+     "of teal shadows at the movies."),
     ("black-and-white", "Black & white",
-     "Still-photography B&W films on the Acros simulation, grounded in "
-     "datasheets and real film scans."),
-    ("creative", "Creative / editorial",
-     "Original designed looks — not film emulations. Faithfulness here means "
-     "faithfulness to an aesthetic reference, not a datasheet."),
+     "Six films, six personalities. Pan F etches, Tri-X punches, and Delta "
+     "3200 turns grain into the whole point."),
+    ("creative", "Creative looks",
+     "These aren't emulations of anything. I designed them from scratch and "
+     "kept tuning until they felt right."),
 ]
 
 SIM_COLORS = [
@@ -100,7 +134,7 @@ def strip_first_h1(text: str) -> str:
 def display_title(raw: str) -> str:
     """'Kodak Gold 200 — Fujifilm X-T5 (X-Trans V) · STILLS' → 'Kodak Gold 200'."""
     t = re.sub(r"\s*—\s*Fujifilm X-T5.*$", "", raw)
-    return t.strip()
+    return t.strip().replace(" — ", ": ")
 
 
 def plain_text(md_text: str) -> str:
@@ -161,40 +195,74 @@ def validation_badge(status: str) -> tuple[str, str]:
 # ------------------------------------------------------------ link rewriting
 
 class LinkMap:
-    """Maps repo-relative paths to site URLs; unknown paths fall back to GitHub."""
+    """Maps repo-relative paths to site URLs.
+
+    Links the site can serve become site links (with human link text — never a
+    file name); links to anything internal (PDFs, drop folders, project files)
+    are unlinked so no repo path ever surfaces on the site.
+    """
 
     def __init__(self):
         self.map: dict[str, str] = {}
+        self.names: dict[str, str] = {}
 
-    def add(self, repo_path: str, url: str):
+    def add(self, repo_path: str, url: str, name: str = ""):
         self.map[repo_path.strip("/")] = url
+        if name:
+            self.names.setdefault(url, name)
 
-    def resolve(self, src_repo_dir: str, target: str, root: str) -> str:
-        if re.match(r"^([a-z]+:|#|//)", target):
-            return target
+    def resolve(self, src_repo_dir: str, target: str):
+        """→ (url-with-anchor or None, canonical url or None)."""
         target, anchor = (target.split("#", 1) + [""])[:2]
         anchor = "#" + anchor if anchor else ""
         resolved = posixpath.normpath(posixpath.join(src_repo_dir, target)).strip("/")
         if resolved in self.map:
             url = self.map[resolved]
-            # A mapped URL may carry its own anchor (e.g. research.md → page#research)
             if anchor and "#" in url:
                 url = url.split("#")[0]
-            return root + url + anchor
-        return GITHUB_BLOB + resolved + anchor
+            return url + anchor, url
+        return None, None
 
     def rewrite(self, md_text: str, src_repo_dir: str, root: str) -> str:
+        looks_internal = re.compile(r"(\.(md|pdf)\b|^`|/$)")
+
         def sub(m):
-            return "](" + self.resolve(src_repo_dir, m.group(1), root) + ")"
-        return re.sub(r"\]\(([^)\s]+)\)", sub, md_text)
+            bang, text, target = m.group(1), m.group(2), m.group(3)
+            if re.match(r"^([a-z]+:|#|//)", target):
+                return m.group(0)
+            if bang:  # image reference — leave untouched
+                return m.group(0)
+            url, canonical = self.resolve(src_repo_dir, target)
+            if url is None:
+                # Internal-only target: drop the link, keep readable text.
+                return humanize(text)
+            if looks_internal.search(text.strip()):
+                text = self.names.get(url, self.names.get(canonical, humanize(text)))
+            return f"[{text}]({root}{url})"
+
+        return re.sub(r"(!?)\[([^\]]*)\]\(([^)\s]+)\)", sub, md_text)
+
+
+def humanize(text: str) -> str:
+    """'`kodak-gold-200/`' → 'kodak gold 200' — last-resort de-filing of link text."""
+    t = text.strip().strip("`").rstrip("/")
+    t = re.sub(r"\.(md|pdf)$", "", t)
+    t = t.split("/")[-1].replace("-", " ").replace("_", " ")
+    return t or text
 
 
 LINKS = LinkMap()
 
 
+def clean_prose(md_text: str) -> str:
+    for pattern, replacement in PROSE_CLEANUP:
+        md_text = re.sub(pattern, replacement, md_text)
+    return md_text
+
+
 def render_md(md_text: str, src_repo_dir: str, root: str) -> str:
     rewritten = LINKS.rewrite(md_text, src_repo_dir, root)
-    return markdown.markdown(rewritten, extensions=MD_EXTENSIONS)
+    return markdown.markdown(clean_prose(rewritten), extensions=MD_EXTENSIONS)
 
 
 # ----------------------------------------------------------------- data load
@@ -230,7 +298,7 @@ def parse_sources(md_text: str):
         credit = m.group(1).strip()
         links.append(("Original recipe", m.group(2)))
     for m in re.finditer(r"\[Source(?::\s*([^\]]+))?\]\((https?://[^)\s]+)\)", md_text):
-        label = ("Original recipe — " + m.group(1)) if m.group(1) else "Original recipe"
+        label = ("Original recipe: " + m.group(1)) if m.group(1) else "Original recipe"
         links.append((label, m.group(2)))
     return credit, links
 
@@ -239,6 +307,7 @@ def creator_for(slug: str, credit: str | None, links) -> str:
     if slug in CREATOR_OVERRIDES:
         return CREATOR_OVERRIDES[slug]
     if credit:
+        credit = credit.replace(" — ", " · ")
         return re.sub(r"\s*\(", " · ", credit.replace(")", ""), count=1)
     for _, url in links:
         for domain, name in DOMAIN_CREATORS:
@@ -265,6 +334,12 @@ def load_recipe(folder: Path, tier: str, category: str, index_meta: dict) -> dic
     meta = index_meta.get(repo_dir, {})
     credit, source_links = parse_sources(recipe_md)
 
+    # Real sample frames, if the photographer has dropped any in test-shots/.
+    shots = sorted(
+        f for f in (folder / "test-shots").glob("*")
+        if f.suffix.lower() in IMAGE_EXTS
+    ) if (folder / "test-shots").is_dir() else []
+
     badge_class, badge_label = validation_badge(
         meta.get("status", "reference" if tier == "reference" else "")
     )
@@ -286,6 +361,8 @@ def load_recipe(folder: Path, tier: str, category: str, index_meta: dict) -> dic
         "creator": creator_for(slug, credit, source_links) if tier == "reference" else None,
         "source_links": source_links,
         "sections": sections,
+        "shot_files": shots,
+        "shots": ["shots/" + quote(f.name) for f in shots],
     }
 
 
@@ -337,8 +414,8 @@ def load_knowledge_articles():
             "slug": path.stem,
             "url": "knowledge/" + path.stem + "/",
             "repo_path": path.relative_to(ROOT).as_posix(),
-            "title": first_h1(text),
-            "covers": covers,
+            "title": first_h1(text).replace(" — ", ": "),
+            "covers": covers.replace(" — ", ", "),
             "blurb": first_paragraph(strip_first_h1(text)),
             "text": text,
         })
@@ -352,25 +429,26 @@ def build():
     originals, references = discover_recipes(index_meta)
     articles = load_knowledge_articles()
 
-    # Register every URL in the link map before rendering anything.
+    # Register every URL (and its human name) in the link map before rendering.
     for r in originals + references:
-        LINKS.add(r["repo_dir"], r["url"])
+        LINKS.add(r["repo_dir"], r["url"], r["title"])
         for fname, sec_id, _ in RECIPE_SECTIONS:
             if (Path(ROOT / r["repo_dir"]) / fname).exists():
-                LINKS.add(r["repo_dir"] + "/" + fname, r["url"] + "#" + sec_id)
+                LINKS.add(r["repo_dir"] + "/" + fname,
+                          r["url"] + "#" + sec_id,
+                          SECTION_INLINE_NAMES[sec_id])
     for a in articles:
-        LINKS.add(a["repo_path"], a["url"])
-    LINKS.add("Knowledge/README.md", "knowledge/")
-    LINKS.add("Knowledge", "knowledge/")
-    LINKS.add("X-T5/README.md", "")
-    LINKS.add("X-T5", "")
-    LINKS.add("X-T5/RANKING.md", "ranking/")
-    LINKS.add("README.md", "about/")
+        LINKS.add(a["repo_path"], a["url"], a["title"])
+    LINKS.add("Knowledge/README.md", "knowledge/", "the knowledge base")
+    LINKS.add("Knowledge", "knowledge/", "the knowledge base")
+    LINKS.add("X-T5/README.md", "", "the recipe bank")
+    LINKS.add("X-T5", "", "the recipe bank")
+    LINKS.add("X-T5/RANKING.md", "ranking/", "the full ranking")
+    LINKS.add("README.md", "about/", "about this project")
 
     env = Environment(loader=FileSystemLoader(SITE_DIR / "templates"),
                       autoescape=False, trim_blocks=True, lstrip_blocks=True)
-    env.globals.update(site_title=SITE_TITLE, github=GITHUB_REPO,
-                       email=CONTACT_EMAIL)
+    env.globals.update(site_title=SITE_TITLE, email=CONTACT_EMAIL)
 
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -378,29 +456,61 @@ def build():
     shutil.copy(SITE_DIR / "static" / "style.css", OUT / "static" / "style.css")
     (OUT / ".nojekyll").write_text("")
 
-    def emit(url: str, template: str, **ctx):
+    emitted_urls = []
+
+    def emit(url: str, template: str, jsonld: dict | None = None, **ctx):
         depth = url.rstrip("/").count("/") + 1 if url else 0
         root = "../" * depth
         page_dir = OUT / url
         page_dir.mkdir(parents=True, exist_ok=True)
-        html = env.get_template(template).render(root=root, url=url, **ctx)
+        html = env.get_template(template).render(
+            root=root, url=url, canonical=BASE_URL + url,
+            jsonld=json.dumps(jsonld, ensure_ascii=False) if jsonld else None,
+            **ctx)
         (page_dir / "index.html").write_text(html, encoding="utf-8")
+        emitted_urls.append(url)
+
+    def article_jsonld(headline: str, url: str, description: str) -> dict:
+        return {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": headline,
+            "description": description,
+            "url": BASE_URL + url,
+            "author": {"@type": "Person", "name": AUTHOR},
+            "publisher": {"@type": "Organization", "name": SITE_TITLE},
+        }
 
     # -- home (originals) --------------------------------------------------
     groups = []
     for cat, label, intro in ORIGINAL_CATEGORIES:
         cards = [r for r in originals if r["category"] == cat]
         groups.append({"label": label, "intro": intro, "cards": cards})
+    hero_frames = [{"title": r["title"], "color": r["sim_color"]}
+                   for r in originals[:10]]
     emit("", "home.html", nav="originals", groups=groups,
+         hero_frames=hero_frames,
          n_originals=len(originals), n_references=len(references),
          n_articles=len(articles),
-         meta_description="A research-backed bank of Fujifilm X-T5 film-simulation "
-                          "recipes, validated against manufacturer datasheets and real film scans.")
+         page_title="Fujifilm X-T5 film simulation recipes, built from film datasheets",
+         meta_description="Film simulation recipes for the Fujifilm X-T5, worked out "
+                          "from manufacturer datasheets and checked against real film "
+                          "scans. Kodak, Fuji, Ilford and cinema looks, straight out of camera.",
+         jsonld={
+             "@context": "https://schema.org",
+             "@type": "WebSite",
+             "name": SITE_TITLE,
+             "url": BASE_URL,
+             "description": "Research-backed film simulation recipes for the Fujifilm X-T5.",
+             "author": {"@type": "Person", "name": AUTHOR},
+         })
 
     # -- community ---------------------------------------------------------
     emit("community/", "community.html", nav="community", cards=references,
-         meta_description="Film-simulation recipes by the wider Fujifilm community — "
-                          "Fuji X Weekly, Ross McConaghy, Luís Costa and more — with full attribution.")
+         page_title="Community film simulation recipes for the Fujifilm X-T5",
+         meta_description="Fujifilm X-T5 recipes from creators across the community, "
+                          "including Fuji X Weekly, Ross McConaghy and Luís Costa. Every "
+                          "recipe is credited and linked to its original page.")
 
     # -- recipe pages ------------------------------------------------------
     for r in originals + references:
@@ -412,46 +522,76 @@ def build():
                 "id": s["id"], "title": s["title"],
                 "html": render_md(body, r["repo_dir"], depth_root),
             })
+        if r["shot_files"]:
+            shots_dir = OUT / r["url"] / "shots"
+            shots_dir.mkdir(parents=True, exist_ok=True)
+            for f in r["shot_files"]:
+                shutil.copy(f, shots_dir / f.name)
+        mood = r["mood"].rstrip(".")
+        desc = (f"Exact Fujifilm X-T5 settings for the {r['title']} look"
+                + (f", built on {r['sim']}" if r["sim"] else "")
+                + (f": {mood[0].lower()}{mood[1:]}." if mood else ".")
+                + " With the reasoning behind every setting.")
         emit(r["url"], "recipe.html",
              nav="originals" if r["tier"] == "original" else "community",
              r=r, sections=rendered_sections,
-             meta_description=(r["blurb"] or r["mood"])[:300])
+             page_title=f"{r['title']} film simulation recipe for the Fujifilm X-T5",
+             meta_description=desc,
+             jsonld=article_jsonld(
+                 f"{r['title']} film simulation recipe for the Fujifilm X-T5",
+                 r["url"], desc))
 
     # -- knowledge ---------------------------------------------------------
     emit("knowledge/", "knowledge_index.html", nav="knowledge", articles=articles,
-         meta_description="The knowledge layer: what every Fujifilm setting does, the "
-                          "color science of film simulations, film chemistry, and the validation methodology.")
+         page_title="Fujifilm settings and film science, explained",
+         meta_description="What every Fujifilm X-T5 image quality setting does and how "
+                          "settings combine into a look. Film simulation bases, white "
+                          "balance shift, grain, colour science and film chemistry.")
     for a in articles:
         body = demote_headings(strip_first_h1(a["text"]))
         emit(a["url"], "article.html", nav="knowledge", title=a["title"],
+             page_title=f"{a['title']} (Fujifilm X-T5 guide)",
              content=render_md(body, "Knowledge", "../../"),
-             source_path=a["repo_path"],
-             meta_description=a["blurb"][:300])
+             meta_description=(a["covers"] or a["blurb"])[:300],
+             jsonld=article_jsonld(a["title"], a["url"],
+                                   (a["covers"] or a["blurb"])[:300]))
 
     # -- ranking -----------------------------------------------------------
     ranking = read(ROOT / "X-T5" / "RANKING.md")
     emit("ranking/", "article.html", nav="originals",
          title=first_h1(ranking),
+         page_title="Every recipe in the bank, ranked",
          content=render_md(demote_headings(strip_first_h1(ranking)), "X-T5", "../"),
-         source_path="X-T5/RANKING.md",
-         meta_description="The full recipe bank ranked by aesthetic value and real-world popularity.")
+         meta_description="All the Fujifilm X-T5 recipes on this site ranked by how "
+                          "good they look and how much people actually use them.")
 
     # -- about -------------------------------------------------------------
-    about = read(ROOT / "README.md")
-    emit("about/", "article.html", nav="about", title="About",
-         content=render_md(demote_headings(strip_first_h1(about)), "", "../"),
-         source_path="README.md",
-         meta_description="What this project is: a validated, research-backed Fujifilm "
-                          "recipe bank and the knowledge layer behind it.")
+    emit("about/", "about.html", nav="about",
+         n_originals=len(originals), n_references=len(references),
+         page_title="About Fujifilm Recipes",
+         meta_description="Why this recipe bank starts from film datasheets instead of "
+                          "guesswork, and what the validation badges on each recipe mean.")
 
     # -- contact -----------------------------------------------------------
     emit("contact/", "contact.html", nav="contact",
-         meta_description="Get in touch — questions, corrections, or film scans to help validate recipes.")
+         page_title="Contact Fujifilm Recipes",
+         meta_description="Questions, corrections, recipe requests, or sample frames "
+                          "and film scans you want to share.")
 
     # -- search index (client-side filter) ---------------------------------
     idx = [{"t": r["title"], "s": r["sim"], "m": r["mood"], "u": r["url"],
             "tier": r["tier"]} for r in originals + references]
     (OUT / "static" / "recipes.json").write_text(json.dumps(idx, ensure_ascii=False))
+
+    # -- sitemap + robots --------------------------------------------------
+    entries = "\n".join(
+        f"  <url><loc>{BASE_URL}{u}</loc></url>" for u in sorted(emitted_urls))
+    (OUT / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{entries}\n</urlset>\n")
+    (OUT / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}sitemap.xml\n")
 
     n_pages = sum(1 for _ in OUT.rglob("index.html"))
     print(f"Built {n_pages} pages → {OUT}")

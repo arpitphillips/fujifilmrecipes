@@ -55,7 +55,7 @@ Each recipe folder holds: `recipe.md` (stills), sometimes `recipe-video.md` (mov
 | [b&w/ilford-pan-f-plus-50](originals/black-and-white/ilford-pan-f-plus-50/) | Acros | Slowest, sharpest, contrasty B&W | — | datasheet |
 | [b&w/ilford-delta-3200](originals/black-and-white/ilford-delta-3200/) | Acros | Heaviest-grain pushed B&W | — | datasheet + **scan** |
 | [mumbai-monsoon](originals/mumbai-monsoon/) | Classic Negative | Overcast/rain cinematic | ✅ | original design |
-| [mumbai](originals/mumbai/) | Classic Negative | Warm vibrant sunny street | ✅ | original design |
+| [mumbai](originals/mumbai/) | Classic Negative | Warm lively sunny street | ✅ | original design |
 | [creative/fashion-editorial-vogue](originals/creative/fashion-editorial-vogue/) | Pro Neg Hi | Polished fashion editorial | inline | creative design |
 | [creative/bewaremyvelvia-bold](originals/creative/bewaremyvelvia-bold/) | Velvia | Bold saturated dramatic | inline | creative design |
 | [creative/matte-editorial](originals/creative/matte-editorial/) | Eterna | Muted faded lifestyle matte | inline | creative design |

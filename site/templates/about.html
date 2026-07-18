@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <h1>About</h1>
+    <p class="page-lead">
+      A film simulation recipe bank for the Fujifilm X-T5, researched instead of guessed.
+    </p>
+  </div>
+</section>
+
+<div class="wrap">
+  <article class="md about-md">
+    <h2>What this is</h2>
+    <p>A recipe is a set of in camera JPEG settings that makes the X-T5 render like a specific
+       film stock. Warm Kodak Gold afternoons. The cool green cast of a Superia print from a
+       90s minilab. Tri-X grain on a rainy street. All straight out of camera, with no editing
+       afterwards.</p>
+    <p>Most recipe collections online are settings someone liked, with a film name attached
+       after the fact. I wanted to work in the other direction: start from what the film
+       actually was, then build the look.</p>
+
+    <h2>Where the recipes come from</h2>
+    <p>Film stocks are unusually well documented. Kodak and Ilford published technical
+       datasheets for nearly everything: characteristic curves, granularity figures, colour
+       balance, exposure latitude. Those numbers say precise things about how a film renders,
+       and they map surprisingly well onto the X-T5's controls. A film with a long highlight
+       shoulder wants DR400 and a negative Highlight setting. A film with RMS granularity of 14
+       has no business wearing fine grain.</p>
+    <p>So every original recipe here starts with the datasheet. When I can get scans of the
+       real stock, from a lab roll or an archive, I compare them frame by frame against the
+       recipe's output and adjust. The badge on each card tells you how far up that ladder a
+       recipe has climbed. The <a href="{{ root }}knowledge/validation-methodology/">validation
+       methodology</a> explains exactly what each tier means, and each recipe page keeps its
+       grade analysis: the reasoning for every single setting, so you can bend it to your taste
+       instead of obeying it.</p>
+
+    <h2>Two shelves</h2>
+    <p><a href="{{ root }}">Originals</a> are the recipes I derived myself: colour film, cinema
+       stocks, black and white, and a set of creative looks that don't pretend to be film at
+       all. <a href="{{ root }}community/">Community recipes</a> come from the wider Fujifilm
+       world. I keep those for testing and comparison, and every one is credited and linked to
+       its creator's page.</p>
+
+    <h2>Why straight out of camera</h2>
+    <p>Fujifilm built its film simulations from measurements of its own emulsions, and the
+       resulting colour behaviour is baked into the camera's processing in ways that curves and
+       sliders can't honestly reproduce afterwards. I wrote a
+       <a href="{{ root }}knowledge/color-science-why-film-cannot-be-faked/">long piece</a> on
+       why. The short version: the JPEG the camera writes is the photograph. The recipe is your
+       darkroom, and it runs in the half second after you press the shutter.</p>
+
+    <h2>The fine print</h2>
+    <p>Everything here targets the X-T5 and its X-Trans V sensor generation. On an X-Trans IV
+       body, raise Color Chrome FX Blue one notch. The
+       <a href="{{ root }}knowledge/x-trans-v-and-conversion/">conversion guide</a> covers the
+       blue rendering change behind that rule.</p>
+  </article>
+</div>
+{% endblock %}

@@ -1,14 +1,14 @@
 {% extends "base.html" %}
-{% block title %}Knowledge base — {{ site_title }}{% endblock %}
 {% block content %}
 <section class="page-head">
   <div class="wrap">
-    <h1>Knowledge base</h1>
+    <h1>The knowledge base</h1>
     <p class="page-lead">
-      The reference layer behind the recipes: what every camera setting actually does, how settings
-      combine into a grade, the colour science of Fujifilm's simulations, the film chemistry
-      underneath — and the evidence standard each original recipe is held to. Grounded in the
-      X-T5 Owner's Manual and cited sources throughout.
+      Why does Classic Chrome feel like a memory? What does that red/blue grid actually move?
+      Start here if you want to understand what each dial does before you trust anyone's numbers,
+      mine included. The articles cover every simulation base and image quality control, then go
+      further into the colour science and film chemistry that explain why the camera can do
+      things editing software can't.
     </p>
   </div>
 </section>
@@ -17,8 +17,10 @@
   <div class="article-list">
     {% for a in articles %}
     <a class="article-item" href="{{ root }}{{ a.url }}">
-      <h3>{{ a.title }}</h3>
-      <p>{{ a.covers or a.blurb }}</p>
+      <div>
+        <h3>{{ a.title }}</h3>
+        <p>{{ a.covers or a.blurb }}</p>
+      </div>
     </a>
     {% endfor %}
   </div>

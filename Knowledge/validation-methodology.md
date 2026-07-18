@@ -1,60 +1,60 @@
-# Validation Methodology — Proof of Faithfulness
+# Validation Methodology, Proof of Faithfulness
 
-The standard every recipe must meet to be promoted to `originals/` and sold. The goal: **faithful reproduction, proven against real film — not a single pretty example, and not vibes.**
+The standard every recipe must meet to be promoted to `originals/` and sold. The goal: faithful reproduction, proven against real film, not a single pretty example, and not vibes.
 
-## ⭐ CORE PRINCIPLE — always study BOTH datasheets and real images
-For every film look or simulation you **MUST**, without exception:
-1. **Read the manufacturer datasheet** — characteristic curve (contrast/gamma), RMS granularity / grain index, spectral sensitivity, exposure latitude, balance. The objective physics.
-2. **Fetch and analyse real reference images** — ≥5 across lighting/subjects. A datasheet tells you the physics; only real scans tell you how the film actually renders once shot, developed, and scanned.
+## ⭐ CORE PRINCIPLE: always study BOTH datasheets and real images
+For every film look or simulation you MUST, without exception:
+1. Read the manufacturer datasheet: characteristic curve (contrast/gamma), RMS granularity / grain index, spectral sensitivity, exposure latitude, balance. The objective physics.
+2. Fetch and analyse real reference images: ≥5 across lighting/subjects. A datasheet tells you the physics; only real scans tell you how the film actually renders once shot, developed, and scanned.
 
-Never build a recipe from memory, or from only one of the two. And **keep finding new strategies to improve authenticity** — new image sources (Reddit, Flickr, Commons, lab galleries, user drops), new datasheets, side-by-side comparisons. This is a continuous discipline, not a one-time check.
+Never build a recipe from memory, or from only one of the two. And keep finding new strategies to improve authenticity, new image sources (Reddit, Flickr, Commons, lab galleries, user drops), new datasheets, side-by-side comparisons. This is a continuous discipline, not a one-time check.
 
-**Image-fetching strategies (in rough order of reliability):**
-1. **User-provided reference files** (downloaded PDFs / scans placed in `X-T5/_reference-sources/`) — render with `pdftoppm` and view every page/image. *Best when available.*
-2. **Direct image download** — `Invoke-WebRequest`/`curl` a real scan JPG to disk, then Read it. Works on open hosts (Wikimedia Commons `upload.wikimedia.org`, Flickr static, blog media dirs). Bypasses the browser.
-3. **Manufacturer / lab galleries** — datasheets (fetch PDF → `pdftotext`/`pdftoppm`) for curves + grain, plus lab film-index galleries for real scans.
-4. **Search → collect many** — always gather ≥5 across lighting/subjects (see scan rules) so you're not fitting to an outlier.
-5. When a source is bot-protected (Cloudflare), don't fight it — switch hosts, or ask the user to download the page/scans (as was done for Gold 200).
-6. **Video references (YouTube):** the player blocks browser screenshots in this environment, but YouTube serves **real auto-generated frame stills** as plain JPGs — `https://i.ytimg.com/vi/<VIDEO_ID>/sd1.jpg`, `sd2.jpg`, `sd3.jpg` (~25/50/75% points) and `maxresdefault.jpg` (hero frame). Four genuine frames across different scenes, fetchable with a plain browser-UA request. Caveat: heavy compression → trust hue relationships, treat absolute saturation loosely. (Proven on the Silent Atlas verification, 2026-07-16.)
+Image-fetching strategies (in rough order of reliability):
+1. User-provided reference files (downloaded PDFs / scans placed in `X-T5/_reference-sources/`), render with `pdftoppm` and view every page/image. *Best when available.*
+2. Direct image download: `Invoke-WebRequest`/`curl` a real scan JPG to disk, then Read it. Works on open hosts (Wikimedia Commons `upload.wikimedia.org`, Flickr static, blog media dirs). Bypasses the browser.
+3. Manufacturer / lab galleries: datasheets (fetch PDF → `pdftotext`/`pdftoppm`) for curves + grain, plus lab film-index galleries for real scans.
+4. Search → collect many: always gather ≥5 across lighting/subjects (see scan rules) so you're not fitting to an outlier.
+5. When a source is bot-protected (Cloudflare), don't fight it; switch hosts, or ask the user to download the page/scans (as was done for Gold 200).
+6. Video references (YouTube): the player blocks browser screenshots in this environment, but YouTube serves real auto-generated frame stills as plain JPGs, `https://i.ytimg.com/vi/<VIDEO_ID>/sd1.jpg`, `sd2.jpg`, `sd3.jpg` (~25/50/75% points) and `maxresdefault.jpg` (hero frame). Four genuine frames across different scenes, fetchable with a plain browser-UA request. Caveat: heavy compression → trust hue relationships and treat absolute saturation loosely. (Proven on the Silent Atlas verification, 2026-07-16.)
 
-Record which images were viewed (source, light, subject) in the recipe's `validation.md`. Images are **analysis-only, never redistributed** in the product.
+Record which images were viewed (source, light, subject) in the recipe's `validation.md`. Images are analysis-only, never redistributed in the product.
 
 ## The three evidence tiers
 A recipe's validation status is one of:
 
-1. **Datasheet-validated** — grounded in the manufacturer's technical data (balance, ISO/EI, contrast, grain/RMS or grain index, latitude, spectral/skin notes). Establishes the *objective* baseline.
-2. **Characteristic-validated** — corroborated by ≥3 independent, reputable reviews describing the look (cast, contrast, saturation, grain, per-hue behaviour). Establishes the *consensus* look.
-3. **Scan-validated (pixel)** — checked against **multiple real film scans** (see rules below). Establishes the *actual* rendering. **Required for the top "validated original" tier.**
+1. Datasheet-validated: grounded in the manufacturer's technical data (balance, ISO/EI, contrast, grain/RMS or grain index, latitude, spectral/skin notes). Establishes the *objective* baseline.
+2. Characteristic-validated: corroborated by ≥3 independent, reputable reviews describing the look (cast, contrast, saturation, grain, per-hue behaviour). Establishes the *consensus* look.
+3. Scan-validated (pixel): checked against multiple real film scans (see rules below). Establishes the *actual* rendering. Required for the top "validated original" tier.
 
 An original ships with its tier stated. Gold 200 is the reference example (all three tiers → fully scan-validated).
 
 ## Scan-validation rules (to avoid building on outliers)
-- **≥5 scans per film**, from **different photographers/sources** where possible.
-- **Spread across lighting**: direct sun, flat/overcast, open shade, golden hour, and artificial/night where the film is used there.
-- **Spread across subjects**: at least one each of skin/portrait, foliage/greens, sky/blues, neutral whites/greys, and a saturated accent (red/yellow).
-- **Note the pipeline**: lab scan vs home scan, and scanner, shift results — flag when known, since scanning changes colour as much as the film.
-- **Read per-channel behaviour** explicitly: where do whites sit (warm/cool), how are greens shifted, how saturated are blues, how do highlights roll and shadows hold.
-- **Reject outliers**: if one scan disagrees with the other four, weight the consensus, don't chase the odd one.
+- ≥5 scans per film, from different photographers/sources where possible.
+- Spread across lighting: direct sun, flat/overcast, open shade, golden hour, and artificial/night where the film is used there.
+- Spread across subjects: at least one each of skin/portrait, foliage/greens, sky/blues, neutral whites/greys, and a saturated accent (red/yellow).
+- Note the pipeline: lab scan vs home scan, and scanner, shift results, flag when known, since scanning changes colour as much as the film.
+- Read per-channel behaviour explicitly: where do whites sit (warm/cool), how are greens shifted, how saturated are blues, how do highlights roll and shadows hold.
+- Reject outliers: if one scan disagrees with the other four, weight the consensus, don't chase the odd one.
 
 ## From evidence → settings → proof
 Each original records, in its `validation.md` (or `research.md`):
 1. The datasheet facts used.
-2. The scans analysed (source, light, subject) — **analysis only, never redistributed**; source files kept locally in `X-T5/_reference-sources/`.
-3. A **trait → setting** table (each observed trait mapped to the specific control producing it).
-4. **What changed because of the evidence** (e.g. Gold 200: WB +4R→+3R and Clarity −2→0 after scan analysis).
-5. A **faithfulness verdict** and what's still open (missing conditions, pipeline caveats).
+2. The scans analysed (source, light, subject), analysis only, never redistributed; source files kept locally in `X-T5/_reference-sources/`.
+3. A trait → setting table (each observed trait mapped to the specific control producing it).
+4. What changed because of the evidence (e.g. Gold 200: WB +4R→+3R and Clarity −2→0 after scan analysis).
+5. A faithfulness verdict and what's still open (missing conditions, pipeline caveats).
 
 ## Quality rules that always apply
-- **Clarity = 0 is the *default*, not a hard rule.** Keep it at 0 whenever the look allows (avoids halos/artifacts, faster saves). But **faithfulness wins**: if the real film's rendering genuinely needs a non-zero Clarity (e.g. the gritty micro-contrast of Tri-X, or a soft dreamy stock), change it — and justify why in the validation. Quality and faithfulness above the preference.
-- **Faithful reproduction beats stylistic flourish.** A recipe is judged by how close it lands, not how "nice" it looks in isolation.
-- Prefer **fixed WB** for colour-critical films (repeatable); use Auto only when the look tolerates scene-to-scene drift.
+- **Clarity = 0 is the *default*, not a hard rule. Keep it at 0 whenever the look allows (avoids halos/artifacts, faster saves). But faithfulness wins**: if the real film's rendering genuinely needs a non-zero Clarity (e.g. the gritty micro-contrast of Tri-X, or a soft dreamy stock), change it, and justify why in the validation. Quality and faithfulness above the preference.
+- Faithful reproduction beats stylistic flourish. A recipe is judged by how close it lands, not how "nice" it looks in isolation.
+- Prefer fixed WB for colour-critical films (repeatable); use Auto only when the look tolerates scene-to-scene drift.
 
 ## Promotion: reference → original
-A `reference` recipe (attributed capture) becomes a validated `original` only after it is **re-derived from evidence** and passes at least datasheet + characteristic validation (scan-validation for the top tier). Copying values is not derivation; the analysis and write-up must be our own. This is both a quality bar and the clean-IP basis for selling the bank.
+A `reference` recipe (attributed capture) becomes a validated `original` only after it is re-derived from evidence and passes at least datasheet + characteristic validation (scan-validation for the top tier). Copying values is not derivation; the analysis and write-up must be our own. This is both a quality bar and the clean-IP basis for selling the bank.
 
 ## Current validation ledger
 
-> **2026-07-15 datasheet audit:** all originals below re-verified against **locally archived manufacturer PDFs** (`X-T5/_reference-sources/datasheets/`) — see [X-T5/VALIDATION-AUDIT.md](../X-T5/VALIDATION-AUDIT.md). The datasheet tier for every film-based original is now archive-backed, not just fetch-based.
+> **2026-07-15 datasheet audit:** all originals below re-verified against locally archived manufacturer PDFs (`X-T5/_reference-sources/datasheets/`); see [X-T5/VALIDATION-AUDIT.md](../X-T5/VALIDATION-AUDIT.md). The datasheet tier for every film-based original is now archive-backed rather than fetch-based.
 
 | Recipe | Tier | Notes |
 |---|---|---|

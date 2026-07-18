@@ -1,13 +1,24 @@
 {% macro recipe_card(r, root) %}
 <a class="card" href="{{ root }}{{ r.url }}"
    data-search="{{ (r.title ~ ' ' ~ r.sim ~ ' ' ~ r.mood ~ ' ' ~ (r.creator or '')) | lower | e }}">
-  <div class="card-top">
-    <span class="sim-chip"><span class="sim-dot" style="background: {{ r.sim_color }}"></span>{{ r.sim or '—' }}</span>
-    {% if r.video %}<span class="video-chip" title="Movie-mode version available">video</span>{% endif %}
+  {% if r.shots %}
+  <div class="card-photo">
+    <img src="{{ root }}{{ r.url }}{{ r.shots[0] }}" alt="Sample frame shot with the {{ r.title }} recipe" loading="lazy">
   </div>
-  <h3 class="card-title">{{ r.title }}</h3>
-  {% if r.mood %}<p class="card-mood">{{ r.mood }}</p>{% endif %}
-  {% if r.creator %}<p class="card-creator">by {{ r.creator }}</p>{% endif %}
-  <span class="badge badge-{{ r.badge_class }}">{{ r.badge_label }}</span>
+  {% else %}
+  <div class="card-photo placeholder" style="--sim: {{ r.sim_color }}">
+    <span class="ph-label">samples soon</span>
+  </div>
+  {% endif %}
+  <div class="card-body">
+    <div class="card-top">
+      <span class="sim-chip"><span class="sim-dot" style="background: {{ r.sim_color }}"></span>{{ r.sim or '·' }}</span>
+      {% if r.video %}<span class="video-chip" title="Movie mode version available">video</span>{% endif %}
+    </div>
+    <h3 class="card-title">{{ r.title }}</h3>
+    {% if r.mood %}<p class="card-mood">{{ r.mood }}</p>{% endif %}
+    {% if r.creator %}<p class="card-creator">by {{ r.creator }}</p>{% endif %}
+    <span class="badge badge-{{ r.badge_class }}">{{ r.badge_label }}</span>
+  </div>
 </a>
 {% endmacro %}

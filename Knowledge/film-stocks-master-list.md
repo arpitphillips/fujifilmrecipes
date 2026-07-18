@@ -1,15 +1,15 @@
-# Film Stocks Master List — the Canon of Top Stocks & Recipe Coverage
+# Film stocks master list: the classic stocks and recipe coverage
 
 The reference canon of the most important film stocks per manufacturer, with this bank's coverage status. Use this to decide what to emulate next.
 
-> **Datasheets:** official technical datasheets for nearly every stock below (46 PDFs — characteristic curves, spectral sensitivity, granularity) are archived in [`X-T5/_reference-sources/datasheets/`](../X-T5/_reference-sources/datasheets/README.md), organised by manufacturer. Gaps are listed in that folder's README.
+> **Datasheets:** official technical datasheets for nearly every stock below (46 PDFs covering characteristic curves, spectral sensitivity and granularity) are archived in [`X-T5/_reference-sources/datasheets/`](../X-T5/_reference-sources/datasheets/README.md), organised by manufacturer. Gaps are listed in that folder's README.
 
-**Coverage legend:**
-- ✅ **original** — validated/research-derived recipe in `X-T5/originals/`
-- 📗 **reference** — attributed recipe in `X-T5/reference-recipes/`
-- 🔎 **available** — a known X-Trans V recipe exists (Fuji X Weekly unless noted) but isn't in the bank yet
-- 🔶 **IV-only** — only an X-Trans IV recipe exists; needs porting (raise CCFXB one notch — see [x-trans-v-and-conversion.md](x-trans-v-and-conversion.md))
-- ❌ **gap** — no known faithful recipe; original-derivation candidate
+Coverage legend:
+- ✅ original: a validated or research-derived recipe in `X-T5/originals/`
+- 📗 reference: an attributed recipe in `X-T5/reference-recipes/`
+- 🔎 available: a known X-Trans V recipe exists (Fuji X Weekly unless noted) but isn't in the bank yet
+- 🔶 IV-only: only an X-Trans IV recipe exists and needs porting (raise CCFXB one notch, see [x-trans-v-and-conversion.md](x-trans-v-and-conversion.md))
+- ❌ gap: no known faithful recipe, so a candidate for original derivation
 
 ---
 
@@ -93,21 +93,21 @@ The reference canon of the most important film stocks per manufacturer, with thi
 
 ---
 
-## Priority queue — ✅ closed 2026-07-16
+## Priority queue (closed 2026-07-16)
 
-All six 2026-07-15 priority items are now covered: **Ektar 100** and **Pro 400H** as datasheet-derived originals; **CineStill 400D v2**, **Kodachrome 25**, **Plus-X 125**, and **T-Max 100** (Hard/Soft Tone) as attributed reference recipes; **Delta 3200** and **Pan F Plus 50** as datasheet-derived originals (the two ❌ derivation candidates). See [CHANGELOG.md](../CHANGELOG.md) for details.
+All six 2026-07-15 priority items are now covered: Ektar 100 and Pro 400H as datasheet-derived originals; CineStill 400D v2, Kodachrome 25, Plus-X 125 and T-Max 100 (Hard/Soft Tone) as attributed reference recipes; and Delta 3200 and Pan F Plus 50, the two ❌ derivation candidates, as datasheet-derived originals. See [CHANGELOG.md](../CHANGELOG.md) for details.
 
 ## Next tier of gaps (candidates for a future pass)
 
-1. **Astia 100F** 🔶 — port an X-Trans IV Astia recipe (CCFXB one notch up).
-2. **Superia 100 / Fujicolor C200** 🔎 — fetch FXW recipes to round out the Fuji consumer-negative family.
-3. **Vericolor III 160** 🔎 — Portra's direct ancestor; fetch FXW recipe.
-4. **Ilford Delta 100 / 400** ❌ — datasheets already archived; derivation candidates (Delta 3200's precedent shows the approach).
-5. **Agfa Ultra 100 / Scala 200** 🔎 — fetch FXW recipes; Agfa datasheets (APX, Scala) already archived.
-6. **CineStill 50D** ❌ — no confirmed X-Trans V recipe found yet.
-7. **XP2 Super 400 / SFX 200** ❌ — Ilford datasheets already archived; chromogenic-B&W and near-IR derivation candidates.
+1. Astia 100F 🔶: port an X-Trans IV Astia recipe (CCFXB one notch up).
+2. Superia 100 / Fujicolor C200 🔎: fetch FXW recipes to round out the Fuji consumer-negative family.
+3. Vericolor III 160 🔎: Portra's direct ancestor; fetch the FXW recipe.
+4. Ilford Delta 100 / 400 ❌: datasheets already archived, and Delta 3200's precedent shows the derivation approach.
+5. Agfa Ultra 100 / Scala 200 🔎: fetch FXW recipes; the Agfa datasheets (APX, Scala) are already archived.
+6. CineStill 50D ❌: no confirmed X-Trans V recipe found yet.
+7. XP2 Super 400 / SFX 200 ❌: Ilford datasheets already archived; chromogenic-B&W and near-IR derivation candidates.
 
-> **Additional recipe source — [Ross McConaghy (rossandhisjpegs.com)](https://www.rossandhisjpegs.com/fujifilm-recipes):** 6 of his **creative** looks are now in `reference-recipes/` (ross-chrome-fog, -canned-heat, -fruit-pastel, -sherbet-lemon, -pumpkin-soup, -salted-slate). His site *also* has film-emulation recipes that map to open gaps above and could be fetched next: **Ultramax Electro** (UltraMax 400, Provia base), **XP2 Electro** (Ilford XP2 Super, Acros+R), **Fujipop Trio 1–3** (Fujicolor C200, three bases), **Lomo800 Electro** (Lomography 800). Note: several of his recipes were published without a stated sensor generation — apply the CCFXB IV→V check where the base is Classic Chrome/Neg/Eterna.
+> **Additional recipe source, [Ross McConaghy (rossandhisjpegs.com)](https://www.rossandhisjpegs.com/fujifilm-recipes):** 6 of his creative looks are now in `reference-recipes/` (ross-chrome-fog, -canned-heat, -fruit-pastel, -sherbet-lemon, -pumpkin-soup, -salted-slate). His site also has film-emulation recipes that map to open gaps above and could be fetched next: Ultramax Electro (UltraMax 400, Provia base), XP2 Electro (Ilford XP2 Super, Acros+R), Fujipop Trio 1–3 (Fujicolor C200, three bases), and Lomo800 Electro (Lomography 800). Several of his recipes were published without a stated sensor generation, so apply the CCFXB IV→V check where the base is Classic Chrome/Neg/Eterna.
 
 *Sources: [Fuji X Weekly X-Trans V index](https://fujixweekly.com/fujifilm-x-trans-v-recipes/) (fetched 2026-07-15/16), [Ross McConaghy recipes](https://www.rossandhisjpegs.com/fujifilm-recipes) (fetched 2026-07-16), existing bank contents, manufacturer datasheets.*
 

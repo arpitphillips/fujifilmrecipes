@@ -3,8 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% block title %}{{ site_title }}{% endblock %}</title>
-<meta name="description" content="{{ meta_description | default('Research-backed Fujifilm X-T5 film-simulation recipes.') }}">
+<title>{% if page_title %}{{ page_title }} | {{ site_title }}{% else %}{% block title %}{{ site_title }}{% endblock %}{% endif %}</title>
+<meta name="description" content="{{ meta_description | default('Research-backed Fujifilm X-T5 film simulation recipes.') }}">
+<link rel="canonical" href="{{ canonical }}">
+<meta property="og:site_name" content="{{ site_title }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page_title | default(site_title) }}">
+<meta property="og:description" content="{{ meta_description | default('Research-backed Fujifilm X-T5 film simulation recipes.') }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta name="twitter:card" content="summary">
+{% if jsonld %}
+<script type="application/ld+json">{{ jsonld }}</script>
+{% endif %}
 <link rel="stylesheet" href="{{ root }}static/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23151209'/><circle cx='50' cy='50' r='30' fill='none' stroke='%23e0a458' stroke-width='9'/><circle cx='50' cy='50' r='10' fill='%23e0a458'/></svg>">
 </head>
@@ -14,7 +24,7 @@
     <a class="brand" href="{{ root }}">
       <span class="brand-mark"></span>
       <span class="brand-name">{{ site_title }}</span>
-      <span class="brand-sub">X-T5 · X-Trans V</span>
+      <span class="brand-sub">for the X-T5</span>
     </a>
     <nav class="tabs" aria-label="Main">
       <a href="{{ root }}" {% if nav == 'originals' %}class="active"{% endif %}>Originals</a>
@@ -32,14 +42,15 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p><strong>{{ site_title }}</strong> — a research-backed film-simulation recipe bank for the Fujifilm X-T5.
-       Original recipes are independently derived and validated; community recipes remain the work of
-       their original creators and always link back to the source.</p>
+    <p><strong>{{ site_title }}</strong> is a recipe bank for the Fujifilm X-T5 that I research
+       the slow way: film datasheets first, then real scans whenever I can get my hands on them.
+       Community recipes belong to their creators and always link back to the original page.</p>
     <p>
-      <a href="{{ root }}ranking/">Full ranking</a> ·
-      <a href="{{ root }}knowledge/validation-methodology/">Validation methodology</a> ·
-      <a href="{{ github }}">Source on GitHub</a>
+      <a href="{{ root }}ranking/">The ranking</a> ·
+      <a href="{{ root }}knowledge/">Knowledge base</a> ·
+      <a href="{{ root }}contact/">Say hello</a>
     </p>
+    <p class="footer-fine">Built by one person with a white balance problem.</p>
   </div>
 </footer>
 

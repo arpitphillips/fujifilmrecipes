@@ -13,6 +13,76 @@
 
 ---
 
+## 2026-07-18 — Site v3 final iteration: audit reaches zero across all 80 pages (author: Claude session)
+**What changed:**
+- **Bulk prose passes across all rendered recipe files + Knowledge articles:** debolded 752 prose spans (blockquote callout keys and all table content kept), converted 138 em dashes with connective continuations to commas/semicolons, then the ~355 residual prose em dashes to commas, protecting any line where the dash sits inside a quotation.
+- **Repairs from reviewing that pass:** restored 103 H1 title dashes the comma pass had broken (recipe titles were showing their "— Fujifilm X-T5" suffixes on the site), and hand-fixed 19 run-on sentences it created, including a meaning inversion in validation-methodology ("don't fight it, switch hosts…" read as a negated list).
+- **Individual residue fixes:** two "reflecting…" participle tails, two "not just/not merely" parallelisms, "crucial" ×2 and "vibrant" ×1 in our own prose (Fujifilm's quoted manual wording kept verbatim), ✓-glyphs in two datasheet-check notes rewritten as words, and the recipe-page source-link label "Original recipe — X" → "Original recipe: X".
+- **`site/audit.py`:** vocabulary matches inside double-quoted spans are now exempt (quotations aren't our authorship).
+- **Final state: audit score 0 on all 80 pages** (from 2,593 at the start of the loop); 0 broken internal links; sitemap covers all 80 pages; screenshots verified in both colour schemes.
+
+**Why:** Completes the user's /loop task: entire site copy humanized per the humanizer skill, SEO layer complete.
+**Follow-ups:** none for copy. The audit gate (`python3 site/audit.py`) can run in CI or before any future content merge to keep new copy clean.
+
+## 2026-07-17 — Site v3 iteration 5: bulk bullet-key transform + knowledge articles (author: Claude session)
+**What changed:**
+- **Mechanical repo-wide transform** across all rendered recipe files, Knowledge articles and RANKING.md (207 lines in 50 files): `- **Key** — explanation` list items became `- Key: explanation`, and `## Heading — subtitle` became `## Heading: subtitle`. Applied only outside tables and code fences; diff sampled and verified readable. This is the single most common machine-styling pattern in the bank.
+- **`Knowledge/film-chemistry-fundamentals.md`** and **`Knowledge/film-simulations.md`** hand-humanized: prose em dashes and bold removed (chemical equations debolded but untouched in content; Fujifilm's own quoted manual descriptions kept verbatim, including the quoted word "vibrant" — quotations are not our copy).
+- Sitewide audit score 1,295 → 822; template pages remain 0.
+
+**Why:** Loop continues; the bulk transform safely cleared the long tail's dominant pattern.
+**Follow-ups:** Remaining ~70 pages average ~11 points (light em dash/bold residue). Next: validation-methodology, ektar-100, vision3-50d, pro-400h, pro400h-comparison, grain-and-detail, double-x, video-mode-settings.
+
+## 2026-07-17 — Site v3 iteration 4: content humanization batch 3 (author: Claude session)
+**What changed:**
+- **`originals/mumbai/`** (all 3 files), **`originals/mumbai-monsoon/`** (all 3 files), **`originals/cinema/kodak-ektachrome-100d/`** (recipe.md + knowledge.md): prose humanized — em dashes, "**Key** — explanation" bullet scaffolding and remaining "vibrant" vocabulary removed; all settings, variants, study evidence and citations preserved.
+- **Two more stale-value fixes found and corrected in mumbai-monsoon:** knowledge.md's design-response table and recipe-video.md's compensation notes both still said "Clarity −1" from before the Clarity-0 quality standard; both now match the recipe's actual Clarity 0.
+- Sitewide audit score 1,462 → 1,295; 7 pages fully clean; template pages remain 0.
+
+**Why:** Loop continues toward fully human-reading site copy.
+**Follow-ups:** Next: film-chemistry-fundamentals (56), kodak-ektar-100 (53), fujicolor-pro-400h (52), validation-methodology (50), kodak-double-x-5222 (49), kodak-ektachrome-e100 (45), then the ~40-and-below tail (~60 pages).
+
+## 2026-07-17 — Site v3 iteration 3: content humanization batch 2 (author: Claude session)
+**What changed:**
+- **`Knowledge/color-science-why-film-cannot-be-faked.md` fully rewritten for prose style** (largest offender: 59 prose em dashes): headings de-title-cased, "**Key** — explanation" bullet scaffolding converted to sentences, em dashes replaced with natural punctuation. Every fact, figure, table, citation and cross-link preserved; footer date bumped.
+- **`originals/creative/silent-atlas/`** (recipe.md, recipe-video.md, knowledge.md): same prose treatment, including the ✓-mark verification summary rewritten as sentences. All settings, the −3B→−2B correction record, and verification history intact.
+- **`originals/fujicolor-superia-400/`** (all 4 files): same treatment; datasheet claims, validation status and caveats preserved verbatim in meaning.
+- Sitewide audit score 1,720 → 1,462; template pages remain clean.
+
+**Why:** Loop continues toward fully human-reading site copy.
+**Follow-ups:** Next batch: mumbai (61, has 2 vocab hits), kodak-ektachrome-100d (57, 1 -ing tail), mumbai-monsoon (57), film-chemistry-fundamentals (56), kodak-ektar-100 (53), fujicolor-pro-400h (52), then the ~40-point tier.
+
+## 2026-07-17 — Site v3 iteration 2: content humanization batch 1 (author: Claude session)
+**What changed:**
+- **Audit refinement (`site/audit.py`):** style tells (em dash, curly quotes, bold) are now measured on prose only, with `<table>` content excluded, and coverage/status glyphs (✅📗🔎🔶❌⚠️) exempted — tables legitimately use em dashes as empty-value markers, bold as row keys, and glyphs as data notation. Sitewide score dropped 2,593 → 1,848 from measurement fairness alone.
+- **`originals/kodak-gold-200/` (all 5 files) humanized:** prose em dashes and bold removed, sentences rewritten to read naturally. Settings, links, sources and tables untouched. Also fixed three **stale-value references** that predated the scan-validation pass: knowledge.md cited "Highlight −1.5 + Clarity −2" and "+4R" (validated recipe is Highlight −2, Clarity 0, +3R); research.md's derivation table cited "Clarity −2"; recipe-video.md's compensation notes referenced stills Clarity −2. Recipe values themselves unchanged.
+- **`Knowledge/film-stocks-master-list.md` prose humanized:** H1 de-title-cased, legend/priority-queue/Ross-note em dashes and bold-key patterns rewritten as plain sentences. All tables and coverage data untouched.
+- Sitewide audit score now 1,720 (was 2,593); 6 pages fully clean; template pages still 0.
+
+**Why:** Loop iterations toward the user's goal: the whole site reading as human-written.
+**Follow-ups:** Next batches: color-science article (59 prose em dashes), silent-atlas, fujicolor-superia-400, mumbai ×2, ektachrome-100d, then the long tail of ~70 pages scoring 10–50.
+
+## 2026-07-17 — Site v3 iteration 1: copy humanized, SEO layer, AI-tell audit (author: Claude session)
+**What changed:**
+- **All site-authored copy rewritten** per the humanizer skill (Wikipedia "Signs of AI writing"): removed em dashes, negative parallelisms, tailing-negation fragments, rule-of-three padding, emoji-decorated headings/bullets, and promotional vocabulary from every template (home, community, knowledge index, about, contact, footer, category intros). Site voice is now first-person (the owner's), with varied rhythm and plain copulas.
+- **SEO layer in `site/build.py` + `base.html`:** per-page unique `<title>` and hand-written meta descriptions (recipe pages get generated but natural ones), canonical URLs against the Pages base URL, Open Graph/Twitter meta, JSON-LD (WebSite on home; Article with author on recipe and knowledge pages), `sitemap.xml`, `robots.txt`.
+- **New `site/audit.py`** — scans built pages for AI-writing tells (em dash counts, AI vocabulary, negative parallelisms, participle tails, curly quotes, emoji, bold density), prints worst pages, exits non-zero if template pages aren't clean. Template pages now score 0; markdown-driven pages carry a total score of ~2,590 to work down in subsequent passes.
+- Display transforms: knowledge titles and recipe display titles render " — " as ": "; creator credits normalised.
+- **Index wording edit:** `X-T5/README.md` + `RANKING.md` Mumbai mood cell "Warm vibrant sunny street" → "Warm lively sunny street" ("vibrant" is a flagged AI-vocabulary word surfacing on the homepage).
+
+**Why:** User asked for the entire site copy redone with the humanizer skill + SEO best practices so the site reads as human-written, iterating in a loop until clean.
+**Follow-ups:** Loop continues: humanize the rendered markdown prose (knowledge articles and recipe files) in batches, preserving all settings, facts and sources — worst pages first. Decide whether table status glyphs (✅/❌) should stay exempt in the audit.
+
+## 2026-07-17 — Site v2: internal references scrubbed, light/dark, image-led design (author: Claude session)
+**What changed (all in `site/`):**
+- **No internal-document references anywhere on the site.** Removed the per-page "Source file" footers and all GitHub links from the chrome. The link rewriter now *unlinks* anything that isn't a site page (instead of falling back to a GitHub URL), rewrites file-name link texts to human wording ("the research notes", "the grade analysis"), and a prose-cleanup pass rewrites remaining file/folder mentions (`recipe.md`, `_reference-sources/`, CHANGELOG, the manual PDFs…). Verified by scanner: 0 `.md`/`.pdf`/path mentions and 0 repo links across all 80 pages.
+- **About page rewritten** as site-native content (was the rendered root README, which is full of repo structure); Contact page rewritten without the GitHub card, adding "send a sample frame" and "send film scans" cards.
+- **Light/dark theming** via `prefers-color-scheme` — warm-paper light palette, darkroom-charcoal dark palette, all colors tokenised.
+- **Image-led layout:** every recipe card and page now has a photo slot. The generator publishes images found in a recipe's `test-shots/` folder (cover on the card + gallery on the page); until real frames exist it renders film-frame placeholders tinted with the recipe's base-sim colour, and each empty gallery invites readers to submit a frame via the contact page. Also: hero film-strip of the flagship looks' sim colours, per-article emoji on the knowledge index, punchier copy throughout ("Your X-T5 already shoots film.").
+
+**Why:** User feedback on site v1 — remove internal-doc references, make it fun, follow system light/dark, and design image-heavy with space for sample images.
+**Follow-ups:** Drop real JPEGs into any recipe's `test-shots/` and rebuild — they'll appear automatically. `references/` scans stay unpublished by design (third-party material, analysis-only).
+
 ## 2026-07-17 — Static knowledge-base website added (author: Claude session)
 **What changed:**
 - New **`site/`** — a static site generator (`build.py` + Jinja2 templates + `static/style.css`) that renders the whole repo into a browsable website (`_site/`, gitignored). No content is duplicated: the markdown stays the single source of truth, and every page footer links back to its source file on GitHub.

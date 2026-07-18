@@ -1,6 +1,6 @@
 # Vivid Velvia — Fujifilm X-T5 (X-Trans V)
 
-Velvia base. Emulates **Fujichrome Velvia** slide film — positioned by the author between his "Velvia Film" recipe (more subdued) and "The Rockwell" (over-the-top): bold, saturated, but not cartoonish. Fills the bank's Velvia/landscape-slide gap.
+Velvia base. Emulates Fujichrome Velvia slide film, positioned by the author between his "Velvia Film" recipe (more subdued) and "The Rockwell" (over-the-top): bold, saturated, but not cartoonish. Fills the bank's Velvia/landscape-slide gap.
 
 [Source](https://fujixweekly.com/2025/10/28/vivid-velvia-fujifilm-x-e5-x-trans-v-film-simulation-recipe/)
 
@@ -21,6 +21,6 @@ Velvia base. Emulates **Fujichrome Velvia** slide film — positioned by the aut
 | ISO | Auto, up to ISO 6400 |
 | Exposure Comp | +1/3 to +1 (typically) |
 
-**Notes**
-- Best for colourful landscapes; also does well at night. **Not for portraits** (Velvia pumps skin tones — see [Knowledge/color-science](../../../Knowledge/color-science-why-film-cannot-be-faked.md): Velvia can clip bright reds/pinks out of sRGB gamut).
+Notes
+- Best for colourful landscapes; also does well at night. Not for portraits (Velvia pumps skin tones; see [Knowledge/color-science](../../../Knowledge/color-science-why-film-cannot-be-faked.md): Velvia can clip bright reds/pinks out of sRGB gamut).
 - Clarity +3 slows shot-to-shot saving.

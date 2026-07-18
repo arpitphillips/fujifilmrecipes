@@ -1,8 +1,8 @@
 # Fujicolor Superia X-Tra 400 — Fujifilm X-T5 (X-Trans V) · VIDEO / MOVIE
 
-Movie-mode version of the [stills recipe](recipe.md). Movie mode **drops Grain, Color Chrome Effect, Color Chrome FX Blue, and Clarity** (see [video-mode-settings](../../../Knowledge/video-mode-settings.md)); the cool Superia colour/tone foundation transfers, richness is compensated. Target: **standard film-simulation recording**, not F-Log/HLG.
+Movie-mode version of the [stills recipe](recipe.md). Movie mode drops Grain, Color Chrome Effect, Color Chrome FX Blue and Clarity (see [video-mode-settings](../../../Knowledge/video-mode-settings.md)). The cool Superia colour and tone foundation transfers directly, and the lost richness gets compensated. The target is standard film-simulation recording, not F-Log/HLG.
 
-Set in the movie shooting display → **IMAGE QUALITY SETTING** tab.
+Set in the movie shooting display → IMAGE QUALITY SETTING tab.
 
 | Setting | Value | vs stills |
 |---|---|---|
@@ -17,7 +17,7 @@ Set in the movie shooting display → **IMAGE QUALITY SETTING** tab.
 | Interframe NR | AUTO | movie-only; OFF for fast motion |
 | ISO | Auto, up to ISO 6400 | same |
 
-### Dropped → handled
-- **CCFXB Weak / CCE Weak:** gone → **Color +3** restores cool-blue and green richness.
-- **Grain (Weak/Small):** gone → add fine grain in **post** if wanted (Superia grain is subtle anyway).
-- **Clarity:** was 0 already — nothing lost.
+### What was dropped and how it's handled
+- CCFXB Weak and CCE Weak don't exist in video, so Color +3 restores the cool-blue and green richness.
+- Grain (Weak/Small) doesn't exist either. Add fine grain in post if you want it; Superia grain is subtle anyway.
+- Clarity was already 0, so nothing is lost.

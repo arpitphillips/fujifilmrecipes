@@ -1,6 +1,6 @@
 # Mumbai (General) — Grade Analysis & The Soul of Bombay
 
-> Original design, grounded in an **11-image study** of real Mumbai photographs across conditions. See [`recipe.md`](recipe.md), [`recipe-video.md`](recipe-video.md), and the [Knowledge base](../../../Knowledge/README.md).
+> Original design, grounded in an 11-image study of real Mumbai photographs across conditions. See [`recipe.md`](recipe.md), [`recipe-video.md`](recipe-video.md), and the [Knowledge base](../../../Knowledge/README.md).
 
 ## The 11-image study (what Bombay actually looks like)
 Fetched from Wikimedia Commons (analysis-only), spanning dusk, harsh sun, haze, night, indoor festival, and street:
@@ -19,15 +19,15 @@ Fetched from Wikimedia Commons (analysis-only), spanning dusk, harsh sun, haze, 
 | 10 | Station platform performers | Night/flash | Terracotta pavers, blue tarp again, brass/wood warmth, flash-lit skin against black |
 | 11 | Home Ganpati shrine | Indoor mixed | Festival density: **marigold orange, rani pink, deep red, brass/copper, diya flame** |
 
-(A 12th "Monsoon" hit was Kashmir, not Mumbai — discarded; its cool grey-blue supports the separate [Mumbai Monsoon](../mumbai-monsoon/knowledge.md) recipe.)
+(A 12th "Monsoon" hit was Kashmir, not Mumbai, discarded; its cool grey-blue supports the separate [Mumbai Monsoon](../mumbai-monsoon/knowledge.md) recipe.)
 
 ## The soul, distilled
-Across every image, Bombay is **warmth wrapped in haze, with colour that refuses to be dulled**:
-- **Golden-ochre warmth is the base note** — colonial basalt, rust, terracotta, sodium light, brass. The city is *warm* in every light, day and night.
-- **The sea is always in the air** — haze softens highlights, dissolves distance, and turns dusk milky-gold. Contrast lives up close; the horizon melts.
-- **Colour accents are the heartbeat** — kaali-peeli yellow, blue tarps (in nearly every frame), marigold, saffron, rani pink, laundry mosaics. Saturated life on an earthy stage.
-- **Blue is real but gentle** — deep only on clear days, usually paled by haze. Never Velvia-deep.
-- **Texture everywhere** — rust, peeling paint, corrugated tin, wet stone, crowds. Grit is not noise; it's the subject.
+Across every image, Bombay is warmth wrapped in haze, with colour that refuses to be dulled:
+- Golden-ochre warmth is the base note: colonial basalt, rust, terracotta, sodium light, brass. The city is warm in every light, day and night.
+- The sea is always in the air. Haze softens highlights, dissolves distance, and turns dusk milky gold. Contrast lives up close while the horizon melts.
+- Colour accents are the heartbeat: kaali-peeli yellow, blue tarps in nearly every frame, marigold, saffron, rani pink, laundry mosaics. Saturated life on an earthy stage.
+- Blue is real but gentle. Deep only on clear days, usually paled by haze, never Velvia-deep.
+- Texture everywhere: rust, peeling paint, corrugated tin, wet stone, crowds. Grit is not noise here. It's the subject.
 
 ## How the recipe embodies it
 | Soul element | Setting |
@@ -41,10 +41,10 @@ Across every image, Bombay is **warmth wrapped in haze, with colour that refuses
 | Warm-on-dark nights | The warm WB carries sodium light naturally; let ISO climb |
 
 ## Variants (from the study)
-- **Marine Drive dusk / sea-haze:** Exposure **+1/3**, Highlight **−2** — lean into the milky golden glow.
-- **Clear-winter-sky landmarks:** CCFXB **Strong**, Color **+4** — the Gateway/pillar deep-blue days.
-- **Festival (Ganpati/Holi):** Color **+4**, Grain **Weak/Small** — maximum colour density, cleaner faces.
-- **Monsoon:** switch to [Mumbai Monsoon](../mumbai-monsoon/recipe.md) — the cool, wet sibling.
+- Marine Drive dusk and sea-haze: Exposure +1/3, Highlight −2, leaning into the milky golden glow.
+- Clear-winter-sky landmarks: CCFXB Strong, Color +4, for the Gateway and pillar deep-blue days.
+- Festival (Ganpati/Holi): Color +4, Grain Weak/Small. Maximum colour density, cleaner faces.
+- Monsoon: switch to [Mumbai Monsoon](../mumbai-monsoon/recipe.md), the cool, wet sibling.
 
 ## Validation status
-Original design — **11 real images across 7 condition types** (top tier for a place-look; no film datasheet applies). Refined once from the evidence (Highlight −1 → −1.5). Field-test next: drop your own frames into [`test-shots/`](test-shots/) — especially dusk Marine Drive, monsoon street, and night bazaar — and I'll tune further.
+Original design, studied against 11 real images across 7 condition types, which is the top tier for a place-look since no film datasheet applies. Refined once from the evidence (Highlight −1 → −1.5). Field-testing comes next: drop your own frames into [`test-shots/`](test-shots/), especially dusk Marine Drive, monsoon street and night bazaar, and I'll tune further.

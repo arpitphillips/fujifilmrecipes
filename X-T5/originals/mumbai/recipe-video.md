@@ -1,6 +1,6 @@
 # Mumbai (General) — Fujifilm X-T5 (X-Trans V) · VIDEO
 
-Movie-mode version of the [stills recipe](recipe.md). Movie mode **drops Grain, Color Chrome Effect, Color Chrome FX Blue, and Clarity** (see [video-mode-settings](../../../Knowledge/video-mode-settings.md)). Target: standard film-simulation recording.
+Movie-mode version of the [stills recipe](recipe.md). Movie mode drops Grain, Color Chrome Effect, Color Chrome FX Blue and Clarity (see [video-mode-settings](../../../Knowledge/video-mode-settings.md)). The target is standard film-simulation recording.
 
 | Setting | Value | vs stills |
 |---|---|---|
@@ -15,5 +15,5 @@ Movie-mode version of the [stills recipe](recipe.md). Movie mode **drops Grain, 
 | Interframe NR | AUTO | movie-only |
 | ISO | Auto, up to ISO 6400 | same |
 
-- **Clarity +1** (the grit) and **Grain** are unavailable in video → add grain in post; a mist filter is *not* wanted here (this look is crisp/gritty, not hazy-soft).
-- The warm/vibrant colour and blue sky carry through via WB + Classic Negative + Color +4.
+- Clarity +1 (the grit) and Grain don't exist in video, so add grain in post. A mist filter is not wanted here; this look is crisp and gritty, not hazy-soft.
+- The warm, lively colour and blue sky carry through via the WB shift, Classic Negative and Color +4.

@@ -3,14 +3,14 @@
 > Read alongside [`recipe.md`](recipe.md) and the [Knowledge base](../../../Knowledge/README.md).
 
 ## The film being emulated
-**CineStill 800T** is a cult **tungsten-balanced** film: repackaged Kodak Vision3 500T motion-picture stock with the anti-halation *Remjet* layer removed so it develops in standard C41. Two consequences define its look:
-1. **Tungsten balance** → shot in daylight it goes strongly **blue**; it's designed for **artificial/night** light.
-2. **No Remjet** → bright light sources **bloom/halate** with a red-pink glow (streetlights, neon).
+CineStill 800T is a cult tungsten-balanced film: repackaged Kodak Vision3 500T motion-picture stock with the anti-halation *Remjet* layer removed so it develops in standard C41. Two consequences define its look:
+1. Tungsten balance → shot in daylight it goes strongly blue; it's designed for artificial/night light.
+2. No Remjet → bright light sources bloom/halate with a red-pink glow (streetlights, neon).
 
-So the target look is **cool, cinematic night photography** with glowing lights.
+So the target look is cool, cinematic night photography with glowing lights.
 
 ## The grade in one line
-A **cool, tungsten-blue, cinematic low-contrast night look** with soft mids, deep-but-lifted shadows, heavy grain, and rich colour around light sources.
+A cool, tungsten-blue, cinematic low-contrast night look with soft mids, deep-but-lifted shadows, heavy grain, and rich colour around light sources.
 
 ## How the settings build that grade
 | Setting | Value | What it contributes |
@@ -29,16 +29,16 @@ A **cool, tungsten-blue, cinematic low-contrast night look** with soft mids, dee
 | **High ISO NR** | −4 | Preserve detail/grain (important at the high ISOs night shooting needs). |
 
 ## Reading the tonal/colour signature
-- **Contrast:** low overall (Eterna + −5 clarity + −3 sharpness) with a modest shadow deepening (+2) for night weight.
-- **Saturation:** pushed up (Color +4) specifically so light sources glow with colour against the dark.
-- **Cast:** strongly cool/blue — the defining tungsten-film characteristic.
-- **Texture:** the softest *and* grainiest combination here — soft edges/mids over heavy coarse grain = pure cinematic night.
+- Contrast: low overall (Eterna + −5 clarity + −3 sharpness) with a modest shadow deepening (+2) for night weight.
+- Saturation: pushed up (Color +4) specifically so light sources glow with colour against the dark.
+- Cast: strongly cool/blue, the defining tungsten-film characteristic.
+- Texture: the softest *and* grainiest combination here, soft edges/mids over heavy coarse grain = pure cinematic night.
 
 ## Best use
-**After-dark photography** — city streets, neon, streetlamps, windows, interiors with mixed artificial light. Can give interesting cool results in daylight too (as tungsten film does), but it's built for night.
+After-dark photography, city streets, neon, streetlamps, windows, interiors with mixed artificial light. Can give interesting cool results in daylight too (as tungsten film does), but it's built for night.
 
 ## X-Trans V note
-X-Trans V port of the X-Trans IV CineStill 800T; the only IV→V change was **Color Chrome FX Blue Strong → Weak** (Eterna blues render deeper on V). See [conversion notes](../../../Knowledge/x-trans-v-and-conversion.md).
+X-Trans V port of the X-Trans IV CineStill 800T; the only IV→V change was Color Chrome FX Blue Strong → Weak (Eterna blues render deeper on V). See [conversion notes](../../../Knowledge/x-trans-v-and-conversion.md).
 
 ## Related in this collection
 - The only Eterna-based (cinematic) recipe in this set, and the go-to for night/mood. For a *warm* vintage look instead, see [Kodak Gold 200](../../originals/kodak-gold-200/knowledge.md); for cool-but-not-night, [Pacific Blues](../pacific-blues/knowledge.md).

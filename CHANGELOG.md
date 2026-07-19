@@ -13,6 +13,20 @@
 
 ---
 
+## 2026-07-19 — 8 famous recipes added (incl. video wing); datasheet manifest; the nerd guide (author: Claude session)
+**What changed:**
+- **8 new attributed reference recipes** (each `recipe.md` + drop-folders, indexed in `X-T5/README.md`), researched from the most-popular / Instagram-known / YouTube-cinematic space. All by Ritchie Roesch (Fuji X Weekly), all with Source links:
+  - Stills: **timeless-negative** (NN, one of FXW's most popular V recipes), **nostalgia-negative** (Ritchie's first X-T5 recipe), **nostalgic-americana** (cool aged-print NN).
+  - **Video wing** (FXW's May 2026 video-recipe series, the "cinematic YouTube" category): **nostalgic-color** (NN, memory-toned), **chrome-color** (CC documentary), **vivid-fujichrome** (Velvia postcard), **reala-color** (Reala Ace true-to-life).
+  - **cine-teal** (Eterna, the famous moody teal look) — an X-Trans IV recipe, ported with the documented CCFXB Strong→Weak drop and the port noted in the file.
+  - Research method note: FXW and most recipe sites are Cloudflare-blocked from this environment, so settings were transcribed from search-index snippets of the source pages, complete for every recipe added; recipes whose full settings couldn't be verified (Roman Fox's five, Shuttergroove's movie recipes, Ross's four film-emulation looks) were left out rather than guessed.
+- **Datasheet archive: manifest + fetch script.** This environment's network policy blocks arbitrary downloads (proxy CONNECT 403), so instead of PDFs: **`datasheets/MANIFEST.md`** now catalogues every film-stock datasheet known to exist (~50 pending beyond the 48 archived, across Kodak still/motion, Fujifilm, Ilford, Agfa, Foma, Adox, Rollei, Bergger, Ferrania, and a none-exists list), and **`datasheets/fetch-datasheets.sh`** downloads all pending sheets into the right folders when run with open network. README points to both.
+- **New Knowledge article: `nerd-guide-datasheet-to-recipe.md`** ("The nerd guide") — how to read a characteristic curve, granularity scales (RMS vs PGI), spectral sensitivity; the full measurement-to-menu mapping table; the four judgment calls no sheet can settle; a Gold 200 worked example; and a recipe-skepticism checklist. Indexed in `Knowledge/README.md`; renders on the site.
+- Site rebuilt: 89 pages (was 80), audit score still 0 sitewide, 0 broken links, sitemap updated.
+
+**Why:** User asked for more famous/popular/cinematic recipes, every findable datasheet, enriched knowledge, and a guide for nerds.
+**Follow-ups:** Run `fetch-datasheets.sh` on an unrestricted machine, then flip MANIFEST statuses and log. Candidates left on the table for a future pass (full settings unobtainable this session): Roman Fox's 5 street recipes (snapsbyfox.com), Shuttergroove's movie recipes (In The Mood For Teal, Super 8), Ross's Ultramax/XP2/Fujipop/Lomo800 film emulations.
+
 ## 2026-07-18 — Site v3 final iteration: audit reaches zero across all 80 pages (author: Claude session)
 **What changed:**
 - **Bulk prose passes across all rendered recipe files + Knowledge articles:** debolded 752 prose spans (blockquote callout keys and all table content kept), converted 138 em dashes with connective continuations to commas/semicolons, then the ~355 residual prose em dashes to commas, protecting any line where the dash sits inside a quotation.

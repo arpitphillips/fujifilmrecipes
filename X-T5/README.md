@@ -104,6 +104,14 @@ See [Knowledge/validation-methodology.md](../Knowledge/validation-methodology.md
 | [ross-sherbet-lemon](reference-recipes/ross-sherbet-lemon/) | Velvia | Creative: bright bold seaside/funfair | — | reference (Ross McConaghy) |
 | [ross-pumpkin-soup](reference-recipes/ross-pumpkin-soup/) | Nostalgic Neg. | Creative: warm punchy autumnal | — | reference (Ross McConaghy) |
 | [ross-salted-slate](reference-recipes/ross-salted-slate/) | Acros+G | Creative: dark slate-grey grainy B&W | — | reference (Ross McConaghy) |
+| [timeless-negative](reference-recipes/timeless-negative/) | Nostalgic Neg. | Faded any-decade print look | — | reference *(added 2026-07-19)* |
+| [nostalgia-negative](reference-recipes/nostalgia-negative/) | Nostalgic Neg. | Warm 70s New Color print | — | reference *(added 2026-07-19)* |
+| [nostalgic-americana](reference-recipes/nostalgic-americana/) | Nostalgic Neg. | Cool aged shoebox print | — | reference *(added 2026-07-19)* |
+| [cine-teal](reference-recipes/cine-teal/) | Eterna | Moody teal cinematic (IV→V port) | — | reference *(added 2026-07-19)* |
+| [nostalgic-color](reference-recipes/nostalgic-color/) | Nostalgic Neg. | Video: warm memory-like footage | ✅ | reference *(added 2026-07-19)* |
+| [chrome-color](reference-recipes/chrome-color/) | Classic Chrome | Video: documentary editorial | ✅ | reference *(added 2026-07-19)* |
+| [vivid-fujichrome](reference-recipes/vivid-fujichrome/) | Velvia | Video: bold postcard slide colour | ✅ | reference *(added 2026-07-19)* |
+| [reala-color](reference-recipes/reala-color/) | Reala Ace | Video: clean true-to-life | ✅ | reference *(added 2026-07-19)* |
 
 > **Video recipes** exist for all **originals** (Gold 200 & Mumbai Monsoon as separate `recipe-video.md`; Superia and the cinema sims as inline "Video (movie mode)" sections). Movie mode drops grain/chrome/clarity — see [Knowledge/video-mode-settings.md](../Knowledge/video-mode-settings.md). Video versions of the reference recipes can be generated on request.
 

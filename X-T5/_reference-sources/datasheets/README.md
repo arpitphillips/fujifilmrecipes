@@ -2,6 +2,8 @@
 
 Official manufacturer technical datasheets for the stocks in [Knowledge/film-stocks-master-list.md](../../../Knowledge/film-stocks-master-list.md). These are the **datasheet evidence tier** for the [validation methodology](../../../Knowledge/validation-methodology.md) — use them for characteristic curves, spectral sensitivity, RMS granularity, and reciprocity data when deriving or validating recipes.
 
+> **Growing the archive:** [MANIFEST.md](MANIFEST.md) catalogues every additional datasheet known to exist (with status per stock), and [fetch-datasheets.sh](fetch-datasheets.sh) downloads the pending ones — run it on a machine with open network access, since the hosted session environment blocks arbitrary downloads. How to *read* these sheets is covered in the [nerd guide](../../../Knowledge/nerd-guide-datasheet-to-recipe.md).
+
 Fetched 2026-07-15 (46 PDFs, ~25 MB); +2 more fetched 2026-07-16 (Double-X, Ektachrome 100D cine). Analysis-only; not redistributed with the product.
 
 ## fujifilm/ (archived 2010-era sheets via 125px.com)

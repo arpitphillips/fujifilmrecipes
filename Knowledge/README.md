@@ -30,6 +30,7 @@ Understanding a recipe = understanding the base profile, then reading each modif
 | [film-chemistry-fundamentals.md](film-chemistry-fundamentals.md) | **Film chemistry** — silver halide crystals, latent image formation, development/stop/fix reactions, why grain size ↔ film speed ↔ contrast are chemically coupled, sepia toning chemistry (from the UW–Eau Claire chemistry-of-photography reference cited by the Imaging Resource guide) |
 | [pro400h-vs-proneghi-analog-comparison.md](pro400h-vs-proneghi-analog-comparison.md) | **Analog vs. digital comparison** — Fujifilm Pro 400H film stock vs. Pro Neg Hi simulation, key differences in shadow cast, highlight shoulder, green rendering, and recipe settings to bridge the gap |
 | [film-stocks-master-list.md](film-stocks-master-list.md) | **The canon of top film stocks** (Fujifilm, Kodak, Ilford, CineStill, Agfa+) with the bank's recipe-coverage status and the priority queue for closing gaps |
+| [nerd-guide-datasheet-to-recipe.md](nerd-guide-datasheet-to-recipe.md) | **The nerd guide** — how to read a film datasheet (characteristic curves, granularity, spectral sensitivity) and turn the numbers into X-T5 settings, with the full measurement-to-menu mapping table and a worked example |
 
 ## How to read the per-recipe knowledge files
 

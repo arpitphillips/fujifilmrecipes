@@ -59,14 +59,14 @@ A `reference` recipe (attributed capture) becomes a validated `original` only af
 | Recipe | Tier | Notes |
 |---|---|---|
 | Kodak Gold 200 | Datasheet + Characteristic + **Scan (full)** | ~35 scans, all light conditions; WB & Clarity refined from evidence |
-| Kodak Portra 400 (original) | **Datasheet (E-4050 archived: PGI 37@4×6, latitude, skin aims)** + Characteristic (strong) | derived 2026-07-15; scan pass pending |
+| Kodak Portra 400 (original) | **Datasheet (E-4050 archived: PGI 37@4×6, latitude, skin aims)** + Characteristic (strong) + Scan (partial: 1 sunny-daylight Commons scan, 2026-07-20) | more scans wanted (skin, overcast, golden hour) |
 | Kodak Ektachrome E100 (original) | **Datasheet (E-4000 archived: RMS 8, curves, low-contrast tone scale)** | derived 2026-07-15; characteristic log + scan pass pending |
 | Fujicolor Superia 400 | Datasheet + Characteristic + Scan (partial) | 2 scans, one photographer — cool palette/tone confirmed; grain level provisional |
 | Fujifilm Acros 100 | **Datasheet (RMS 7 extracted)** + Characteristic + Scan | 2 scans (soft + harsh light) |
 | Ilford HP5 Plus 400 | **Datasheet (extracted)** + Characteristic + Scan (partial) | 1 scan; more conditions wanted |
 | Kodak Tri-X 400 | **Datasheet (F-4017 extracted)** + Characteristic | scans pending; recipe deliberately targets the *pushed* reportage look (documented in its knowledge.md) |
 | Vision3 500T | Datasheet + Characteristic + Proxy-scan | 1 real CineStill night frame (same emulsion) — validates clean/stylised split |
-| Vision3 250D | Datasheet + Characteristic | scan pass pending |
+| Vision3 250D | Datasheet + Characteristic + Scan (partial: 1 overcast Commons scan, 2026-07-20) | more conditions wanted |
 | Kodak 2383 Print | **Datasheet (LAD/tone-scale extracted)** + Characteristic | scan/frame-grab pass pending |
 | Kodak Vision3 50D (original) | **Datasheet (finest-grain claim, archived)** + Characteristic (Red Rocket, Vanessa Whyte BSC) + **Scan** | 2 real Commons scans (daylight + overcast); derived 2026-07-16 |
 | Kodak Double-X 5222 (original) | **Datasheet (RMS 14, gamma 0.65–0.70, archived)** + Characteristic (Raging Bull, Schindler's List, Manhattan) | no Commons frame-grabs exist (real footage isn't Commons material); derived 2026-07-16 |

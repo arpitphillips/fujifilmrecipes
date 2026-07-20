@@ -31,6 +31,7 @@ Understanding a recipe = understanding the base profile, then reading each modif
 | [pro400h-vs-proneghi-analog-comparison.md](pro400h-vs-proneghi-analog-comparison.md) | **Analog vs. digital comparison** — Fujifilm Pro 400H film stock vs. Pro Neg Hi simulation, key differences in shadow cast, highlight shoulder, green rendering, and recipe settings to bridge the gap |
 | [film-stocks-master-list.md](film-stocks-master-list.md) | **The canon of top film stocks** (Fujifilm, Kodak, Ilford, CineStill, Agfa+) with the bank's recipe-coverage status and the priority queue for closing gaps |
 | [nerd-guide-datasheet-to-recipe.md](nerd-guide-datasheet-to-recipe.md) | **The nerd guide** — how to read a film datasheet (characteristic curves, granularity, spectral sensitivity) and turn the numbers into X-T5 settings, with the full measurement-to-menu mapping table and a worked example |
+| [fujifilm-official-design-notes.md](fujifilm-official-design-notes.md) | **Fujifilm's own words** — first-party design statements from the Image Design team's X Stories and product pages (Acros grain engine, Classic Neg's magenta highlights, Eterna as ungraded canvas, Nostalgic Neg's shadow amber, Reala Ace saturation compression), each mapped to recipe implications |
 
 ## How to read the per-recipe knowledge files
 

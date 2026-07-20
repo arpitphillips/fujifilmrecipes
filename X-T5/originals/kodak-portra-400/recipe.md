@@ -37,3 +37,5 @@ Distinct from [kodak-portra-400-v2](../../reference-recipes/kodak-portra-400-v2/
 - Under tungsten/fluorescent the real film needs colour-compensating filters; digitally, correct WB toward the source or accept the warm cast.
 
 Validation tier: Datasheet-validated (E-4050: PGI, latitude, balance, skin-density aims, archived PDF). Characteristic pass strong (best-documented film in the bank's sources). Scan-validation pending; drop real Portra 400 scans into [`references/`](references/).
+
+> **Scan validation, first pass:** 1 real Portra 400 scan analysed (sunny daylight, red and white coach; Wikimedia Commons, analysis-only). It confirmed restrained saturation even on a saturated red subject, warm-neutral rather than stark whites, open shadows with detail, muted natural greens, and fine non-clumpy grain, all consistent with Weak/Small grain, Shadow −1, Color +1 and the DR400 soft-highlight build. More scans (portrait skin, overcast, golden hour) are still wanted; drop them into [`references/`](references/).

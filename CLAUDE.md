@@ -52,6 +52,7 @@ Core philosophy (grounded in [Knowledge/color-science-why-film-cannot-be-faked.m
 6. **Update the indexes** — a new recipe must be added to `X-T5/README.md` (correct tier table) and, if ranked, `RANKING.md`.
 7. **All links relative**; run a quick link check after moving anything.
 8. **Knowledge files carry their sources** — every claim ties to a source line at top or a citation inline; keep the `*Last updated: YYYY-MM-DD*` footer current.
+9. **Continuous pro-tip enrichment (standing user directive, 2026-07-20):** every research iteration must convert findings into practical pro-tips/notes on the recipe listings themselves — not just the knowledge layer. When new evidence lands (official design notes, scan analysis, handling quirks), append a "Pro tip" note to the affected recipe files.
 
 ## Key cross-file facts (so you don't re-derive them)
 

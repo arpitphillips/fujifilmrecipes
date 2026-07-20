@@ -13,6 +13,30 @@
 
 ---
 
+## 2026-07-20 — Second-machine copy merged: official design notes, pro-tips, scan passes (author: Claude session)
+**What changed:**
+- User uploaded the second machine's repo copy (the diverged `D:\Fujifilm Recipes`); its four unmerged sessions (2026-07-16 through 2026-07-20, logged below) are now integrated into this canonical copy. All ported prose was restyled to this copy's human-written standard; facts, official quotes and settings kept intact.
+- **New `Knowledge/fujifilm-official-design-notes.md`** — first-party design statements from Fujifilm's X Stories/product pages for Acros, Classic Neg., Eterna, Nostalgic Neg. and Reala Ace, each mapped to recipe implications. Indexed in `Knowledge/README.md`.
+- **Bank-wide "Pro tips" section added to `X-T5/README.md`** (HEIF disables Clarity; Clarity save-speed cost; FINE+RAW re-development workflow; ISO-as-grain-control on Acros; per-C-slot WB memory; Classic Neg magenta-highlight tuning rule; Nostalgic Neg shadow-amber rule).
+- **Per-recipe notes ported (13 files):** pro tips on Tri-X, Gold 200, CineStill 800T; Nostalgic Neg. official note on california-summer, 1976-kodak, thommys-ektachrome, ross-pumpkin-soup; Reala Ace saturation-compression note on reala-ace, fujifilm-negative; Eterna ungraded-canvas confirmation in `originals/cinema/README.md`; scan-validation first-pass notes on **kodak-portra-400** and **kodak-vision3-250d** (both now datasheet + scan (partial) in the index and ledger) and **kodachrome-25**.
+- **New CLAUDE.md rule 9:** the standing continuous pro-tip enrichment directive from the second machine now lives in the repo rules, where both copies' agents will honour it.
+- Not ported: everything else in the upload was an older snapshot of files already improved here (the delta-3200 comparison and pastel-dream variant were already present); the upload's `.claude/` settings and macOS cruft were ignored.
+
+## 2026-07-20 — Standing directive added: continuous pro-tip enrichment (author: Claude session, second machine; merged 2026-07-20)
+**What changed:** every research iteration must convert findings into practical pro-tips on the recipe listings themselves. Immediate enrichment pass: bank-wide Pro tips section in `X-T5/README.md`; per-recipe tips for Tri-X, Gold 200, CineStill 800T.
+**Why:** user directive: "keep making edits to recipe listings: pro-tips, pro-notes, top tips, suggestions, recommendations as you keep finding information."
+
+## 2026-07-20 — Loop iteration 4: scan-validation pass, Portra 400 / Vision3 250D / Kodachrome 25 (author: Claude session, second machine; merged 2026-07-20)
+**What changed:** real Wikimedia Commons scans analysed (analysis-only) for recipes lacking pixel evidence; validation notes appended and ledger updated. Portra 400 and Vision3 250D move to Scan (partial); the Kodachrome 25 reference's headline Sharpness +3 / Grain Off / Color +1 choices confirmed against a dated May-1980 K25 scan. A fourth candidate (a slide labelled only "Dia") was discarded for lacking stock attribution rather than counted as Ektachrome evidence.
+**Follow-ups:** E100 scan pass still open; Tri-X and 2383 remain the least scan-covered; partials want 5-scan spreads per methodology.
+
+## 2026-07-20 — Loop iterations 2–3: remaining official sim pages mined, insights applied (author: Claude session, second machine; merged 2026-07-20)
+**What changed:** mined the Eterna, Nostalgic Neg. and Reala Ace official pages into `fujifilm-official-design-notes.md` (Eterna as deliberately ungraded canvas; Nostalgic Neg's WB-immovable shadow amber; Reala Ace's nonlinear saturation compression), then applied the insights as notes on the affected recipe files.
+**Follow-ups:** remaining official pages (Provia, Velvia, Astia, Classic Chrome, Pro Neg) for a future pass.
+
+## 2026-07-16 — Loop iteration 1: Fujifilm official design notes mined (author: Claude session, second machine; merged 2026-07-20)
+**What changed:** first version of `fujifilm-official-design-notes.md` with the Acros engineering story (10-year development; core-level, tone-differentiated, ISO-scaling grain) and Classic Neg's official signature (cyan-green shadows, magenta highlights, aged-consumer-film intent), each mapped to recipe implications, including the new tuning rule: too-pink Classic Neg highlights want less Red, not more Blue.
+
 ## 2026-07-19 — 8 famous recipes added (incl. video wing); datasheet manifest; the nerd guide (author: Claude session)
 **What changed:**
 - **8 new attributed reference recipes** (each `recipe.md` + drop-folders, indexed in `X-T5/README.md`), researched from the most-popular / Instagram-known / YouTube-cinematic space. All by Ritchie Roesch (Fuji X Weekly), all with Source links:

@@ -24,3 +24,5 @@ A warm, faded, sun-drenched Nostalgic Neg. look (amber highlights, rich shadows,
 
 ### Compatibility
 Fifth-generation only (X-T5, X-H2/S, X-S20, X100VI, X-T50 …) because it requires the Nostalgic Neg. film simulation. No X-Trans IV/III equivalent.
+
+> **Official design note:** Fujifilm's Nostalgic Neg. page confirms the sim's amber warmth is anchored in the shadows, where negative film normally goes cool, and "does not change easily when adjusted via white balance alone". Don't try to cool this recipe via WB shifts; if you need neutral shadows, switch base sims instead. The flip side: portraits in shadow are a native strength of this base, since skin keeps its richness in shade. See [fujifilm-official-design-notes](../../../Knowledge/fujifilm-official-design-notes.md).

@@ -37,3 +37,5 @@ Cinema looks are most-used in **video** — but movie mode drops Grain, Color Ch
 - [Eastman Double-X 5222/7222 technical data (PDF, archived)](../../../_reference-sources/datasheets/kodak-motion/double-x_5222.pdf)
 - [Kodak Ektachrome 100D 5294/7294 technical data (PDF, archived)](../../../_reference-sources/datasheets/kodak-motion/ektachrome-100d_5294.pdf)
 - Characteristic research: [The Hollywood History of Iconic Kodak Film Stocks](https://www.filmmakersacademy.com/blog-hollywood-kodak-film-stocks/), reporting on *Red Rocket*, Vanessa Whyte BSC, *Raging Bull*, *Schindler's List*, and *Poor Things* (fetched 2026-07-16).
+
+> **Officially confirmed:** Fujifilm's own Eterna page states the sim deliberately looks "weak" as isolated stills. It is an ungraded cinema canvas meant for a finishing layer, "opening the door" to post-production. That is first-party validation of this family's approach: the Color lifts, CCE Strong and tone shaping in these recipes are the finishing grade. See [fujifilm-official-design-notes](../../../Knowledge/fujifilm-official-design-notes.md).

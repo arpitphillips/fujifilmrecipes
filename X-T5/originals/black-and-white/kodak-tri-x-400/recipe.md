@@ -22,3 +22,5 @@ The iconic photojournalism B&W: gritty, punchy, deep rich blacks with heavy, dis
 - High ISO by design: Tri-X is often shot/pushed at 800–1600+; higher ISO deepens the gritty look. Let ISO climb.
 - Filter: +Ye (natural contrast, slightly darker skies) is the default; +R for a punchier, dark-sky Tri-X.
 - Video: grain *and* Clarity are unavailable in movie mode, so video loses most of Tri-X's grit; add grain in post; consider Sharpness +2 and Shadow +2 to partly compensate contrast.
+
+> **Pro tip (from Fujifilm's official ACROS design notes):** the grain engine concentrates grain in shadows and scales it with ISO, so for maximum Tri-X grit raise ISO and expose about a third of a stop down rather than only cranking ISO. Bright high-key frames always render cleaner because highlight grain stays fine by design. Two corollaries: this recipe is not HEIF-safe (HEIF disables Clarity, and Clarity +3 is part of the look, so shoot JPEG), and the +3 slows burst saving. See [fujifilm-official-design-notes](../../../Knowledge/fujifilm-official-design-notes.md).

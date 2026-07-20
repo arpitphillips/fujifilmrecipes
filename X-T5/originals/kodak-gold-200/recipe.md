@@ -31,3 +31,5 @@ This recipe was derived from the Kodak E-7022 datasheet and analysis of referenc
 Set White Balance to Daylight, +2 Red & −5 Blue, and raise Shadow to +1. That keeps some warmth and shadow density when the sun isn't out.
 
 > **Provenance:** independently derived from the Kodak datasheet and observed frames. It converges with the popular [Fuji X Weekly Gold 200 (X-Trans V)](https://fujixweekly.com/2023/10/24/kodak-gold-200-fujifilm-x-t5-x-trans-v-film-simulation-recipe/) recipe, which is itself a form of validation; the one place we differ is Highlight (−2 here, −1.5 there). See [`research.md`](research.md).
+
+> **Pro tips:** Clarity 0 makes this the bank's fastest-saving warm recipe and fully HEIF-safe. DR400 pins ISO at 500 or above, so in bright sun control exposure with aperture and shutter and let ISO sit at 500. In a C-slot set it pairs naturally with Kodachrome 64, the crisp counterpart for the same sunny conditions.

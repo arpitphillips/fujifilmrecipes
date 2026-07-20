@@ -20,3 +20,5 @@ Classic Negative base, replicating Fujifilm's new Reala Ace film sim (GFX100 II)
 | Clarity | -2 |
 | ISO | Auto, up to ISO 6400 |
 | Exposure Comp | -1/3 to +1 (typically) |
+
+> **Official design note:** Fujifilm's Reala Ace page reveals the sim uses nonlinear saturation compression: "the more saturated the subject, the more muted the color." A +Color push therefore mostly lifts muted content while vivid subjects stay tamed, which is why this look reads natural rather than punchy, and why Reala Ace is a poor base for deliberately vivid grades. Bonus strengths per Fujifilm: purple and yellow-green reproduction (flowers, dusk skies, spring foliage), the original film's fourth-layer breakthrough. See [fujifilm-official-design-notes](../../../Knowledge/fujifilm-official-design-notes.md).

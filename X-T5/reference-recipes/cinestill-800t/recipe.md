@@ -20,3 +20,5 @@ Eterna base. Tungsten-balanced cinematic night-photography look with a blue cast
 | Clarity | -5 |
 | ISO | Auto, up to ISO 6400 |
 | Exposure Comp | -1/3 to +2/3 (typically) |
+
+> **Pro tip (from real-frame analysis):** the halation-style glow reads strongest around point light sources against darkness, like neon signs, streetlamps and traffic lights, so compose with practicals in frame; broad even lighting hides the effect. For the clean version of this same emulsion without the glow, use the [Vision3 500T original](../../originals/cinema/kodak-vision3-500t/recipe.md).

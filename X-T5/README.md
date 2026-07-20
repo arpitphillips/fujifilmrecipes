@@ -38,13 +38,13 @@ Each recipe folder holds: `recipe.md` (stills), sometimes `recipe-video.md` (mov
 | Recipe | Base film sim | Mood | Video? | Validation |
 |---|---|---|---|---|
 | [kodak-gold-200](originals/kodak-gold-200/) | Classic Chrome | Warm sunny nostalgia | ✅ | datasheet + **scan-validated** |
-| [kodak-portra-400](originals/kodak-portra-400/) | Classic Chrome | Emulsion-faithful pro portrait | — | datasheet (E-4050 archived) |
+| [kodak-portra-400](originals/kodak-portra-400/) | Classic Chrome | Emulsion-faithful pro portrait | — | datasheet + scan (partial) |
 | [kodak-ektachrome-e100](originals/kodak-ektachrome-e100/) | Provia | Neutral clean slide (E100) | — | datasheet (E-4000 archived) |
 | [kodak-ektar-100](originals/kodak-ektar-100/) | Velvia (tamed) | Vivid, sharp, near-invisible grain | — | datasheet + **scan** |
 | [fujicolor-pro-400h](originals/fujicolor-pro-400h/) | Pro Neg. Hi | Cool pastel pro portrait | — | datasheet + video-comparison |
 | [fujicolor-superia-400](originals/fujicolor-superia-400/) | Classic Negative | Cool green "Fuji look" | ✅ | datasheet + characteristic |
 | [cinema/kodak-vision3-50d](originals/cinema/kodak-vision3-50d/) | Eterna | Cleanest daylight cinema (finest grain) | ✅ | datasheet + characteristic + **scan** |
-| [cinema/kodak-vision3-250d](originals/cinema/kodak-vision3-250d/) | Eterna | Daylight cinema | ✅ inline | datasheet + characteristic |
+| [cinema/kodak-vision3-250d](originals/cinema/kodak-vision3-250d/) | Eterna | Daylight cinema | ✅ inline | datasheet + characteristic + scan (partial) |
 | [cinema/kodak-vision3-500t](originals/cinema/kodak-vision3-500t/) | Eterna | Tungsten night cinema | ✅ inline | datasheet + characteristic |
 | [cinema/kodak-double-x-5222](originals/cinema/kodak-double-x-5222/) | Acros | Classic B&W cinema (Raging Bull, Schindler's List) | ✅ | datasheet + characteristic |
 | [cinema/kodak-ektachrome-100d](originals/cinema/kodak-ektachrome-100d/) | Provia | Reversal cinema slide (Poor Things) | ✅ | datasheet + characteristic |
@@ -114,6 +114,18 @@ See [Knowledge/validation-methodology.md](../Knowledge/validation-methodology.md
 | [reala-color](reference-recipes/reala-color/) | Reala Ace | Video: clean true-to-life | ✅ | reference *(added 2026-07-19)* |
 
 > **Video recipes** exist for all **originals** (Gold 200 & Mumbai Monsoon as separate `recipe-video.md`; Superia and the cinema sims as inline "Video (movie mode)" sections). Movie mode drops grain/chrome/clarity — see [Knowledge/video-mode-settings.md](../Knowledge/video-mode-settings.md). Video versions of the reference recipes can be generated on request.
+
+## Pro tips (bank-wide, from accumulated research)
+
+- HEIF silently disables Clarity. Any recipe with Clarity away from 0 loses part of its look in HEIF, so shoot JPEG (FINE or FINE+RAW) for the full recipe. Clarity-0 recipes (Gold 200, Portra 400, Superia 400, Clean Girl, all the cinema stills) are HEIF-safe.
+- Clarity away from 0 also slows shot-to-shot saving. For street or burst work, favour the Clarity-0 recipes or accept the buffer pause (Kodachrome 64 at +3, Tri-X at +3, UltraMax at +3, Pan F at +2).
+- Shoot FINE + RAW. The JPEG carries the baked look, and the RAW lets you re-develop any other recipe later, in-camera or via Fujifilm X RAW Studio. One shoot, every look in the bank.
+- On Acros-based recipes, ISO is a real grain control: Fujifilm's own design notes state the grain engine scales with ISO and concentrates in shadows. For more grit, raise ISO and expose slightly down; high-key frames always render cleaner because highlight grain stays fine by design.
+- The X-T5 remembers a WB Shift per C-slot, so program all seven slots without shifts bleeding across recipes.
+- Classic Neg highlights lean magenta by design (official). If highlights look too pink on 2383, Silent Atlas or Mumbai, reduce Red in the WB shift rather than adding Blue.
+- Nostalgic Neg's shadow amber can't be neutralised by WB (official). Pick a different base if you need neutral shadows; conversely it is the best base for portraits in shade.
+
+See [fujifilm-official-design-notes](../Knowledge/fujifilm-official-design-notes.md) for the first-party sources behind the "official" items.
 
 ## General notes
 - Store recipes in the **C1–C7 custom presets** (Image Quality → Edit/Save Custom Setting). See [How to Program Film Simulation Recipes to Your Fujifilm Camera](https://fujixweekly.com/2024/02/27/how-to-program-film-simulation-recipes-to-your-fujifilm-camera/).

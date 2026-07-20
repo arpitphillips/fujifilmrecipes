@@ -1,0 +1,1 @@
+Drop **real Fujichrome Fortia / Fortia SP scans** here. This recipe has NO pixel evidence behind it — Fortia was a Japan-only limited run (2004–2007) and no genuine scans could be found on open sources. Real scans would move it from characteristic-only to scan-validated. Japanese photo blogs, Flickr and 2000s-era slide-scan archives are the likely sources.

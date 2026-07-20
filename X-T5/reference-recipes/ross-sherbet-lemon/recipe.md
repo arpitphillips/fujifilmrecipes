@@ -27,3 +27,5 @@ Notes
 - A brighter, seaside-specific cousin of [BewareMyVelvia (Bold)](../../originals/creative/bewaremyvelvia-bold/) (more dramatic) and [Fruit Pastel](../ross-fruit-pastel/) (pastel-lifted).
 
 > **X-Trans V, verified correct as-published (2026-07-16).** Velvia is not a blue-affected sim (only Classic Chrome/Neg/Eterna/EBB change IV→V), and Ross authors on an X-Trans V-category body anyway ([Pumpkin Soup](../ross-pumpkin-soup/) proof), CCFXB Weak transfers to the X-T5 unchanged. See [x-trans-v-and-conversion.md](../../../Knowledge/x-trans-v-and-conversion.md).
+
+> **Pro note (official, 2026-07-20):** this is a Velvia recipe, and Velvia is hard at both ends of the curve. Highlight −1.5 softens the already-hard highlight end (buying back detail, which is right), but Shadow +1.5 stacks hardness onto the already-hard shadow end, so expect genuinely deep, crushed blacks and expose for the shadows. Velvia also lifts sky blues toward magenta by design, so correct purple-leaning blues with WB (Blue up, Red down) rather than by cutting Color. See [TONE-CURVE-AUDIT.md](../../TONE-CURVE-AUDIT.md).

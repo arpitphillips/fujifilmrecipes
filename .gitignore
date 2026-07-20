@@ -8,3 +8,9 @@ _site/
 
 # Python bytecode
 __pycache__/
+
+# Third-party reference images in request workspaces (analysis-only, not redistributed)
+Requests/*/Reference Images/*.webp
+Requests/*/Reference Images/*.jpg
+Requests/*/Reference Images/*.jpeg
+Requests/*/Reference Images/*.png

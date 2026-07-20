@@ -1,45 +1,46 @@
 # Fujifilm X-T5 Film Simulation Recipes
 
-Curated from [Fuji X Weekly](https://fujixweekly.com/fujifilm-x-trans-v-recipes/) — the X-T5 uses the **X-Trans V** sensor/processor, so all recipes in this folder are the X-Trans V versions (or noted as fully compatible). Selected as a well-rounded starter set spanning classic color, punchy/vintage color, moody tones, cinematic night, and black & white.
+Curated from [Fuji X Weekly](https://fujixweekly.com/fujifilm-x-trans-v-recipes/), the X-T5 uses the X-Trans V sensor/processor, so all recipes in this folder are the X-Trans V versions (or noted as fully compatible). Selected as a well-rounded starter set spanning classic color, punchy/vintage color, moody tones, cinematic night, and black & white.
 
 ## Folder structure
 
-This folder is organised in **two tiers**:
+This folder is organised in two tiers:
 
-- **[`originals/`](originals/)** — validated / research-derived / original-design recipes (the sellable IP), sub-grouped into colour (root), `cinema/`, `black-and-white/`, and `creative/`.
-- **[`reference-recipes/`](reference-recipes/)** — attributed recipes from Fuji X Weekly and other sources, kept for testing/benchmarking and as candidates to re-derive as originals.
+- [`originals/`](originals/): validated / research-derived / original-design recipes (the sellable IP), sub-grouped into colour (root), `cinema/`, `black-and-white/`, and `creative/`.
+- [`reference-recipes/`](reference-recipes/): attributed recipes from Fuji X Weekly and other sources, kept for testing/benchmarking and as candidates to re-derive as originals.
 
 Plus: `_reference-sources/` (drop-folder for source PDFs/scans used in validation) and the two Fujifilm manuals (below).
 
 Each recipe is its own folder containing:
-- **`recipe.md`** — the exact settings to program into the camera.
-- **`knowledge.md`** — the grade analysis: what look it produces, the film it emulates, and the reasoning behind every setting.
-- **`references/`** and **`test-shots/`** — image drop-folders (see below).
+- `recipe.md`: the exact settings to program into the camera.
+- `knowledge.md`: the grade analysis: what look it produces, the film it emulates, and the reasoning behind every setting.
+- `references/` and `test-shots/` — image drop-folders (see below).
 
 For the settings-based reference (what each control does and how looks are built), see the top-level [Knowledge base](../Knowledge/README.md).
 
 The two Fujifilm PDFs in this folder are the source documents:
-- `x-t5_manual_en_s_f.pdf` — the full X-T5 Owner's Manual (Image Quality settings: Ch.6, printed pp.122–132).
+- `x-t5_manual_en_s_f.pdf`, the full X-T5 Owner's Manual (Image Quality settings: Ch.6, printed pp.122–132).
 - `x-t5_nfg_en_s_f.pdf` — New Features Guide for firmware v4.30 (connectivity/menu changes only; does not affect recipes).
 
 ## Recipes
 
 **See [RANKING.md](RANKING.md) for the full bank ranked by aesthetic value × popularity.**
 
-Each recipe folder holds: `recipe.md` (stills), sometimes `recipe-video.md` (movie mode), and `knowledge.md` (grade analysis). Flagship entries also have `research.md` / `validation.md`. Recipes are tagged **original** (research-derived or original design — the clean IP for the bank) or **reference** (attributed captures for testing/benchmarking).
+Each recipe folder holds: `recipe.md` (stills), sometimes `recipe-video.md` (movie mode), and `knowledge.md` (grade analysis). Flagship entries also have `research.md` / `validation.md`. Recipes are tagged original (research-derived or original design, the clean IP for the bank) or reference (attributed captures for testing/benchmarking).
 
 **Every recipe folder also has two drop-folders:**
-- `references/` — drop **real film scans** of the look here (Reddit/Flickr/lab finds) to validate & improve the recipe.
-- `test-shots/` — drop **your own X-T5 frames** shot with the recipe here to test faithfulness.
+- `references/` — drop real film scans of the look here (Reddit/Flickr/lab finds) to validate & improve the recipe.
+- `test-shots/` — drop your own X-T5 frames shot with the recipe here to test faithfulness.
 
-(Reddit can't be auto-scraped — it needs login I can't perform — so `references/` is how you feed me good Reddit/Cloudflare-site images.)
+(Reddit can't be auto-scraped, it needs login I can't perform, so `references/` is how you feed me good Reddit/Cloudflare-site images.)
 
-### Originals (validated / research-derived — the sellable IP)
+### Originals (validated / research-derived: the sellable IP)
 | Recipe | Base film sim | Mood | Video? | Validation |
 |---|---|---|---|---|
 | [kodak-gold-200](originals/kodak-gold-200/) | Classic Chrome | Warm sunny nostalgia | ✅ | datasheet + **scan-validated** |
 | [kodak-portra-400](originals/kodak-portra-400/) | Classic Chrome | Emulsion-faithful pro portrait | — | datasheet + scan (partial) |
 | [kodak-ektachrome-e100](originals/kodak-ektachrome-e100/) | Provia | Neutral clean slide (E100) | — | datasheet (E-4000 archived) |
+| [fujifilm-fortia-sp](originals/fujifilm-fortia-sp/) | Velvia | Extreme saturation, sakura and autumn specialist | — | characteristic only (no datasheet, no scans) |
 | [kodak-ektar-100](originals/kodak-ektar-100/) | Velvia (tamed) | Vivid, sharp, near-invisible grain | — | datasheet + **scan** |
 | [fujicolor-pro-400h](originals/fujicolor-pro-400h/) | Pro Neg. Hi | Cool pastel pro portrait | — | datasheet + video-comparison |
 | [fujicolor-superia-400](originals/fujicolor-superia-400/) | Classic Negative | Cool green "Fuji look" | ✅ | datasheet + characteristic |
@@ -67,7 +68,7 @@ Each recipe folder holds: `recipe.md` (stills), sometimes `recipe-video.md` (mov
 
 See [Knowledge/validation-methodology.md](../Knowledge/validation-methodology.md) for what each validation tier means.
 
-### Reference recipes (attributed captures — for testing/benchmarking, to be re-derived as originals)
+### Reference recipes (attributed captures: for testing/benchmarking, to be re-derived as originals)
 | Recipe | Base film sim | Mood | Video? | Status |
 |---|---|---|---|---|
 | [reggies-portra](reference-recipes/reggies-portra/) | Classic Chrome | Everyday / versatile portraits | — | reference |
@@ -113,7 +114,7 @@ See [Knowledge/validation-methodology.md](../Knowledge/validation-methodology.md
 | [vivid-fujichrome](reference-recipes/vivid-fujichrome/) | Velvia | Video: bold postcard slide colour | ✅ | reference *(added 2026-07-19)* |
 | [reala-color](reference-recipes/reala-color/) | Reala Ace | Video: clean true-to-life | ✅ | reference *(added 2026-07-19)* |
 
-> **Video recipes** exist for all **originals** (Gold 200 & Mumbai Monsoon as separate `recipe-video.md`; Superia and the cinema sims as inline "Video (movie mode)" sections). Movie mode drops grain/chrome/clarity — see [Knowledge/video-mode-settings.md](../Knowledge/video-mode-settings.md). Video versions of the reference recipes can be generated on request.
+> **Video recipes** exist for all originals (Gold 200 & Mumbai Monsoon as separate `recipe-video.md`; Superia and the cinema sims as inline "Video (movie mode)" sections). Movie mode drops grain/chrome/clarity; see [Knowledge/video-mode-settings.md](../Knowledge/video-mode-settings.md). Video versions of the reference recipes can be generated on request.
 
 ## Pro tips (bank-wide, from accumulated research)
 
@@ -124,11 +125,18 @@ See [Knowledge/validation-methodology.md](../Knowledge/validation-methodology.md
 - The X-T5 remembers a WB Shift per C-slot, so program all seven slots without shifts bleeding across recipes.
 - Classic Neg highlights lean magenta by design (official). If highlights look too pink on 2383, Silent Atlas or Mumbai, reduce Red in the WB shift rather than adding Blue.
 - Nostalgic Neg's shadow amber can't be neutralised by WB (official). Pick a different base if you need neutral shadows; conversely it is the best base for portraits in shade.
+- Pick your base by the sky (official). Fujifilm moves blue in three different directions: Velvia adds magenta for a deep sky-as-subject blue, Classic Chrome removed the magenta component so skies read pale and recede, and Eterna shifts blue toward cyan for a cinematic teal. Reaching one from another with Color, WB or FX Blue fights a deliberate design decision and always shows.
+- Provia is not a neutral baseline (official). It's a memory-colour rendering with four built-in per-hue moves: brighter skies, intensified sunsets, lusher foliage, and deliberately damped orange skin. Every "subdued vs Provia" claim is subdued relative to something already warmed.
+- Color Chrome Effect is a tonality tool, not a saturation tool (official). It's modelled on Fortia reversal film and works by gradation detection, keeping already-saturated areas from flattening into solid patches. It does most of its work on rich subjects (wood, brass, terracotta, deep foliage, warm skin) and almost nothing on a grey, muted frame.
+- Don't stack Color Chrome Effect on Velvia (official). Velvia lifts every hue uniformly while CCE adds density only to already-saturated hues; together they go plastic. On Velvia keep CCE Weak or Off, and since Velvia is hard at both ends, Highlight/Shadow 0 is already high-contrast. (The one deliberate exception is [Fortia SP](originals/fujifilm-fortia-sp/), where the plastic extreme is the point.)
+- "No matter what you do in Velvia mode, it will never turn into Fortia" (official). No combination of settings converts one simulation into another, so choose the base first; settings tune a look, they don't relocate it.
+- Pro Neg. Hi against Std is a lighting decision, not a taste one (official). Std for controlled or studio light, Hi for flat unmodifiable light because it "creates shadows even in flat light."
+- Classic Chrome has no film ancestor (official). It's "an imaginary film" modelling photojournalism magazines, its olive greens and terracotta reds are designed in, and sky magenta was deliberately removed, so it renders pale skies by intent. Great for interiors and fashion (Fujifilm's own recommendation); just don't claim stock lineage or fight it with FX Blue.
 
-See [fujifilm-official-design-notes](../Knowledge/fujifilm-official-design-notes.md) for the first-party sources behind the "official" items.
+See [fujifilm-official-design-notes](../Knowledge/fujifilm-official-design-notes.md) for the first-party sources behind the "official" items, and [TONE-CURVE-AUDIT.md](TONE-CURVE-AUDIT.md) for every recipe's Highlight/Shadow checked against its base simulation's native curve.
 
 ## General notes
-- Store recipes in the **C1–C7 custom presets** (Image Quality → Edit/Save Custom Setting). See [How to Program Film Simulation Recipes to Your Fujifilm Camera](https://fujixweekly.com/2024/02/27/how-to-program-film-simulation-recipes-to-your-fujifilm-camera/).
+- Store recipes in the C1–C7 custom presets (Image Quality → Edit/Save Custom Setting). See [How to Program Film Simulation Recipes to Your Fujifilm Camera](https://fujixweekly.com/2024/02/27/how-to-program-film-simulation-recipes-to-your-fujifilm-camera/).
 - "Exposure Compensation: typically" is a starting suggestion, not a rule — judge each scene.
-- The X-T5 remembers a **White Balance Shift per C-preset** (X-Pro3-and-newer feature), so each recipe keeps its own shift.
-- **X-Trans V blue note:** many of these are ports of X-Trans IV recipes with Color Chrome FX Blue dropped one notch. To run a recipe on an X-Trans IV body, raise CCFXB one notch (Off→Weak, Weak→Strong). Full detail in [x-trans-v-and-conversion.md](../Knowledge/x-trans-v-and-conversion.md).
+- The X-T5 remembers a White Balance Shift per C-preset (X-Pro3-and-newer feature), so each recipe keeps its own shift.
+- X-Trans V blue note: many of these are ports of X-Trans IV recipes with Color Chrome FX Blue dropped one notch. To run a recipe on an X-Trans IV body, raise CCFXB one notch (Off→Weak, Weak→Strong). Full detail in [x-trans-v-and-conversion.md](../Knowledge/x-trans-v-and-conversion.md).

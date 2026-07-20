@@ -51,3 +51,24 @@ Recipes list these as Highlight and Shadow (a.k.a. "H Tone" / "S Tone").
 - A bright, clean look = higher Highlight with modest Shadow.
 
 > Note the interaction: DR400 already softens highlights, so a recipe pairing DR400 with a low/negative Highlight value pushes hard toward a soft, print-like highlight roll-off; pairing DR400 with a positive Shadow deepens blacks while keeping highlight latitude, a classic "moody but not muddy" combination.
+
+## ⚠️ The base sim has its own curve: Highlight/Shadow are *relative*, not absolute *(added 2026-07-20)*
+
+A Highlight/Shadow pair does not mean the same thing on every simulation. Fujifilm's Image Design team has published the underlying curve shapes, and they differ sharply:
+
+| Simulation | Native curve (official) | Consequence for your settings |
+|---|---|---|
+| **CLASSIC CHROME** | **"The shadow end is hard, but the tonality is soft on the highlight end"**; overall **second hardest after Velvia** | Highlight **−1 is usually enough** (already protected; −2 goes limp). Needs a **Shadow lift** just to reach normal shadow detail. |
+| **VELVIA** | Hard at **both** ends — "deep shadows… bold impression" | Highlight/Shadow at 0 is *already* a high-contrast recipe. Negative values buy normal contrast, not flatness. |
+| **ETERNA** | **"The highlight and shadow tones are both soft"** (official); **12-stop DR, "comparable to F-Log"** | Real latitude in reserve — Highlight −2 does not produce mush here the way it would on a narrower profile. |
+| **ASTIA** | Soft at **both** ends, "while saturation is maintained" | Don't stack Highlight softening past ~−1.5. Any real depth must come from DR/Shadow, not the sim. |
+| **PRO Neg. Hi** | "Boosts contrast, **creating shadows even in flat light**" | Supplies structure flat light doesn't. Reach for it *because* the light is flat. |
+| **PRO Neg. Std** | "Good lighting and moderate contrast" — parameters apply straightforwardly | The predictable base: best place to prototype a look before porting it. |
+| **ACROS** | Harder mid-to-highlight compression, **softer shadows** than Monochrome | Shadow-positive B&W recipes work *with* the curve — which is why deep Acros shadows still hold texture. |
+| **MONOCHROME** | Shares **Provia's** tonality design | Softer than Classic Chrome — counter-intuitive, but official. |
+
+**The practical rule:** before setting Highlight/Shadow, ask what the base already does at that end. Stacking softness on a soft end produces mush; stacking hardness on a hard end produces crushed blacks. The strongest recipes push *against* the base's native shape, not with it.
+
+Full sourcing: [fujifilm-official-design-notes.md](fujifilm-official-design-notes.md).
+
+---

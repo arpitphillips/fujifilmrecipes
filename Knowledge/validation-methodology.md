@@ -13,11 +13,23 @@ Image-fetching strategies (in rough order of reliability):
 1. User-provided reference files (downloaded PDFs / scans placed in `X-T5/_reference-sources/`), render with `pdftoppm` and view every page/image. *Best when available.*
 2. Direct image download: `Invoke-WebRequest`/`curl` a real scan JPG to disk, then Read it. Works on open hosts (Wikimedia Commons `upload.wikimedia.org`, Flickr static, blog media dirs). Bypasses the browser.
 3. Manufacturer / lab galleries: datasheets (fetch PDF → `pdftotext`/`pdftoppm`) for curves + grain, plus lab film-index galleries for real scans.
-4. Search → collect many: always gather ≥5 across lighting/subjects (see scan rules) so you're not fitting to an outlier.
+4. Search → collect many: always gather ≥5 across lighting/subjects (see scan rules) so you're not fitting to an outlier. Before searching Commons, read [COMMONS-SCAN-INDEX.md](../X-T5/_reference-sources/COMMONS-SCAN-INDEX.md); it records which stocks have genuine scans, which have only box shots, and the mislabelling traps already caught.
 5. When a source is bot-protected (Cloudflare), don't fight it; switch hosts, or ask the user to download the page/scans (as was done for Gold 200).
 6. Video references (YouTube): the player blocks browser screenshots in this environment, but YouTube serves real auto-generated frame stills as plain JPGs, `https://i.ytimg.com/vi/<VIDEO_ID>/sd1.jpg`, `sd2.jpg`, `sd3.jpg` (~25/50/75% points) and `maxresdefault.jpg` (hero frame). Four genuine frames across different scenes, fetchable with a plain browser-UA request. Caveat: heavy compression → trust hue relationships and treat absolute saturation loosely. (Proven on the Silent Atlas verification, 2026-07-16.)
 
 Record which images were viewed (source, light, subject) in the recipe's `validation.md`. Images are analysis-only, never redistributed in the product.
+
+## Blind evaluation: borrowed from Fujifilm's own process *(added 2026-07-20)*
+
+Fujifilm's Image Design team describes how they validate a simulation during development: photographers shoot diverse scenes with deliberately unconventional settings, prints are then evaluated by neutral parties who were not involved in the shoot, and the cycle repeats "for every test." ([X Stories, ep. 1](https://www.fujifilm-x.com/global/stories/the-world-of-film-simulation-episode-1/))
+
+The reason that matters to us: the person who built a recipe is the worst judge of it. Knowing the intent makes you see the intent. This is the same failure mode as fitting to a single reference image, one step further along.
+
+**Adopt for the bank:**
+- When judging test shots, look at the frames before re-reading the settings, grade the image, not the intention.
+- Evaluate a recipe against reference scans mixed in, unlabelled, rather than side-by-side with labels.
+- Prefer a second opinion from someone who doesn't know the target for any recipe being promoted to `originals/`.
+- Fujifilm evaluates on prints; screens flatter. Worth a print check before declaring a flagship recipe finished.
 
 ## The three evidence tiers
 A recipe's validation status is one of:
@@ -75,6 +87,7 @@ A `reference` recipe (attributed capture) becomes a validated `original` only af
 | Fujicolor Pro 400H (original) | **Datasheet (RMS 4, shadow-saturation control)** + **video-comparison** (real film vs Pro Neg Hi sim) | strongest non-scan evidence in the bank; derived 2026-07-16 |
 | Ilford Delta 3200 (original) | **Datasheet (true ISO 1000, EI-3200-by-design)** + Scan (1, overcast street) | derived 2026-07-16 |
 | Ilford Pan F Plus 50 (original) | **Datasheet (extremely fine grain, "edge contrast")** | a found "reference" was a synthetic software preset — correctly discarded, not used; genuine scans still needed; derived 2026-07-16 |
+| Fujichrome Fortia SP (original) | Characteristic only (no datasheet located, no genuine scans on open sources) + unusually strong first-party derivation (Color Chrome Effect is Fujifilm's own Fortia model) | below the flagship bar by design; genuine scans would settle it; derived 2026-07-20 |
 | Mumbai (General) | **11-image place study** across 7 condition types | refined once from evidence (Highlight −1.5) |
 | Mumbai Monsoon | Original design | field-test pending |
 | Creative looks | Aesthetic designs | tune against user-dropped `references/` |

@@ -54,3 +54,23 @@ The colour identity of a grade is built in layers:
 4. CCE / CCFXB add richness/depth to warm colours and blues respectively.
 
 A "vivid" grade stacks Velvia/Classic-Neg + positive Color + Strong Chrome effects; a "muted vintage" grade stacks Classic Chrome + modest Color + a warm WB shift.
+
+## Where Color Chrome Effect came from: and what it actually does *(added 2026-07-20)*
+
+Fujifilm's own account ([X Stories, GFX Technologies #6](https://www.fujifilm-x.com/global/stories/gfx-technologies-6/)):
+
+- It is modelled on FORTIA: Fujifilm's ultra-saturated reversal slide film, reproducing its "higher contrast and more vivid colour" *while maintaining tonality*.
+- The premise: *"One of the characteristics of reversal colour film is that tonality remains even in high contrast range."*
+- The mechanism is gradation detection, not saturation: *"By analysing the light and information received on the sensor surface, one can detect slight gradation. Color Chrome Effect uses this to create tonality while maintaining high contrast."*
+
+**Why this matters practically:** CCE does not make colours more saturated, it recovers and preserves *gradation inside* colours that are already saturated enough to be at risk of flattening into a solid patch. That is why:
+
+- CCE Strong enriches wood, brass, terracotta, deep foliage, red fabric and skin in warm light, areas where saturation is high and tonal separation is fragile.
+- CCE does little on a low-saturation frame: a grey, overcast, muted scene has nothing for it to work on. Setting it Strong there costs you nothing but buys nothing either.
+- Stacking CCE on Velvia goes plastic. Velvia applies a *uniform gain* across hues; CCE then runs a tonality-recovery pass over colour that has already been pushed past the point where gradation survives. On a Velvia base, prefer Weak/Off.
+
+**Historical note on speed:** on the X-Processor Pro generation, CCE took "about 1.0 sec." to process and blocked continuous shooting and AF-C. The X-T5's X-Processor 5 carries no such documented restriction, treat that figure as context for why the control was once used sparingly, not as current behaviour.
+
+> **The capstone quote for base selection:** *"no matter what you do in Velvia mode, it will never turn into Fortia."* Fujifilm states outright that no combination of settings converts one simulation into another. Choose the base first, settings tune a look, they do not relocate it. See the [blue/sky axis and per-sim curve table](fujifilm-official-design-notes.md).
+
+---

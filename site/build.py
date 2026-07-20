@@ -177,11 +177,13 @@ def sim_color(sim: str) -> str:
 def validation_badge(status: str) -> tuple[str, str]:
     """→ (css class, short label) for a validation/status cell."""
     s = status.lower()
-    if "scan" in s:
+    if "characteristic only" in s or ("characteristic" in s and "no datasheet" in s):
+        return "ref", "characteristic only"
+    if "scan" in s and "no scan" not in s:
         return "scan", "scan-validated"
     if "characteristic" in s:
         return "char", "datasheet + characteristic"
-    if "datasheet" in s:
+    if "datasheet" in s and "no datasheet" not in s:
         return "data", "datasheet-derived"
     if "frame study" in s:
         return "creative", "frame-study design"

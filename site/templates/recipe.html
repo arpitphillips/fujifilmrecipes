@@ -42,9 +42,7 @@
     {% else %}
     <div class="gallery-grid gallery-empty">
       {% for _ in range(3) %}
-      <div class="gallery-frame placeholder" style="--sim: {{ r.sim_color }}">
-        <span class="ph-label">🎞️</span>
-      </div>
+      <div class="gallery-frame placeholder"></div>
       {% endfor %}
     </div>
     <p class="gallery-note">These slots are waiting for real photographs. If you've shot with

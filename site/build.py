@@ -486,10 +486,7 @@ def build():
     for cat, label, intro in ORIGINAL_CATEGORIES:
         cards = [r for r in originals if r["category"] == cat]
         groups.append({"label": label, "intro": intro, "cards": cards})
-    hero_frames = [{"title": r["title"], "color": r["sim_color"]}
-                   for r in originals[:10]]
     emit("", "home.html", nav="originals", groups=groups,
-         hero_frames=hero_frames,
          n_originals=len(originals), n_references=len(references),
          n_articles=len(articles),
          page_title="Fujifilm X-T5 film simulation recipes, built from film datasheets",

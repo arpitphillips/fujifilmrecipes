@@ -87,6 +87,23 @@ Neither tells you what Portra 800 does; they tell you what a plastic lens and a 
 
 ---
 
+### ⚠️ The confounders are not randomly distributed — they cluster on exactly what the bank lacks
+
+Three colour frames have now been rejected for light-source contamination: **Portra 800** (sodium-vapour street lighting), **Portra 800** again (same series), and **UltraMax 400** (a room lit entirely by a TV screen). That is not coincidence.
+
+**Film photographers shoot night and interior scenes precisely *because* the light is strange.** A tungsten-lit bar, a neon street, a screen-lit room — these are chosen for their light, which means the light dominates the frame, which means they are systematically the **worst possible candidates for colour validation**.
+
+The consequence is uncomfortable but worth stating plainly: **the conditions the bank most needs (night, tungsten, interior, mixed light) are the conditions where open-source evidence is least trustworthy.** Daylight frames are abundant and clean; the gap cannot be closed by simply searching harder for night frames.
+
+**What actually works for those conditions:**
+- **B&W is far less affected** — colour casts don't exist, so night and interior B&W frames remain usable (the 1989 Prague HP5 frame is the best evidence in the bank, and it is available-light indoors).
+- **User-shot test frames** in known light, dropped into `test-shots/`.
+- **A grey card or colour chart in frame** — the only reliable way to separate the light from the emulsion.
+
+---
+
+---
+
 ## Where to look next (Commons is now largely exhausted)
 
 Commons skews toward European, daytime, architectural and technical subjects, by a small number of prolific film photographers. That produces two systematic gaps across the whole bank:

@@ -64,6 +64,34 @@ Each original records, in its `validation.md` (or `research.md`):
 ## Promotion: reference → original
 A `reference` recipe (attributed capture) becomes a validated `original` only after it is re-derived from evidence and passes at least datasheet + characteristic validation (scan-validation for the top tier). Copying values is not derivation; the analysis and write-up must be our own. This is both a quality bar and the clean-IP basis for selling the bank.
 
+## Evidence state of the bank at a glance *(consolidated 2026-07-21)*
+
+| Evidence level | Count | Recipes |
+|---|---|---|
+| **Scan-validated, multi-frame** (3+ frames or full pass) | **5** | Gold 200 *(~35 frames)*, Acros 100 *(4)*, HP5 Plus *(3)*, Vision3 50D *(3)*, Tri-X 400 *(2, two extreme conditions)* |
+| **Scan-validated, 2 frames** | **4** | Vision3 500T *(both key balances)*, Vision3 250D, Delta 3200 *(two photographers)*, Ektar 100 |
+| **Scan (partial — 1 frame, or 2 from one photographer)** | **6** | Portra 400, Ektachrome E100, Superia 400, Pro 400H, UltraMax 400, Kodachrome 25 |
+| **Datasheet + characteristic, no scan** | **4** | 2383 Print, Double-X 5222, Ektachrome 100D, Pan F Plus 50 |
+| **Characteristic only** ⚠️ | **1** | Fortia SP — *weakest in the bank, flagged in-recipe* |
+| **Original design / place study** | **3** | Mumbai (11-image study), Mumbai Monsoon, creative looks |
+
+**Nine of the film-based originals now carry real pixel evidence**, up from three at the start of the July validation push. Every cinema recipe except 2383, Double-X and 100D is scan-backed.
+
+### Which remaining gaps are actually closable
+
+Honest triage, so effort goes where it can succeed:
+
+| Gap | Closable? | Why |
+|---|---|---|
+| More daylight frames for partials | ✅ **Yes, easily** | Commons is rich in clean daylight film photography |
+| **2383 Print / Double-X / Ektachrome 100D** | ❌ **Structurally blocked** | Motion-picture stocks: real footage isn't Commons material, and frame-grabs of released films are neither free nor faithful (they carry the DI grade) |
+| **Pan F Plus 50, T-Max** | ❌ **Blocked on Commons** | Only box shots and **software simulations**. Needs Flickr or a user drop |
+| **Fortia SP** | ❌ **Effectively closed** | Japan-only limited run, 2004–07. No datasheet, no scans anywhere open |
+| **Night / tungsten / interior colour** | ⚠️ **Blocked by contamination, not scarcity** | Frames are abundant but the light source dominates them — see [scan index](../X-T5/_reference-sources/COMMONS-SCAN-INDEX.md). **B&W is exempt** |
+| **Colour skin tones / portraits** | ⚠️ **Only via user drops** | The bank's largest gap. Commons portrait searching also carries a real risk of surfacing inappropriate imagery of identifiable people — a earlier attempt did, and was discarded |
+
+**The two highest-value things a human can contribute**, in order: a **colour portrait scan** for Pro 400H or Portra 400, and **any frame shot with a grey card in shot** under tungsten or mixed light.
+
 ## Current validation ledger
 
 > **2026-07-15 datasheet audit:** all originals below re-verified against locally archived manufacturer PDFs (`X-T5/_reference-sources/datasheets/`); see [X-T5/VALIDATION-AUDIT.md](../X-T5/VALIDATION-AUDIT.md). The datasheet tier for every film-based original is now archive-backed rather than fetch-based.

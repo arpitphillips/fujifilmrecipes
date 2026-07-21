@@ -243,4 +243,23 @@ Cameras since the X-T3/X-T30 also offer B&W Adjust: ±9 steps of warm/cool tonin
 
 ---
 
+---
+
+## Fujifilm's own words for this argument *(added 2026-07-20)*
+
+The strongest first-party statement of the thesis on this page comes from the Image Design team:
+
+> **"Image design is a work of converting the raw signal while understanding the difference of the spectral sensitivity."**
+> Source: [X Stories: Film Simulation, Revolution by Continuous Evolution](https://www.fujifilm-x.com/global/stories/film-simulation-revolution-by-continuous-evolution/)
+
+That single sentence is the whole case. A film simulation is not a colour grade applied to a finished picture; it is a spectral-sensitivity-aware conversion of the raw sensor signal**, performed at the point where the sensor's response is reconciled with how the eye actually sees. Once a file has been demosaiced and handed to Lightroom, that step has already happened and cannot be re-run. This is why the in-camera JPEG is the archival primary in this bank.
+
+Two supporting statements from the same source:
+- The target never moved, only the machinery: *"The vision of ideal colour reproduction for FUJIFILM remains the same. It's just that devices have evolved, processor has evolved, and the algorithm has evolved."* And, candidly, *"there are still hundreds of things to do to reach the ideal vision."*
+- Newer processors extract more from the *same* signal (*"it picks up signals that were not previously picked up"*), giving more detail *"without supersaturation"*, and granting every colour simulation greater **"toughness against colour supersaturation."** This is a generational trait, and part of why [X-Trans IV→V ports](x-trans-v-and-conversion.md) tolerate Color values that would have looked garish on older bodies.
+
+A third, easily-missed constraint: the EVF must render the simulation live: *"If the film simulation is set to Velvia, then we have to show the world of Velvia in real time. EVF has to be that what you see is what you get."* Practically, you are previewing the finished JPEG before the shutter fires; recipes should be judged in the viewfinder in the actual light, not guessed at from a settings table.
+
+Full extraction: [fujifilm-official-design-notes.md](fujifilm-official-design-notes.md).
+
 *Last updated: 2026-07-17*

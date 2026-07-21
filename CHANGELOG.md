@@ -13,6 +13,14 @@
 
 ---
 
+## 2026-07-21 — Fourth snapshot merged: rebuilt RANKING, evidence-state summary, colour-science + Commons additions (author: Claude session)
+**What changed:** merged the newest diverged snapshot (upload `2eae9f2e`). Its markdown was otherwise a subset of this copy, so only four genuinely-newer items were pulled in and humanised to the audit-clean style. Site rebuilt: 92 pages, audit 0 sitewide, 0 broken links.
+- **`X-T5/RANKING.md` fully rebuilt** — the old "full bank" table covered only 17 of 61 recipes and was flagged stale. Replaced with the snapshot's tiered ranking (Tier S/A/B/C by aesthetic × real-world popularity, with a "false precision" caveat and honest reading of the `n/a` popularity signal). The snapshot's rebuild predated this copy's 8 recent community recipes, so I added them back as an explicit "Recent reference additions, not yet re-scored" block (the four FXW video recipes + the three Nostalgic Neg. stills + Cine Teal); bank count updated 62 → 70. Medal emoji stripped from tier headings for the published page.
+- **`Knowledge/validation-methodology.md`** gained the "Evidence state of the bank at a glance" summary table (9 film-based originals now carry real pixel evidence, up from 3) and the "Which remaining gaps are actually closable" triage (which stocks are structurally blocked on Commons vs closable, and the two highest-value human contributions).
+- **`Knowledge/color-science-why-film-cannot-be-faked.md`** gained a "Fujifilm's own words for this argument" section putting the Image Design team's raw-signal-conversion quote where the cannot-be-faked thesis lives.
+- **`X-T5/_reference-sources/COMMONS-SCAN-INDEX.md`** gained the "confounders cluster on exactly what the bank lacks" analysis (night/tungsten/interior colour frames are abundant but light-contaminated; B&W is exempt; three colour frames rejected for light-source contamination).
+- Not ported: everything else in the snapshot was an older or identical state of files this copy already leads on (its recipe set lacks the 8 community recipes, the datasheet MANIFEST, and the nerd guide); the Requests screenshots were already handled and stay gitignored.
+
 ## 2026-07-20 — Third-machine snapshot merged: F-Log/RAW workflow, Fortia SP, tone-curve audit, expanded design notes (author: Claude session)
 **What changed:** integrated another diverged repo snapshot (uploaded), merging its genuinely-new work into this canonical copy and humanising all ported prose to the audit-clean house style. New site now 92 pages (was 90), audit 0 sitewide, 0 broken links.
 - **New knowledge article `Knowledge/flog-and-raw-workflow.md`** (F-Log vs F-Log2, the ISO-floor and DATA-LEVEL traps, Resolve/Premiere node order, in-camera RAW conversion + X RAW Studio, RAW-video cost ladder), plus **`Knowledge/luts/`** (two datasheet-derived F-Log→Rec709 `.cube` LUTs + generator script + README). Indexed in `Knowledge/README.md`. Renders on the site.

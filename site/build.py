@@ -592,6 +592,10 @@ def build():
     (OUT / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}sitemap.xml\n")
 
+    # -- ads.txt (Google AdSense authorised-seller declaration) ------------
+    (OUT / "ads.txt").write_text(
+        "google.com, pub-4025909404484604, DIRECT, f08c47fec0942fa0\n")
+
     n_pages = sum(1 for _ in OUT.rglob("index.html"))
     print(f"Built {n_pages} pages → {OUT}")
 
